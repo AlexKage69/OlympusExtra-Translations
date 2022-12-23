@@ -1,0 +1,26 @@
+{
+	Texts = [
+		"_append"
+    Texts = [
+    {
+      /*
+        Event: ApolloWithZeus01
+        Apollo: Seeing you struggle with your father made me realise something, Zagzag. Fathers and sons work much better together. My father and I put together something that might help you.
+        Zeus: That's right, Nephew! I feel generous and I know you feel grateful. Let's show him our power, young son.
+      */
+      Id = "Apollo_0041"
+      Speaker = "Apollo"
+      DisplayName = "Polish Text Here"
+    }
+    {
+      /*
+        Event: ApolloWithZeus01
+        Apollo: Seeing you struggle with your father made me realise something, Zagzag. Fathers and sons work much better together. My father and I put together something that might help you.
+        Zeus: That's right, Nephew! I feel generous and I know you feel grateful. Let's show him our power, young son.
+      */
+      Id = "NPC_Zeus_01"
+      Speaker = "Zeus"
+      DisplayName = "Polish Text Here"
+    }
+  ]
+}

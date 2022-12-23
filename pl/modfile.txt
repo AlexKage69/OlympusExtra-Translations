@@ -1,0 +1,6 @@
+-: Mod Name: Goddess Codex
+    Author - AlexKage
+:-
+
+To "Game/Text/pl/HelpText.pl.sjson"
+SJSON "HelpText.pl.sjson"
