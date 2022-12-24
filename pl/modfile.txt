@@ -2,5 +2,7 @@
     Author - AlexKage
 :-
 
+To "Game/Text/pl/_LootData.pl.sjson"
+SJSON "_LootData.pl.sjson"
 To "Game/Text/pl/HelpText.pl.sjson"
 SJSON "HelpText.pl.sjson"
