@@ -1,0 +1,29 @@
+{
+Texts = [
+    {
+      Id = "UpgradeChoiceMenu_Title_ApolloUpgrade"
+      DisplayName = "阿波罗的祝福"
+    }
+    {
+      Id = "Player_GodDispleased_ApolloUpgrade"
+      DisplayName = "阿波罗不高兴了！"
+    }
+    {
+      Id = "UpgradeChoiceMenu_Title_HestiaUpgrade"
+      DisplayName = "赫斯提亚的祝福"
+    }
+    {
+      Id = "Player_GodDispleased_HestiaUpgrade"
+      DisplayName = "赫斯提亚不高兴了！"
+    }
+    {
+      Id = "UpgradeChoiceMenu_Title_HeraUpgrade"
+      DisplayName = "赫拉的祝福"
+    }
+    {
+      Id = "Player_GodDispleased_HeraUpgrade"
+      DisplayName = "赫拉不高兴了！"
+    }
+
+  ]
+}
