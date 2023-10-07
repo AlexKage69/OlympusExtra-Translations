@@ -1,5 +1,2469 @@
 {
 	Texts = [
-		"_append"
+		{
+			Id = "NPC_Apollo_01"
+			DisplayName = "阿波罗"
+			Description = "光明之神"
+		}		
+		{
+			Id = "ApolloFirstPickUp"
+			DisplayName = "已见到阿波罗"
+		}
+		{
+			Id = "ApolloUpgrade"
+			DisplayName = "阿波罗"
+			Description = "光明之神"
+		}
+		{
+			Id = "ApolloUpgrades"
+			DisplayName = "光明之神"
+			Description = "有朝一日，冥王之子定能获得阿波罗的各种祝福。"
+		}
+		{
+			Id = "CosmeticsMusic"
+			DisplayName = "采风集乐"
+			Description = "有朝一日，冥王之子定能集齐宫廷音乐家所提供的所有乐谱。"
+		}
+		{
+			Id = "ApolloUpgrade_FlavorText01"
+			DisplayName = "音乐是通往心灵大门的钥匙，听听你的发现。"
+		}
+		{
+			Id = "ApolloUpgrade_FlavorText02"
+			DisplayName = "只有最纯粹之人才能理解他的境界。"
+		}
+		{
+			Id = "ApolloUpgrade_FlavorText03"
+			DisplayName = "救助苦难，驱散厄运之神。"
+		}		
+		{
+      		Id = "ApolloBlind"
+			DisplayName = "失明"
+			Description = "{#ItalicFormat}{$Keywords.Status}{#PreviousFormat}: 持续至少 {#BoldFormatGraft}{$TooltipData.TooltipBlindDuration} 秒{#PreviousFormat}，受害者有至少 {#UpgradeFormat}40% {#PreviousFormat}的几率Miss下一次攻击。"
+		}
+		{
+      		Id = "DamageResist"
+			DisplayName = "庇护"
+			Description = "敌人远程攻击造成的伤害下降。"
+		}
+		{
+			Id = "ApolloWeaponTrait"
+			DisplayName = "失明攻击"
+			Description = "{$Keywords.Attack}更强，可以施加{$Keywords.ApolloBlind}。 \n {!Icons.Bullet}{#PropertyFormat}攻击伤害:  \Column 380 {#PreviousFormat}{$TooltipData.DisplayDelta1}" 
+		} 		
+		{
+			Id = "ApolloWeaponTrait_Initial"
+			InheritFrom = "ApolloWeaponTrait"
+			Description = "{$Keywords.Attack} 更强，可以施加{$Keywords.ApolloBlind}。 \n {!Icons.Bullet}{#PropertyFormat}攻击伤害： \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}"
+		}
+		{
+			Id = "ApolloSecondaryTrait"
+			DisplayName = "失明乱舞"
+			Description = "{$Keywords.Special}更强，可以施加{$Keywords.ApolloBlind}。 \n {!Icons.Bullet}{#PropertyFormat}特殊攻击伤害： \Column 380 {#PreviousFormat}{$TooltipData.DisplayDelta1}"
+		} 	
+		{
+			Id = "ApolloSecondaryTrait_Initial"
+			InheritFrom = "ApolloSecondaryTrait"
+			Description = "{$Keywords.Special}更强，可以施加{$Keywords.ApolloBlind}。 \n {!Icons.Bullet}{#PropertyFormat}特殊攻击伤害： \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}"
+		}		
+		{
+			Id = "ApolloDashTrait"
+			DisplayName = "璀璨冲刺"
+			Description = "{$Keywords.Dash}时创造一个光环，对敌人造成伤害并施加{$Keywords.ApolloBlind}。 \n {!Icons.Bullet}{#PropertyFormat}冲刺伤害: \Column 380 {#PreviousFormat}{$TooltipData.DisplayDelta1}"
+		} 
+		{
+			Id = "ApolloDashTrait_Initial"
+			InheritFrom = "ApolloDashTrait"
+			Description = "{$Keywords.Dash}时创造一个光环，对敌人造成伤害并施加{$Keywords.ApolloBlind}。 \n {!Icons.Bullet}{#PropertyFormat}冲刺伤害: \Column 380 {#PreviousFormat}{$TooltipData.NewTotal1}"
+		}
+		{
+			Id = "ApolloSignoff"
+			DisplayName = "来自阿波罗"
+		}
+		{
+			Id = "ApolloSignoff_Max"
+			DisplayName = """
+				你获得了来自 {#AwardMaxFlavorFormat}阿波罗{#AwardDarkFlavorFormat}的{#AwardMaxFlavorFormat}悦耳羁绊\n  \n
+
+				{#AwardDarkFlavorFormat}有时候，只有先知才能预见一段伟大的友谊。
+			"""
+		}
+		{
+      		Id = "FlashBomb"
+			DisplayName = "闪光炸弹"
+			Description = "片刻后引爆，对区域内的敌人造成 {$Keywords.ApolloBlind}，持续{#BoldFormatGraft}{$TooltipData.TooltipBlindDuration}秒{#PreviousFormat}。"
+		}
+		{
+			Id = "Combat_Miss"
+			DisplayName = "Miss"
+		}
+		{
+			Id = "Combat_Blinded"
+			DisplayName = "失明"
+		}
+		{
+			Id = "ApolloShoutTrait"
+			DisplayName = "阿波罗之援"
+			Description = "{$Keywords.Wrath}后，进入{$Keywords.Invulnerable}状态以光柱锁定追踪并灼烧敌人。 持续时间{#BoldFormat}{$TooltipData.AddShout.SuperDuration}秒{#PreviousFormat}。 \n {!Icons.Bullet}{#PropertyFormat}造成伤害: \Column 380 {$TooltipData.DisplayDelta1}{#ItalicFormat}(每{$TooltipData.TooltipInterval} 秒)  \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.EXWrath}: \Column 380 {#OldFormat}{$TooltipData.TooltipDuration}秒持续时间。"
+		}		
+		{
+			Id = "ApolloShoutTrait_Tray"
+			InheritFrom = "ApolloShoutTrait"
+			Description = "{$Keywords.Wrath}后，进入{$Keywords.Invulnerable}状态以光柱锁定追踪并灼烧敌人。 持续时间{#BoldFormat}{$TooltipData.AddShout.SuperDuration}秒{#PreviousFormat}。 \n {!Icons.Bullet}{#PropertyFormat}造成伤害: \Column 380 {$TooltipData.DisplayDelta1}{#ItalicFormat}(每{$TooltipData.TooltipInterval} 秒)  \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.EXWrath}: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDuration}秒持续时间。"
+		}	
+		{
+			Id = "ApolloShoutTrait_Initial"
+			InheritFrom = "ApolloShoutTrait"
+			Description = "{$Keywords.Wrath}后，进入{$Keywords.Invulnerable}状态以光柱锁定追踪并灼烧敌人。 持续时间{#BoldFormat}{$TooltipData.AddShout.SuperDuration}秒{#PreviousFormat}。 \n {!Icons.Bullet}{#PropertyFormat}造成伤害: \Column 380 {$TooltipData.NewTotal1}{#ItalicFormat}(每{$TooltipData.TooltipInterval} 秒)  \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.EXWrath}: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDuration}秒持续时间。"
+		} 
+		{
+			Id = "ApolloRangedTrait"
+			DisplayName = "致盲射击"
+			Description = "{$Keywords.Cast}掷出一枚{$Keywords.FlashBomb}。 \n {!Icons.Bullet}{#PropertyFormat}投弹伤害：\Column 380 {$TooltipData.DisplayDelta1}"
+		}
+		{
+			Id = "ApolloRangedTrait_Initial"
+			InheritFrom = "ApolloRangedTrait"
+			Description = "{$Keywords.Cast}掷出一枚{$Keywords.FlashBomb}。\n {!Icons.Bullet}{#PropertyFormat}投弹伤害: \Column 380 {$TooltipData.NewTotal1}"
+		}
+		{
+			Id = "ApolloRangedTrait_Tray"
+			InheritFrom = "ApolloRangedTrait"
+			Description = "{$Keywords.Cast}掷出一枚{$Keywords.FlashBomb}。\n {!Icons.Bullet}{#PropertyFormat}投弹伤害: \Column 380 {#PreviousFormat}{$TooltipData.NewTotal1}"
+		}
+		{
+			Id = "ShieldLoadAmmo_ApolloRangedTrait"
+			DisplayName = "炽光迸发"
+			Description = "{$Keywords.Cast}可以对周围的敌人造成伤害，并产生{$Keywords.FlashBomb}的效果。\n {!Icons.Bullet}{#PropertyFormat}爆炸伤害: \Column 380 {$TooltipData.DisplayDelta1}"
+		}
+		{
+			Id = "ShieldLoadAmmo_ApolloRangedTrait_Tray"
+			InheritFrom = "ShieldLoadAmmo_ApolloRangedTrait"
+			Description = "{$Keywords.Cast}可以对周围的敌人造成伤害，并产生{$Keywords.FlashBomb}的效果。\n {!Icons.Bullet}{#PropertyFormat}爆炸伤害: \Column 380 {#PreviousFormat}{$TooltipData.NewTotal1}"
+		}
+		{
+			Id = "ShieldLoadAmmo_ApolloRangedTrait_Initial"
+			InheritFrom = "ShieldLoadAmmo_ApolloRangedTrait"
+			Description = "{$Keywords.Cast}可以对周围的敌人造成伤害，并产生{$Keywords.FlashBomb}的效果。\n {!Icons.Bullet}{#PropertyFormat}爆炸伤害: \Column 380 {$TooltipData.NewTotal1}"
+		}
+		{
+			Id = "BowLoadAmmo_ApolloRangedTrait"
+			InheritFrom = "ShieldLoadAmmo_ApolloRangedTrait"
+		}
+		{
+			Id = "BowLoadAmmo_ApolloRangedTrait_Tray"
+			InheritFrom = "ShieldLoadAmmo_ApolloRangedTrait_Tray"
+		}
+		{
+			Id = "BowLoadAmmo_ApolloRangedTrait_Initial"
+			InheritFrom = "ShieldLoadAmmo_ApolloRangedTrait_Initial"
+		}
+		{
+			Id = "FountainDefenseTrait",
+			DisplayName = "宴会音乐"
+			Description = "饮用{$Keywords.Fountain}后，有几率抵御远距离的敌人的伤害。 \n {!Icons.Bullet}{#PropertyFormat}每次饮用{$Keywords.Fountain}伤害抵抗: \Column 380 {$TooltipData.DisplayDelta1}"
+    		}
+		{
+			Id = "FountainDefenseText",
+			DisplayName = "{#CombatTextHighlightFormat}神乐{#PreviousFormat}！"
+    		}
+		{
+    		Id = "FountainDefenseText_Alt"
+      		DisplayName = "{#CombatTextHighlightFormat}{$TempTextData.TraitName}{#PreviousFormat}:{$TempTextData.Amount:P}抵抗！"     
+    		}
+		{
+			Id = "FountainDefenseTrait_Initial",
+			InheritFrom = "FountainDefenseTrait"
+			Description = "饮用{$Keywords.Fountain}后，将永久获得{$Keywords.DamageResist}效果。 \n {!Icons.Bullet}{#PropertyFormat}每次饮用{$Keywords.Fountain}伤害抵抗: \Column 380 {$TooltipData.NewTotal1}"
+    		}
+		{
+			Id = "FountainDefenseTrait_Tray",
+			InheritFrom = "FountainDefenseTrait"
+			Description = "饮用{$Keywords.Fountain}后，将永久获得{$Keywords.DamageResist}效果。 \n {!Icons.Bullet}{#PropertyFormat}总伤害抵抗: \Column 380 {$TooltipData.DisplayDelta1}"
+    		}
+		{
+			Id = "ApolloBlindedTrait"
+			DisplayName = "神圣格律"
+			Description = "处于{$Keywords.ApolloBlind}状态的敌人会受到更高伤害。\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.ApolloBlind}时伤害加成： \Column 380 {$TooltipData.DisplayDelta1}"
+		}
+		{
+			Id = "ApolloBlindedTrait_Initial"
+			InheritFrom = "ApolloBlindedTrait"
+			Description = "处于{$Keywords.ApolloBlind}状态的敌人会受到更高伤害。 \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.ApolloBlind}时伤害加成：: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}"
+		}
+		{
+			Id = "RerollObolTrait"
+			DisplayName = "黄金羊毛"
+			Description = "每{$TooltipData.TooltipObolCount}{!Icons.Currency_Small}将会使你获得 {#TooltipUpgradeFormat}1{#PreviousFormat}{!Icons.ReRoll_Small}。 \n {#PreviousFormat}(随机更改下一个房间的奖励)"
+		}
+		{
+			Id = "RerollObolTrait_Initial"
+			InheritFrom = "RerollObolTrait"
+			Description = "立即获得 {#TooltipUpgradeFormat}1{#PreviousFormat}{!Icons.ReRoll_Small}。每{$TooltipData.TooltipObolCount}{!Icons.Currency_Small}将会使你获得{#TooltipUpgradeFormat}1{#PreviousFormat}{!Icons.ReRoll_Small}。\n {#PreviousFormat}(随机更改下一个房间的奖励)"
+		}
+		{
+			Id = "RerollObolDrop"
+			InheritFrom = "RerollObolTrait"
+			Description = "获得 {#TooltipUpgradeFormat}1{#PreviousFormat}{!Icons.ReRoll_Small}。每{$TooltipData.TooltipObolCount}{!Icons.Currency_Small}将会使你获得{#TooltipUpgradeFormat}1{#PreviousFormat}{!Icons.ReRoll_Small}。 \n {#PreviousFormat}(随机更改下一个房间的奖励)"
+		}
+		{
+			Id = "RerollBoonTrait"
+			DisplayName = "预知将来"
+			Description = "每{$TooltipData.TooltipBoonCount}{$Keywords.GodBoon} 将会使你获得{#TooltipUpgradeFormat}1{#PreviousFormat}{!Icons.ReRoll_Small}。\n {#PreviousFormat}(用于随机改变{#BoldFormatGraft}{$Keywords.GodBoon} {#PreviousFormat}与{#BoldFormatGraft}卡戎之井{#PreviousFormat}内的可选内容)"
+		}
+		{
+			Id = "RerollBoonTrait_Initial"
+			InheritFrom = "RerollBoonTrait"
+			Description = "立即获得{#TooltipUpgradeFormat}1{#PreviousFormat}{!Icons.ReRoll_Small}。每{$TooltipData.TooltipBoonCount}{$Keywords.GodBoon} 将会使你获得{#TooltipUpgradeFormat}1{#PreviousFormat}{!Icons.ReRoll_Small}。\n {#PreviousFormat}(用于随机改变{#BoldFormatGraft}{$Keywords.GodBoon} {#PreviousFormat}与{#BoldFormatGraft}卡戎之井{#PreviousFormat}内的可选内容)"
+		}	
+		{
+			Id = "RerollBoonDrop"
+			InheritFrom = "RerollBoonTrait"
+			Description = "获得{#TooltipUpgradeFormat}1{#PreviousFormat}{!Icons.ReRoll_Small}。每{$TooltipData.TooltipBoonCount}{$Keywords.GodBoon} 将会使你获得{#TooltipUpgradeFormat}1{#PreviousFormat}{!Icons.ReRoll_Small}。\n {#PreviousFormat}(用于随机改变{#BoldFormatGraft}{$Keywords.GodBoon} {#PreviousFormat}与{#BoldFormatGraft}卡戎之井{#PreviousFormat}内的可选内容)"
+		}	
+		{
+			Id = "ApolloRetaliateTrait"
+			DisplayName = "临日之翼"
+			Description = "受到伤害后，对周围的敌人造成伤害并施加 {$Keywords.ApolloBlind}。 \n {!Icons.Bullet}{#PropertyFormat}复仇伤害: \Column 380{$TooltipData.DisplayDelta1}"
+		}
+		{
+			Id = "ApolloRetaliateTrait_Initial"
+			InheritFrom = "ApolloRetaliateTrait"
+			Description = "受到伤害后，对周围的敌人造成伤害并施加 {$Keywords.ApolloBlind}。 \n {!Icons.Bullet}{#PropertyFormat}复仇伤害: \Column 380{$TooltipData.NewTotal1}"
+		}
+		{
+			Id = "FountainCoinTrait",
+			DisplayName = "许愿宝池"
+			Description = "饮用{$Keywords.Fountain}后，将会获得额外的{!Icons.Currency_Small}。 \n {!Icons.Bullet}{#PropertyFormat}}每次饮用{$Keywords.Fountain}获得: \Column 380 {#UpgradeFormat}+{$TooltipData.FountainCoinBonus} {!Icons.Currency_Small}"
+    		}
+		{
+			Id = "FountainCoinText",
+			DisplayName = "{#CombatTextHighlightFormat}还愿{#PreviousFormat}！"
+    		}
+		{
+    		Id = "FountainCoinText_Alt"
+      		DisplayName = "{#CombatTextHighlightFormat}{$TempTextData.TraitName}{#PreviousFormat}: {$TempTextData.Amount} {!Icons.Currency_Small}"     
+    		}
+		{
+			Id = "FountainCoinTrait_Initial",
+			InheritFrom = "FountainCoinTrait"
+			Description = "饮用{$Keywords.Fountain}将会获得额外的{!Icons.Currency_Small}。 \n {!Icons.Bullet}{#PropertyFormat}每次饮用{$Keywords.Fountain}获得: \Column 380 {#UpgradeFormat}+{$TooltipData.FountainCoinBonus} {!Icons.Currency_Small}"
+    		}
+		{
+			Id = "FountainCoinTrait_Tray",
+			InheritFrom = "FountainCoinTrait"
+			Description = "饮用{$Keywords.Fountain}将会获得额外的{!Icons.Currency_Small}。 \n {!Icons.Bullet}{#PropertyFormat}每次饮用{$Keywords.Fountain}获得: \Column 380 {#UpgradeFormat}+{$TooltipData.FountainCoinBonus} {!Icons.Currency_Small}"
+    		}
+		{
+			Id = "ApolloHealTrait"
+			DisplayName = "灵丹妙药"
+			Description = "受{$Keywords.ApolloBlind}影响的敌人被杀时可能掉落{!Icons.HealthRestore_Small}。\n {!Icons.Bullet} {#PropertyFormat}掉落几率:  \Column 380{#UpgradeFormat}{$TooltipData.TooltipDropChance:P} {#PreviousFormat}"
+		}
+		{
+			Id = "ApolloHealTrait_Initial"
+			InheritFrom = "ApolloHealTrait"
+			Description = "受{$Keywords.ApolloBlind}影响的敌人被杀时可能掉落{!Icons.HealthRestore_Small}。\n {!Icons.Bullet} {#PropertyFormat}掉落几率:  \Column 380{#UpgradeFormat}{$TooltipData.TooltipDropChance:P} {#PreviousFormat}"
+		}
+		{
+			Id = "MissChanceTrait"
+			DisplayName = "纯净阳光"
+			Description = "{$Keywords.ApolloBlind}效果造成Miss的几率更大。 \n {!Icons.Bullet}{#PropertyFormat}Miss几率: \Column 380 {#PreviousFormat}{#UpgradeFormat}60%"
+		}
+		{
+			Id = "ForceApolloBoonTrait"
+			DisplayName = "闪亮竖琴"
+			Description = "你找到的下一个{$Keywords.GodBoon}将来自{#BoldFormat}阿波罗{#PreviousFormat}。他的祝福将有 {#AltUpgradeFormat}{$TooltipData.TooltipBonusChance:P} {#PreviousFormat}的几率成为{#RareFormat}稀有{#PreviousFormat}或更高等级。"
+		}
+		{
+			Id = "ForceApolloBoonTrait_Rack"
+			InheritFrom = "ForceApolloBoonTrait"
+			Description = "你找到的下一个{$Keywords.GodBoon}将来自{#BoldFormat}阿波罗{#PreviousFormat}。他的祝福将有 {#AltUpgradeFormat}{$TooltipData.TooltipBonusChance:P} {#PreviousFormat}的几率成为{#RareFormat}稀有{#PreviousFormat}或更高等级。\n\n {#AwardFlavorFormat}{$TooltipData.SignoffText}"
+		}
+		{
+			Id = "ForceApolloBoonTrait_Inactive"
+			DisplayName = "闪亮竖琴"
+			Description = "阿波罗的祝福将有 {#AltUpgradeFormat}{$TooltipData.TooltipBonusChance:P} {#PreviousFormat}的几率成为{#RareFormat}稀有{#PreviousFormat}或更高等级。"
+		}
+		{
+			Id = "FamedDuetTrait"
+			DisplayName = "双生协奏"
+			Description = "{$Keywords.Wrath}将发射12道光束。"
+		}	
+		{
+			Id = "WarSongTrait"
+			DisplayName = "战争之歌"
+			Description = "{$Keywords.FlashBomb}施加{$Keywords.Curse}。\n {!Icons.Bullet}{#PropertyFormat}伤害: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipCurseDamage}"
+		}	
+		{
+			Id = "HyacinthTrait"
+			DisplayName = "风信子花"
+			Description = "同时受到{$Keywords.ApolloBlind}与{$Keywords.Weak}影响的敌人将在{#BoldFormatGraft}{$TooltipData.TooltipDeathThreshold}%{#PreviousFormat}{!Icons.KEnemyHealth_Small}时被粉碎。（对{$Keywords.BossPlural}无效。）"
+    		}
+		{
+			Id = "SeaChanteyTrait"
+			DisplayName = "渔夫号子"
+			Description = "造成的伤害{#AltUpgradeFormat}{$TooltipData.OutgoingMultiplier:P} {#PreviousFormat}，但受到来自{$Keywords.BossPlural}的伤害{#AltPenaltyFormat}{$TooltipData.IncomingMultiplier:P} {#PreviousFormat}。"
+		}	
+		{
+			Id = "SeaChanteyText",
+			DisplayName = "{#CombatTextHighlightFormat}渔歌{#PreviousFormat}！"
+    		}
+		{
+			Id = "BlindDurationTrait"
+			DisplayName = "恐怖旋律"
+			Description = "{$Keywords.ApolloBlind}效果在敌人Miss后不会失效。\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.ApolloBlind}持续: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}秒"
+		}
+		{
+			Id = "DamageReduceDistanceTrait"
+			DisplayName = "箭术对策"
+			Description = "{$Keywords.Deflect}成功触发时，暂时获得{$Keywords.DamageResist}。\n {!Icons.Bullet}{#PropertyFormat}额外保护: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDamageResistModifier}% \n{!Icons.Bullet}{#PropertyFormat}持续: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDamageResistDuration}秒"
+		}	
+		{
+			Id = "MasterBoltTrait"
+			DisplayName = "如雷贯耳" 
+			Description = "所有处于{$Keywords.ApolloBlind}状态的敌人每秒还会受到一次天雷伤害。\n {!Icons.Bullet}{#PropertyFormat}雷电伤害: \Column 380 {#UpgradeFormat}{$TooltipData.MasterBoltDamage}"
+		}
+		{
+			Id = "MasterLobApolloTrait"
+			DisplayName = "光化学雾" 
+			Description = "使用{$Keywords.FlashBomb}时，你身边同时生成一个{$Keywords.Cloud}。\n {!Icons.Bullet}{#PropertyFormat}伤害: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDamage}"
+		}
+		{
+			Id = "MasterLobDionysusTrait"
+			DisplayName = "佳节礼炮" 
+			Description = "使用{$Keywords.Cloud}时，你身边同时生成一个{$Keywords.FlashBomb}。\n {!Icons.Bullet}{#PropertyFormat}伤害: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDamage}"
+		}
+		{
+			Id = "ApolloLightningCloudTrait"
+			DisplayName = "光芒盛宴"
+			Description = "{$Keywords.Cloud}会持续引来天雷。 \n {!Icons.Bullet}{#PropertyFormat}雷电伤害: \Column 380 {$TooltipData.DisplayDelta1}"
+		}
+		{
+			Id = "ApolloLightningCloudTrait_Initial"
+			InheritFrom = "LightningCloudTrait"
+			Description = "{$Keywords.Cloud}会持续引来天雷。 \n {!Icons.Bullet}{#PropertyFormat}雷电伤害: \Column 380 {$TooltipData.NewTotal1}"
+		}
+		{
+			Id = "ApolloIceStrikeArrayTrait"
+			DisplayName = "冰镇美酒"
+			Description = "{$Keywords.Cast}会稍作延迟，然后在目标位置造成{$Keywords.Cloud}的爆炸，对附近的敌人造成伤害并施加{$Keywords.Chill}。 \n {!Icons.Bullet}{#PropertyFormat}爆炸伤害: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDamage:P}"
+		}
+		{
+			Id = "LtUpgrade_Apollo"
+			DisplayName = "受到祝福的敌人现在会让你失明。"
+		}	
+		{
+			Id = "ClearRequiredTraitsApollo"
+			DisplayName = "{!Icons.RunClearStar}阿波罗的门徒{!Icons.RunClearStar}"
+		}
+		{
+			Id = "MusicMusicPlayerMainThemeMusicPlayer"
+			DisplayName = "《遇到提西福涅涅涅》"
+		}
+
+
+
+   {
+      Id = "NPC_Hestia_01"
+      DisplayName = "赫斯提亚"
+      Description = "炉灶女神"
+    }
+    {
+      Id = "HestiaFirstPickUp"
+      DisplayName = "已见到赫斯提亚"
+    }
+    {
+      Id = "HestiaUpgrade"
+      DisplayName = "赫斯提亚"
+      Description = "炉灶女神"
+    }
+    {
+      Id = "HestiaUpgrades"
+      DisplayName = "炉灶女神"
+      Description = "有朝一日，冥王之子定能获得赫斯提亚的各种祝福。"
+    }
+    {
+      Id = "HomeWarmthQuest"
+      DisplayName = "温馨的家"
+      Description = "有朝一日，冥王之子将在炉灶女神的授意下雇用承包商上下翻新，让他的父亲感到家的温馨。"
+    }
+    {
+      Id = "HestiaHomeWarmthQuest01"
+      DisplayName = "在圣殿承包商处购置烛台。"
+    }
+    {
+      Id = "HestiaHomeWarmthQuest02"
+      DisplayName = "在圣殿承包商处购置热情洋溢的改造项目。"
+    }
+    {
+      Id = "HestiaHomeWarmthQuest03"
+      DisplayName = "在圣殿承包商处购置壁炉。"
+    }
+    {
+      Id = "HestiaHomeWarmthQuest04"
+      DisplayName = "在宫廷音乐家处奏响热情洋溢的歌曲。"
+    }
+    {
+      Id = "HestiaHomeWarmthQuest05"
+      DisplayName = "在圣殿承包商处购置冥火。"
+    }
+    {
+      Id = "HestiaHomeWarmthQuest06"
+      DisplayName = "向炉灶女神禀报。"
+    }
+    {
+      Id = "CentaurHeart"
+      DisplayName = "半人马之心"
+      Description = "获得{#UseTextHealingFormat}+{$TooltipData.TooltipMaxHealth}{!Icons.HealthUp_Small} {#PreviousFormat}"
+    }
+    {
+      Id = "CentaurSoul"
+      DisplayName = "半人马灵魂"
+      Description = "获得{#UseTextHealingFormat}+{$TooltipData.TooltipMaxHealth}{!Icons.HealthUp_Small} \n{#PreviousFormat}{#ItalicFormat}（{!Icons.Health_Small}并不恢复）{#PreviousFormat}"
+    }
+    {
+      Id = "RoomRewardEmptyHealthDrop"
+      DisplayName = "半人马灵魂"
+    }
+    {
+      Id = "MiniBoss"
+      DisplayName = "小Boss"
+      Description = "强于一般的敌对生物，通常出现于{!Icons.MiniBoss}"
+    }
+    {
+      Id = "HestiaUpgrade_FlavorText01"
+      DisplayName = "她确保奥林匹斯之火永不熄灭。"
+    }
+    {
+      Id = "HestiaUpgrade_FlavorText02"
+      DisplayName = "房子以土砖瓦石建成，家园以美梦期许建成。"
+    }
+    {
+      Id = "HestiaUpgrade_FlavorText03"
+      DisplayName = "家庭是你永远的归处。"
+    }
+    {
+      Id = "HestiaWeaponTrait"
+      DisplayName = "合抱攻击"
+      Description = "{$Keywords.Attack}更强，可以吸引敌人。\n {!Icons.Bullet}{#PropertyFormat}攻击伤害: \Column 380 {#PreviousFormat}{$TooltipData.DisplayDelta1}"
+    }
+    {
+      Id = "HestiaWeaponTrait_Initial"
+      InheritFrom = "HestiaWeaponTrait"
+      Description = "{$Keywords.Attack}更强，可以吸引敌人。\n {!Icons.Bullet}{#PropertyFormat}攻击伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}"
+    }
+    {
+      Id = "HestiaSecondaryTrait"
+      DisplayName = "合抱乱舞"
+      Description = "{$Keywords.Special}更强，可以吸引敌人。\n {!Icons.Bullet}{#PropertyFormat}特殊攻击伤害: \Column 380 {#PreviousFormat}{$TooltipData.DisplayDelta1}"
+    }
+    {
+      Id = "HestiaSecondaryTrait_Initial"
+      InheritFrom = "HestiaSecondaryTrait"
+      Description = "{$Keywords.Special}更强，可以吸引敌人。\n {!Icons.Bullet}{#PropertyFormat}特殊攻击伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}"
+    }
+    {
+      Id = "HestiaDashTrait"
+      DisplayName = "点燃冲刺"
+      Description = "{$Keywords.Dash}时将留下一串火焰。\n {!Icons.Bullet}{#PropertyFormat}冲刺伤害: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta1} \n {!Icons.Bullet}{#PropertyFormat}持续伤害: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta2}"
+    }
+    {
+      Id = "HestiaDashTrait_Initial"
+      InheritFrom = "HestiaDashTrait"
+      Description = "{$Keywords.Dash}时将留下一串火焰。\n {!Icons.Bullet}{#PropertyFormat}冲刺伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1} \n {!Icons.Bullet}{#PropertyFormat}持续伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal2}"
+    }
+    {
+      Id = "HestiaSignoff"
+      DisplayName = "来自赫斯提亚"
+    }
+    {
+      Id = "HestiaSignoff_Max"
+      DisplayName = """
+				你获得了来自{#AwardMaxFlavorFormat}赫斯提亚{#AwardDarkFlavorFormat}的{#AwardMaxFlavorFormat}慈爱羁绊
+
+				{#AwardDarkFlavorFormat}你们是温情与慈爱军团的创始成员。
+			"""
+    }
+    {
+      Id = "LavaSplash"
+      DisplayName = "熔岩泊"
+      Description = "留有一片熔岩的区域，能在范围内快速伤害敌人。"
+    }
+    {
+      Id = "HestiaShoutTrait"
+      DisplayName = "赫斯提亚之援"
+      Description = "{$Keywords.WrathDerivedStocks}后，燃起火焰之环，每击中敌人回复{$TooltipData.TooltipHeal}{!Icons.Health_Small}。 \n {!Icons.Bullet}{#PropertyFormat}火环伤害: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta1} \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.EXWrath}-火环伤害: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta2}"
+    }
+    {
+      Id = "HestiaShoutTrait_Tray"
+      InheritFrom = "HestiaShoutTrait"
+      Description = "{$Keywords.WrathDerivedStocks}后，燃起火焰之环，每击中敌人回复{$TooltipData.TooltipHeal}{!Icons.Health_Small}。\n {!Icons.Bullet}{#PropertyFormat}火环伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1} \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.EXWrath}-火环伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal2}"
+    }
+    {
+      Id = "HestiaShoutTrait_Initial"
+      InheritFrom = "HestiaShoutTrait"
+      Description = "{$Keywords.WrathDerivedStocks}后，燃起火焰之环，每击中敌人回复{$TooltipData.TooltipHeal}{!Icons.Health_Small}。\n {!Icons.Bullet}{#PropertyFormat}火环伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1} \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.EXWrath}-火环伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal2}"
+    }
+    {
+      Id = "HestiaRangedTrait"
+      DisplayName = "余烬射击"
+      Description = "{$Keywords.Cast}掷出一枚火球，落地形成{$Keywords.LavaSplash}。\n {!Icons.Bullet}{#PropertyFormat}投弹伤害: \Column 380 {$TooltipData.DisplayDelta1} \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.LavaSplash}伤害: \Column 380 {#OldFormat}{$TooltipData.DisplayDelta2}"
+    }
+    {
+      Id = "HestiaRangedTrait_Initial"
+      InheritFrom = "HestiaRangedTrait"
+      Description = "{$Keywords.Cast}掷出一枚火球，落地形成{$Keywords.LavaSplash}。\n {!Icons.Bullet}{#PropertyFormat}投弹伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}  \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.LavaSplash}伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal2}"
+    }
+    {
+      Id = "HestiaRangedTrait_Tray"
+      InheritFrom = "HestiaRangedTrait"
+      Description = "{$Keywords.Cast}掷出一枚火球，落地形成{$Keywords.LavaSplash}。\n {!Icons.Bullet}{#PropertyFormat}投弹伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}  \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.LavaSplash}伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal2}"
+    }
+    {
+      Id = "ShieldLoadAmmo_HestiaRangedTrait"
+      DisplayName = "薪烬火传"
+      Description = "{$Keywords.Cast}可以对周围的敌人造成伤害，并产生{$Keywords.LavaSplash}。\n {!Icons.Bullet}{#PropertyFormat}爆炸伤害: \Column 380 {$TooltipData.DisplayDelta2}"
+    }
+    {
+      Id = "ShieldLoadAmmo_HestiaRangedTrait_Tray"
+      InheritFrom = "ShieldLoadAmmo_HestiaRangedTrait"
+      Description = "{$Keywords.Cast}可以对周围的敌人造成伤害，并产生{$Keywords.LavaSplash}。\n {!Icons.Bullet}{#PropertyFormat}爆炸伤害: \Column 380 {$TooltipData.NewTotal2}"
+    }
+    {
+      Id = "ShieldLoadAmmo_HestiaRangedTrait_Initial"
+      InheritFrom = "ShieldLoadAmmo_HestiaRangedTrait"
+      Description = "{$Keywords.Cast}可以对周围的敌人造成伤害，并产生{$Keywords.LavaSplash}。\n {!Icons.Bullet}{#PropertyFormat}爆炸伤害: \Column 380 {#OldFormat}{$TooltipData.BaseRangedDamage}{!Icons.RightArrow}{$TooltipData.NewTotal2}"
+    }
+    {
+      Id = "BowLoadAmmo_HestiaRangedTrait"
+      InheritFrom = "ShieldLoadAmmo_HestiaRangedTrait"
+    }
+    {
+      Id = "BowLoadAmmo_HestiaRangedTrait_Tray"
+      InheritFrom = "ShieldLoadAmmo_HestiaRangedTrait_Tray"
+    }
+    {
+      Id = "BowLoadAmmo_HestiaRangedTrait_Initial"
+      InheritFrom = "ShieldLoadAmmo_HestiaRangedTrait_Initial"
+    }
+    {
+      Id = "StrongAttractionTrait"
+      DisplayName = "张开怀抱"
+      Description = "具有吸引敌人能力的{#BoldFormat}祝福{#PreviousFormat}将变得更强，且能吸引更多的敌人。\n {!Icons.Bullet}{#PropertyFormat}吸引目标数: \Column 380 {#UpgradeFormat}+{$TooltipData.AttractionCount} \n {!Icons.Bullet}{#PropertyFormat}吸引生效距离: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipAttractionDistance}%"
+    }
+    {
+      Id = "StrongAttractionTrait_Initial"
+      InheritFrom = "StrongAttractionTrait"
+      Description = "具有吸引敌人能力的{#BoldFormat}祝福{#PreviousFormat}将变得更强，且能吸引更多的敌人。\n {!Icons.Bullet}{#PropertyFormat}吸引目标数: \Column 380 {#UpgradeFormat}+{$TooltipData.AttractionCount} \n {!Icons.Bullet}{#PropertyFormat}吸引生效距离: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipAttractionDistance}%"
+    }
+    {
+      Id = "HestiaRevengeTrait"
+      DisplayName = "熔岩喷发"
+      Description = "受到伤害后，于你附近随机生成一个{$Keywords.LavaSplash}。\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.LavaSplash}伤害: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta1}"
+    }
+    {
+      Id = "HestiaRevengeTrait_Initial"
+      InheritFrom = "HestiaRevengeTrait"
+      Description = "受到伤害后，于你附近随机生成一个{$Keywords.LavaSplash}。 \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.LavaSplash}伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}"
+    }
+    {
+      Id = "HealthDefianceTrait"
+      DisplayName = "回到老家"
+      Description = "{$Keywords.ExtraChanceChaos}后，增加{!Icons.HealthUpAlt_Small}效果。\n {!Icons.Bullet}{#PropertyFormat}生命上限恢复: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipBonusHealth}"
+    }
+    {
+      Id = "HealthDefianceTrait_Initial"
+      InheritFrom = "HealthDefianceTrait"
+      Description = "{$Keywords.ExtraChanceChaos}后，增加{!Icons.HealthUpAlt_Small}效果。\n {!Icons.Bullet}{#PropertyFormat}生命上限恢复: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipBonusHealth}"
+    }
+    {
+      Id = "LastStandHealthDrop"
+      InheritFrom = "HealthDefianceTrait_Initial"
+      Description = "{$Keywords.ExtraChanceChaos}后，增加{!Icons.HealthUpAlt_Small}效果。补充{#BoldFormat}1 {#PreviousFormat}死里逃生。\n {!Icons.Bullet}{#PropertyFormat}生命上限恢复: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipBonusHealth} {#UpgradeFormat}"
+    }
+    {
+      Id = "LastStandDamageReduceTrait"
+      DisplayName = "克己节制"
+      Description = "发动{$Keywords.ExtraChanceReplenish}后，本次遭遇战受到的伤害减少。\n {!Icons.Bullet}{#PropertyFormat}减免伤害: \Column 380 {#PreviousFormat}{$TooltipData.DisplayDelta1}"
+    }
+    {
+      Id = "LastStandDamageReduceTrait_Initial"
+      InheritFrom = "LastStandDamageReduceTrait"
+      Description = "发动{$Keywords.ExtraChanceReplenish}后，本次遭遇战受到的伤害减少。\n {!Icons.Bullet}{#PropertyFormat}减免伤害: \Column 380 {#PreviousFormat}{$TooltipData.NewTotal1}"
+    }
+    {
+      Id = "LavaDeathTrait"
+      DisplayName = "熔火之心"
+      Description = "击杀敌人后，敌人将留下一个{$Keywords.LavaSplash}。\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.LavaSplash}伤害: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta1}"
+    }
+    {
+      Id = "LavaDeathTrait_Initial"
+      InheritFrom = "LavaDeathTrait"
+      Description = "击杀敌人后，敌人将留下一个{$Keywords.LavaSplash}。\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.LavaSplash}伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}"
+    }
+    {
+      Id = "HealthDamageTrait"
+      DisplayName = "动人心房"
+      Description = "捡起{$Keywords.CentaurHeart}或{$Keywords.CentaurSoul}时，获得伤害加成。\n 现在获得{#BoldFormat}1{#PreviousFormat} {$Keywords.CentaurSoul}。 \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.Attack}和{$Keywords.Special} 伤害加成: \Column 381 {#UpgradeFormat} {$TooltipData.TooltipDamage:P}"
+    }
+    {
+      Id = "HealthDamageTrait_Tray"
+      InheritFrom = "HealthDamageTrait"
+      Description = "捡起{$Keywords.CentaurHeart}或{$Keywords.CentaurSoul}时，获得伤害加成。\n {!Icons.Bullet}{#PropertyFormat}总{$Keywords.Attack}和{$Keywords.Special}伤害加成: \Column 381 {#UpgradeFormat} {$TooltipData.TooltipTotalDamage:P}"
+    }
+    {
+      Id = "HealthDamageTrait_Initial"
+      InheritFrom = "HealthDamageTrait"
+      Description = "捡起{$Keywords.CentaurHeart}或{$Keywords.CentaurSoul}时，获得伤害加成。\n 现在获得{#BoldFormat}1{#PreviousFormat}{$Keywords.CentaurSoul}。 \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.Attack}和{$Keywords.Special} 伤害加成: \Column 381 {#UpgradeFormat}{$TooltipData.TooltipDamage:P}"
+    }
+    {
+      Id = "HealthDamageSoulDrop"
+      InheritFrom = "HealthDamageTrait_Initial"
+      Description = "捡起{$Keywords.CentaurHeart}或{$Keywords.CentaurSoul}时，获得伤害加成。\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.Attack}和{$Keywords.Special}伤害加成: \Column 381 {#UpgradeFormat} {$TooltipData.TooltipDamage:P}"
+    }
+    {
+      Id = "CentaurHeartBoostedText"
+      DisplayName = "{I}获得{#UseTextHealingFormat}+{$TempTextData.TooltipMaxHealth}{!Icons.HealthUp_Small}及其他……"
+    }
+    {
+      Id = "CentaurHeartBoostedText_Alt"
+      DisplayName = "{#CombatTextHighlightFormat}{$TempTextData.TraitName}{#PreviousFormat}: {$TempTextData.Amount:P}伤害！"
+    }
+    {
+      Id = "LavaResistTrait"
+      DisplayName = "主场优势"
+      Description = "处于{$Keywords.LavaSplash}之上时，受到的伤害减少。\n {!Icons.Bullet}{#PropertyFormat}伤害抵抗: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta1}{#PreviousFormat}"
+    }
+    {
+      Id = "LavaResistTrait_Initial"
+      InheritFrom = "LavaResistTrait"
+      Description = "处于{$Keywords.LavaSplash}之上时，受到的伤害减少。\n {!Icons.Bullet}{#PropertyFormat}伤害抵抗: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}{#PreviousFormat}"
+    }
+    {
+      Id = "LavaLongerTrait"
+      DisplayName = "火焰不熄"
+      Description = "{$Keywords.LavaSplash}范围变得更大，持续时间会增加。\n {!Icons.Bullet}{#PropertyFormat}持续时间加成: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDuration}秒{#PreviousFormat}"
+    }
+    {
+      Id = "LavaLongerTrait_Initial"
+      InheritFrom = "LavaLongerTrait"
+      Description = "{$Keywords.LavaSplash}范围变得更大，持续时间会增加。\n {!Icons.Bullet}{#PropertyFormat}持续时间加成: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDuration} 秒{#PreviousFormat}"
+    }
+    {
+      Id = "LavaAutoTrait"
+      DisplayName = "王室壁炉"
+      Description = "{$Keywords.LavaSplash}将吸引敌人。"
+    }
+    {
+      Id = "ForceHestiaBoonTrait"
+      DisplayName = "不尽坩埚"
+      Description = "你找到的下一个{$Keywords.GodBoon}将来自{#BoldFormat}赫斯提亚{#PreviousFormat}。她的祝福将有 {#AltUpgradeFormat}{$TooltipData.TooltipBonusChance:P} {#PreviousFormat}的几率成为{#RareFormat}稀有{#PreviousFormat}或更高等级。"
+    }
+    {
+      Id = "ForceHestiaBoonTrait_Rack"
+      InheritFrom = "ForceHestiaBoonTrait"
+      Description = "你找到的下一个{$Keywords.GodBoon}将来自{#BoldFormat}赫斯提亚{#PreviousFormat}。她的祝福将有 {#AltUpgradeFormat}{$TooltipData.TooltipBonusChance:P} {#PreviousFormat}的几率成为{#RareFormat}稀有{#PreviousFormat}或更高等级。\n\n {#AwardFlavorFormat}{$TooltipData.SignoffText}"
+    }
+    {
+      Id = "ForceHestiaBoonTrait_Inactive"
+      DisplayName = "不尽坩埚"
+      Description = "赫斯提亚的祝福将有{#AltUpgradeFormat}{$TooltipData.TooltipBonusChance:P} {#PreviousFormat}的几率成为{#RareFormat}稀有{#PreviousFormat}或更高等级。"
+    }
+    {
+      Id = "MoreTrapDamageTrait"
+      DisplayName = "危险区域"
+      Description = "{$Keywords.Traps}和{$Keywords.LavaSplash}将对敌人增加伤害。 \n {!Icons.Bullet}{#PropertyFormat}陷阱增伤: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDamageBonus:P}{#AltUpgradeFormat} \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.LavaSplash}增伤: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDamage:P}{#AltUpgradeFormat}"
+    }
+    {
+      Id = "FreeHealthTrait"
+      DisplayName = "痴心暗许"
+      Description = "击杀{$Keywords.BossPlural}后，获得1{$Keywords.CentaurHeart}。\n 击杀{$Keywords.MiniBoss}后，获得1 {$Keywords.CentaurSoul}。"
+    }
+    {
+      Id = "FreeHealthText"
+      DisplayName = "{#CombatTextHighlightFormat}爱的拥抱{#PreviousFormat}！"
+    }
+    {
+      Id = "UseEmptyHealthDrop"
+      DisplayName = "{I}获得{#UseTextHealingFormat}+{$TempTextData.TooltipMaxHealth} {!Icons.HealthUpAlt_Small} {#PreviousFormat}{#ItalicFormat}（{!Icons.Health_Small}并不恢复）{#PreviousFormat}"
+    }
+    {
+      Id = "ExplosionTrait"
+      DisplayName = "火花四溅"
+      Description = "{$Keywords.Crit}将造成爆炸。\n {!Icons.Bullet}{#PropertyFormat}爆炸伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}"
+    }
+    {
+      Id = "ChillFireTrait"
+      DisplayName = "冰炭同器"
+      Description = "{$Keywords.Dash}将留下可以施加{$Keywords.Chill}的冰焰。\n {!Icons.Bullet}{#PropertyFormat}伤害加成: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}"
+    }
+    {
+      Id = "FullHealBossTrait"
+      DisplayName = "餐前偷饮"
+      Description = "进入{$Keywords.BossPlural}和{$Keywords.MiniBoss}房间将回复{!Icons.Health_Small}。\n {!Icons.Bullet}{#PropertyFormat}遭遇{$Keywords.BossPlural}回复: \Column 380 {#UpgradeFormat}100%{!Icons.Health_Small_Tooltip} \n {!Icons.Bullet}{#PropertyFormat}遭遇{$Keywords.MiniBoss}回复 : \Column 380 {#UpgradeFormat}50%{!Icons.Health_Small_Tooltip}"
+    }
+    {
+      Id = "FullHealBossTrait_Reduced"
+      DisplayName = "餐前偷饮"
+      Description = "进入{$Keywords.BossPlural}和{$Keywords.MiniBoss}房间将回复{!Icons.Health_Small}。\n {!Icons.Bullet}{#PropertyFormat}遭遇{$Keywords.BossPlural}回复: \Column 380 {#AltPenaltyFormat}{$TooltipData.TooltipHeal}%{!Icons.Health_Small_Tooltip}{#PreviousFormat} \n {!Icons.Bullet}{#PropertyFormat}遭遇{$Keywords.MiniBoss}回复: \Column 380 {#AltPenaltyFormat}{$TooltipData.TooltipHealHalf}%{!Icons.Health_Small_Tooltip}{#PreviousFormat}"
+    }
+    {
+      Id = "FullHealBossText",
+      DisplayName = "{#CombatTextHighlightFormat}偷一口{#PreviousFormat}！"
+    }
+    {
+      Id = "FoesNumberDamageTrait"
+      DisplayName = "怒火中烧"
+      Description = "若你同时面对至少{$TooltipData.EnemyThreshold}个敌人，{$Keywords.Attack}和{$Keywords.Special}将造成更高伤害。 \n {!Icons.Bullet}{#PropertyFormat}伤害加成: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDamage:P}"
+    }
+    {
+      Id = "PullZeusCastTrait"
+      DisplayName = "磁心引力"
+      Description = "连环闪电效果将能吸引敌人并且增加弹射次数。 \n {!Icons.Bullet}{#PropertyFormat}弹射次数: \Column 380 {#UpgradeFormat}+3"
+    }
+    {
+      Id = "FishingRewardExtraTrait"
+      DisplayName = "鲜美鱼汤"
+      Description = "{$Keywords.FishingPoint}{#BoldFormat}{#PreviousFormat}将栖息更多的鱼并且{#AltUpgradeFormat}+1等级{!Icons.RandomPomSmall}{#PreviousFormat}。 \n {!Icons.Bullet}{#PropertyFormat}钓鱼收获: \Column 380 {#UpgradeFormat}x2"
+    }
+    {
+      Id = "ShoutMoreHealTrait"
+      DisplayName = "假日时光"
+      Description = "{$Keywords.WrathDerivedStocks}时每击中敌人将多回复{#BoldFormat}4{#PreviousFormat}{!Icons.Health_Small}。"
+    }
+    {
+      Id = "LtUpgrade_Hestia"
+      DisplayName = "受到祝福的敌人现在会吸引你。"
+    }
+    {
+      Id = "ClearRequiredTraitsHestia"
+      DisplayName = "{!Icons.RunClearStar}赫斯提亚的门徒{!Icons.RunClearStar}"
+    }
+
+    {
+      Id = "ForgivenessQuest"
+      DisplayName = "仁慈与宽恕"
+	  Description = "有朝一日，冥王之子将会在炉灶女神的恩泽下得到每位神祇的宽恕。"
+    }
+		{
+			Id = "ZeusFreePass01"
+			DisplayName = "宙斯原谅了你"
+		}
+		{
+			Id = "PoseidonFreePass01"
+			DisplayName = "波塞冬原谅了你"
+		}
+		{
+			Id = "AthenaFreePass01"
+			DisplayName = "雅典娜原谅了你"
+		}
+		{
+			Id = "AphroditeFreePass01"
+			DisplayName = "阿弗洛狄忒原谅了你"
+		}
+		{
+			Id = "AresFreePass01"
+			DisplayName = "阿瑞斯原谅了你"
+		}
+		{
+			Id = "ArtemisFreePass01"
+			DisplayName = "阿尔忒弥斯原谅了你"
+		}
+		{
+			Id = "DionysusFreePass01"
+			DisplayName = "迪奥尼索斯原谅了你"
+		}
+		{
+			Id = "ApolloFreePass01"
+			DisplayName = "阿波罗原谅了你"
+		}
+		{
+			Id = "HestiaFreePass02"
+			DisplayName = "赫斯提亚又原谅了你"
+		}
+		{
+			Id = "HeraFreePass01"
+			DisplayName = "赫拉原谅了你"
+		}
+
+    {
+      Id = "Fish_Tartarus_Common_01_Doubled"
+      DisplayName = "地狱鱼x2"
+    }
+    {
+      Id = "Fish_Tartarus_Rare_01_Doubled"
+      DisplayName = "拳头鱼x2"
+    }
+    {
+      Id = "Fish_Tartarus_Legendary_01_Doubled"
+      DisplayName = "蛟龙鱼x2"
+    }
+    {
+      Id = "Fish_Asphodel_Common_01_Doubled"
+      DisplayName = "鼻涕虫x2"
+    }
+    {
+      Id = "Fish_Asphodel_Rare_01_Doubled"
+      DisplayName = "盔甲虾x2"
+    }
+    {
+      Id = "Fish_Asphodel_Legendary_01_Doubled"
+      DisplayName = "嗜火鱼x2"
+    }
+    {
+      Id = "Fish_Elysium_Common_01_Doubled"
+      DisplayName = "刺甲贝x2"
+    }
+    {
+      Id = "Fish_Elysium_Rare_01_Doubled"
+      DisplayName = "鲤鱼x2"
+    }
+    {
+      Id = "Fish_Elysium_Legendary_01_Doubled"
+      DisplayName = "异形海马x2"
+    }
+    {
+      Id = "Fish_Styx_Common_01_Doubled"
+      DisplayName = "加普虫x2"
+    }
+    {
+      Id = "Fish_Styx_Rare_01_Doubled"
+      DisplayName = "刺豚鱼x2"
+    }
+    {
+      Id = "Fish_Styx_Legendary_01_Doubled"
+      DisplayName = "石背鱼x2"
+    }
+    {
+      Id = "Fish_Chaos_Common_01_Doubled"
+      DisplayName = "马蒂鱼x2"
+    }
+    {
+      Id = "Fish_Chaos_Rare_01_Doubled"
+      DisplayName = "异形水母x2"
+    }
+    {
+      Id = "Fish_Chaos_Legendary_01_Doubled"
+      DisplayName = "双翅鳐x2"
+    }
+    {
+      Id = "Fish_Surface_Common_01_Doubled"
+      DisplayName = "鳟鱼x2"
+    }
+    {
+      Id = "Fish_Surface_Rare_01_Doubled"
+      DisplayName = "鲈鱼x2"
+    }
+    {
+      Id = "Fish_Surface_Legendary_01_Doubled"
+      DisplayName = "鲟鱼x2"
+    }
+    {
+      Id = "FreePassTextBanner"
+      DisplayName = "原谅！"
+    }
+    {
+      Id = "ZeusUpgradeFreePass"
+      DisplayName = "息电宁人"
+    }
+    {
+      Id = "PoseidonUpgradeFreePass"
+      DisplayName = "和衷共济"
+    }
+    {
+      Id = "AthenaUpgradeFreePass"
+      DisplayName = "战术撤退"
+    }
+    {
+      Id = "AphroditeUpgradeFreePass"
+      DisplayName = "大爱无疆"
+    }
+    {
+      Id = "ArtemisUpgradeFreePass"
+      DisplayName = "放鹰收箭"
+    }
+    {
+      Id = "AresUpgradeFreePass"
+      DisplayName = "止戈为武"
+    }
+    {
+      Id = "DionysusUpgradeFreePass"
+      DisplayName = "投桃报李"
+    }
+    {
+      Id = "DemeterUpgradeFreePass"
+      DisplayName = "涣然冰释……(请提交bug！)"
+    }
+    {
+      Id = "ApolloUpgradeFreePass"
+      DisplayName = "高风亮节"
+    }
+    {
+      Id = "HestiaUpgradeFreePass"
+      DisplayName = "扶你一程"
+    }
+    {
+      Id = "HeraUpgradeFreePass"
+      DisplayName = "开恩特赦"
+    }
+
+
+
+
+
+		{
+			Id = "NPC_Hera_01"
+			DisplayName = "赫拉"
+			Description = "天后"
+		}		
+		{
+			Id = "HeraFirstPickUp"
+			DisplayName = "已见到赫拉"
+		}
+		{
+			Id = "HeraUpgrade"
+			DisplayName = "赫拉"
+			Description = "天后"
+		}
+		{
+			Id = "HeraUpgrades"
+			DisplayName = "天后"
+			Description = "有朝一日，冥王之子定能获得赫拉的各种祝福。"
+		}
+		{
+			Id = "HeraUpgrade_FlavorText01"
+			DisplayName = "忠贞是你能赠予盟友的最强武器。"
+		}
+		{
+			Id = "HeraUpgrade_FlavorText02"
+			DisplayName = "若是仰人鼻息，王权也不过是虚名。"
+		}
+		{
+			Id = "HeraUpgrade_FlavorText03"
+			DisplayName = "正义乃是三位一体；裁决，审理和刑罚缺一不可。"
+		}	
+		{
+      		Id = "JealousyCurse"
+			DisplayName = "怨妒"
+			Description = "{#ItalicFormat}{$Keywords.Status}{#PreviousFormat}:持续{#BoldFormatGraft}{$TooltipData.TooltipJealousyDuration}秒{#PreviousFormat}，每种敌人身上的{$Keywords.Status}将使{$Keywords.Attack}和{$Keywords.Special}对受害者多施加{#UpgradeFormat}{$TooltipData.TooltipJealousyPower:P}{#PreviousFormat}的伤害。"
+		}
+		{
+      		Id = "EnvyCurse"
+			DisplayName = "嫉恨"
+			Description = "{#ItalicFormat}{$Keywords.Status}{#PreviousFormat}:持续{#BoldFormatGraft}{$TooltipData.TooltipEnvyDuration}秒{#PreviousFormat}，施加{$Keywords.Status}将造成额外伤害，之后移除{$Keywords.EnvyCurse}。若此{$Keywords.Status}不是{$Keywords.EnvyCurse}，则伤害加倍。"
+		}
+		{
+      		Id = "HeraTrap"
+			DisplayName = "厌胜"
+			Description = "一种被打破后对周围的敌人造成伤害的陷阱罐。"
+		}
+		{
+      		Id = "Aura"
+			DisplayName = "身光"
+			Description = "{#ItalicFormat}{$Keywords.Status}{#PreviousFormat}:进入范围的敌人将受到特殊影响。"
+		}
+		{
+      		Id = "SpecialDiscount"
+			DisplayName = "内部价格"
+			Description = "卡戎之井的某项道具的价格将进一步降低。"
+		}
+		{
+			Id = "HeraWeaponTrait"
+			DisplayName = "刻毒诅咒"
+			Description = "{$Keywords.Attack}施加{$Keywords.EnvyCurse}。\n {!Icons.Bullet}{#PropertyFormat}嫉恨伤害: \Column 380 {#PreviousFormat}{$TooltipData.DisplayDelta1}" 
+		} 		
+		{
+			Id = "HeraWeaponTrait_Initial"
+			InheritFrom = "HeraWeaponTrait"
+			Description = "{$Keywords.Attack}施加{$Keywords.EnvyCurse}。\n {!Icons.Bullet}{#PropertyFormat}嫉恨伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}"
+		}
+		{
+			Id = "HeraSecondaryTrait"
+			DisplayName = "苛烈诅咒"
+			Description = "{$Keywords.Special}施加{$Keywords.EnvyCurse}。\n {!Icons.Bullet}{#PropertyFormat}嫉恨伤害: \Column 380 {#PreviousFormat}{$TooltipData.DisplayDelta1}"
+		} 	
+		{
+			Id = "HeraSecondaryTrait_Initial"
+			InheritFrom = "HeraSecondaryTrait"
+			Description = "{$Keywords.Special}时施加{$Keywords.EnvyCurse}。\n {!Icons.Bullet}{#PropertyFormat}嫉恨伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}"
+		}		
+		{
+			Id = "HeraRushTrait"
+			DisplayName = "构陷冲刺"
+			Description = "{$Keywords.Dash}将在你身后留下一个可以施加{$Keywords.JealousyCurse}状态的{$Keywords.HeraTrap}。\n {!Icons.Bullet}{#PropertyFormat}厌胜伤害: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta1}\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.HeraTrap}冷却时间: \Column 380 {#UpgradeFormat}4秒。"
+		} 
+		{
+			Id = "HeraRushTrait_Initial"
+			InheritFrom = "HeraRushTrait"
+			Description = "{$Keywords.Dash}将在你身后留下一个可以施加{$Keywords.JealousyCurse}状态的{$Keywords.HeraTrap}。\n {!Icons.Bullet}{#PropertyFormat}厌胜伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.HeraTrap}冷却时间: \Column 380 {#UpgradeFormat}4秒。"
+		}
+		{
+			Id = "HeraRushIcon"
+			DisplayName = "{!Icons.RunClearStar}"			
+		}
+		{
+			Id = "HeraSignoff"
+			DisplayName = "来自赫拉"
+		}
+		{
+			Id = "HeraSignoff_Max"
+			DisplayName = """
+				你获得了来自{#AwardMaxFlavorFormat}赫拉{#AwardDarkFlavorFormat}的{#AwardMaxFlavorFormat}御前羁绊
+
+				{#AwardDarkFlavorFormat}奥林匹斯的天后研究完已经勉强决定了，由你来当这一届的小英雄。
+			"""
+		}
+		{
+			Id = "HeraShoutTrait"
+			DisplayName = "赫拉之援"
+			Description = "{$Keywords.WrathDerivedStocks}将随机变为另一位奥林匹斯神明的{$Keywords.WrathDerivedStocks}效果。\n {!Icons.Bullet}{#PropertyFormat}伤害提高: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta1}%{#PreviousFormat}"
+		}		
+		{
+			Id = "HeraShoutTrait_Tray"
+			InheritFrom = "HeraShoutTrait"
+			Description = "{$Keywords.WrathDerivedStocks}将随机变为另一位奥林匹斯神明的{$Keywords.WrathDerivedStocks}效果。\n {!Icons.Bullet}{#PropertyFormat}伤害提高: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta1}%{#PreviousFormat} \n {#ItalicFormat}当前神明为: {$TooltipData.CurrentGod}{#PreviousFormat}"
+		}	
+		{
+			Id = "HeraShoutTrait_Initial"
+			InheritFrom = "HeraShoutTrait"
+			Description = "{$Keywords.WrathDerivedStocks}将随机获得另一位奥林匹斯神明的{$Keywords.WrathDerivedStocks}效果。 \n {!Icons.Bullet}{#PropertyFormat}伤害提高: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}%{#PreviousFormat}"
+		} 
+		{
+			Id = "HeraRangedTrait"
+			DisplayName = "不忿射击"
+			Description = "{$Keywords.Cast}掷出一枚可以分裂成数个小球并且施加{$Keywords.JealousyCurse}的球体。\n {!Icons.Bullet}{#PropertyFormat}投弹伤害: \Column 380 {$TooltipData.DisplayDelta1} \n {!Icons.Bullet}{#PropertyFormat}小球伤害: \Column 380 {$TooltipData.DisplayDelta2}"
+		}
+		{
+			Id = "HeraRangedTrait_Initial"
+			InheritFrom = "HeraRangedTrait"
+			Description = "{$Keywords.Cast}掷出一枚可以分裂成数个小球并且施加{$Keywords.JealousyCurse}的球体。\n {!Icons.Bullet}{#PropertyFormat}投弹伤害: \Column 380 {#OldFormat}{$TooltipData.BaseRangedDamage}{!Icons.RightArrow}{$TooltipData.NewTotal1} \n {!Icons.Bullet}{#PropertyFormat}小球伤害: \Column 380 {$TooltipData.NewTotal2}"
+		}
+		{
+			Id = "HeraRangedTrait_Tray"
+			InheritFrom = "HeraRangedTrait"
+			Description = "{$Keywords.Cast}掷出一枚可以分裂成数个小球并且施加{$Keywords.JealousyCurse}的球体。\n {!Icons.Bullet}{#PropertyFormat}投弹伤害: \Column 380 {$TooltipData.NewTotal1} \n {!Icons.Bullet}{#PropertyFormat}小球伤害: \Column 380 {$TooltipData.NewTotal2}"
+		}
+		{
+			Id = "ShieldLoadAmmo_HeraRangedTrait"
+			DisplayName = "怨忿四起"
+			Description = "{$Keywords.Cast}可以对周围的敌人造成伤害，并施加{$Keywords.JealousyCurse}。 \n {!Icons.Bullet}{#PropertyFormat}爆炸伤害: \Column 380 {$TooltipData.DisplayDelta1}"
+		}
+		{
+			Id = "ShieldLoadAmmo_HeraRangedTrait_Tray"
+			InheritFrom = "ShieldLoadAmmo_HeraRangedTrait"
+			Description = "{$Keywords.Cast}可以对周围的敌人造成伤害，并施加{$Keywords.JealousyCurse}。\n {!Icons.Bullet}{#PropertyFormat}爆炸伤害: \Column 380 {$TooltipData.NewTotal1}"
+		}
+		{
+			Id = "ShieldLoadAmmo_HeraRangedTrait_Initial"
+			InheritFrom = "ShieldLoadAmmo_HeraRangedTrait"
+			Description = "{$Keywords.Cast}可以对周围的敌人造成伤害，并施加{$Keywords.JealousyCurse}。\n {!Icons.Bullet}{#PropertyFormat}爆炸伤害: \Column 380 {#OldFormat}{$TooltipData.BaseRangedDamage}{!Icons.RightArrow}{$TooltipData.NewTotal2}"
+		}
+		{
+			Id = "BowLoadAmmo_HeraRangedTrait"
+			InheritFrom = "ShieldLoadAmmo_HeraRangedTrait"
+		}
+		{
+			Id = "BowLoadAmmo_HeraRangedTrait_Tray"
+			InheritFrom = "ShieldLoadAmmo_HeraRangedTrait_Tray"
+		}
+		{
+			Id = "BowLoadAmmo_HeraRangedTrait_Initial"
+			InheritFrom = "ShieldLoadAmmo_HeraRangedTrait_Initial"
+		}
+		{
+			Id = "DiscountHeraTrait",
+			DisplayName = "特供关系"
+			Description = "所有的道具都将打折。有几率出现某件商品能以{$Keywords.SpecialDiscount}购买。\n {!Icons.Bullet}{#PropertyFormat}折扣幅度: \Column 380 {#UpgradeFormat}-{$TooltipData.TooltipDiscount}%{#PreviousFormat} \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.SpecialDiscount}: \Column 380 {#UpgradeFormat}-20%{#PreviousFormat}"
+    		}
+		{
+			Id = "DiscountHeraTrait_Initial",
+			InheritFrom = "DiscountHeraTrait"
+			Description = "所有的道具都将打折。有几率出现某件商品能以{$Keywords.SpecialDiscount}购买。\n {!Icons.Bullet}{#PropertyFormat}折扣幅度: \Column 380 {#UpgradeFormat}-{$TooltipData.TooltipDiscount}%{#PreviousFormat} \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.SpecialDiscount}: \Column 380 {#UpgradeFormat}-20%{#PreviousFormat}"
+    		}
+		{
+			Id = "PrivilegeHeraTrait"
+			DisplayName = "正宫主母"
+			Description = "持有的{#BoldFormatGraft}{$Keywords.GodBoonPlural}{#PreviousFormat}中每有一个来自同一位奥林匹斯神，则造成额外伤害。 \n {!Icons.Bullet}{#PropertyFormat}累计增加伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal2}{#PreviousFormat}"
+		}
+		{
+			Id = "PrivilegeHeraTrait_Initial"
+			InheritFrom = "PrivilegeHeraTrait"
+			Description = "持有的{#BoldFormatGraft}{$Keywords.GodBoonPlural}{#PreviousFormat}中每有一个来自同一位奥林匹斯神，则造成额外伤害。\n {!Icons.Bullet}{#PropertyFormat}累计增加伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}{#PreviousFormat}"
+		}
+		{
+			Id = "PrivilegeHeraTrait_Tray"
+			InheritFrom = "PrivilegeHeraTrait"
+			Description = "持有的{#BoldFormatGraft}{$Keywords.GodBoonPlural}{#PreviousFormat}中每有一个来自同一位奥林匹斯神，则造成额外伤害。\n {!Icons.Bullet}{#PropertyFormat}累计增加伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal2}{#PreviousFormat} \n {#ItalicFormat}来自{$TooltipData.SameGodName}{#PreviousFormat}"
+		}
+		{
+			Id = "FamilyHeraTrait"
+			DisplayName = "位高权重"
+			Description = "若至少有3名敌人受到{$Keywords.Status}影响，则造成额外伤害。\n {!Icons.Bullet}{#PropertyFormat}增加伤害: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta1}{#PreviousFormat}"
+		}
+		{
+			Id = "FamilyHeraTrait_Initial"
+			InheritFrom = "FamilyHeraTrait"
+			Description = "若至少有3名敌人受到{$Keywords.Status}影响，则造成额外伤害。\n {!Icons.Bullet}{#PropertyFormat}增加伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}{#PreviousFormat}"
+		}
+		{
+			Id = "MoreRewardTrait"
+			DisplayName = "遗产继承"
+			Description = "净化池，地狱宝藏和暗影之罐的收益将提高。\n {!Icons.Bullet}{#PropertyFormat}收益提高: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta1}{#PreviousFormat}"
+		}
+		{
+			Id = "MoreRewardTrait_Initial"
+			InheritFrom = "MoreRewardTrait"
+			Description = "净化池，地狱宝藏和暗影之罐的收益将提高。\n {!Icons.Bullet}{#PropertyFormat}收益提高: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}{#PreviousFormat}"
+		}
+		{
+			Id = "PeriodicCurseTrait"
+			DisplayName = "告密罗织"
+			Description = "每隔一段时间，一名随机的敌人将被施加{$Keywords.JealousyCurse}。\n {!Icons.Bullet}{#PropertyFormat}时间间隔: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipTimeInterval} 秒{#PreviousFormat}"
+		}
+		{
+			Id = "PeriodicCurseTrait_Initial"
+			InheritFrom = "PeriodicCurseTrait"
+			Description = "每隔一段时间，一名随机的敌人将被施加{$Keywords.JealousyCurse}。\n {!Icons.Bullet}{#PropertyFormat}时间间隔: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipTimeInterval} 秒{#PreviousFormat}"
+		}
+		{
+			Id = "EnvyBurstTrait"
+			DisplayName = "作法自毙"
+			Description = "{$Keywords.EnvyCurse}可能发生爆散效果。爆散至少能发生一次。\n {!Icons.Bullet}{#PropertyFormat}爆散伤害: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta2}{#PreviousFormat} \n {!Icons.Bullet}{#PropertyFormat}爆散几率: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipChance:P}{#PreviousFormat} "
+		}
+		{
+			Id = "EnvyBurstTrait_Initial"
+			InheritFrom = "EnvyBurstTrait"
+			Description = "{$Keywords.EnvyCurse}可能发生爆散效果。爆散至少能发生一次。\n {!Icons.Bullet}{#PropertyFormat}爆散伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal2}{#PreviousFormat} \n {!Icons.Bullet}{#PropertyFormat}爆散几率: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipChance:P}{#PreviousFormat} "
+		}
+		{
+    		Id = "MoreCompanionText_Alt"
+      		DisplayName = "{#CombatTextHighlightFormat}{$TempTextData.TraitName}{#PreviousFormat}:{$TempTextData.Amount:P}护驾！"     
+    		}
+		{
+			Id = "MoreCompanionTrait"
+			DisplayName = "心腹廷臣"
+			Description = "进入有卡戎的房间将使你的{#BoldFormat}冥界伴偶{#PreviousFormat}{#BoldFormat}的使用次数{$Keywords.Assist}{#UpgradeFormat}+1{#PreviousFormat}。\n {!Icons.Bullet}{#PropertyFormat}冥界伴偶伤害增加: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta1}{#PreviousFormat}"
+		}
+		{
+			Id = "MoreCompanionTrait_Initial"
+			InheritFrom = "MoreCompanionTrait"
+			Description = "进入有卡戎的房间将使你的{#BoldFormat}冥界伴偶{#PreviousFormat}{#BoldFormat}的使用次数{$Keywords.Assist}{#UpgradeFormat}+1{#PreviousFormat}。\n {!Icons.Bullet}{#PropertyFormat}冥界伴偶伤害增加: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}{#PreviousFormat}"
+		}
+		{
+			Id = "Shop_UseText_HealthAsObolText"
+			DisplayName = "{I} 购买 \n {G} 损失{$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+		}
+		{
+			Id = "Shop_UseStackUpgrade_HealthAsObolText"
+			DisplayName = "{I} 购买强化 \n {G} 损失{$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+		}
+		{
+     			 Id = "Shop_UseWeaponUpgrade_HealthAsObolText"
+      			DisplayName = "{I} 购买升级 \n {G} 损失{$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+    		}
+		{
+      			Id = "Shop_UseMaxHealthDrop_HealthAsObolText"
+     			 DisplayName = "{I} 购买 {#UseTextHealingFormat}+{$TempTextData.TooltipMaxHealth}{!Icons.HealthUp_Small} \n {G} 损失{$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+    		}
+		{
+      			Id = "Shop_UseMetaPointDrop_HealthAsObolText"
+     			 DisplayName = "{I} 购买 {#UseMetaPointFormat}+{$TempTextData.AddResources.MetaPoints}{!Icons.MetaPoint_Small} \n {G} 损失{$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+    		}
+		{
+      			Id = "Shop_UseLockKeyDrop_HealthAsObolText"
+      			DisplayName = "{I} 购买 {#UseLockKeyFormat}+{$TempTextData.AddResources.LockKeys}{!Icons.LockKeySmall} \n {G} 损失{$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+    		}
+		{
+      			Id = "Shop_UseGiftPointDrop_HealthAsObolText"
+     			 DisplayName = "{I} 购买 {#UseGiftPointFormat}+{$TempTextData.AddResources.GiftPoints}{!Icons.GiftPointSmall} \n {G} 损失{$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+   		}
+	 	{
+      			Id = "Shop_UseSuperGiftPointDrop_HealthAsObolText"
+      			DisplayName = "{I} 购买 {#UseGiftPointFormat}+{$TempTextData.AddResources.SuperGiftPoints}{!Icons.SuperGiftPointSmall} \n {G} 损失{$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+    		}
+	 	{
+      			Id = "Shop_UseGemDrop_HealthAsObolText"
+      			DisplayName = "{I} 购买 {#UseShrinePointFormat}+{$TempTextData.AddResources.Gems}{!Icons.GemSmall} \n {G} 损失{$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+    		}
+		{
+      			Id = "Shop_UseSuperGemDrop_HealthAsObolText"
+      			DisplayName = "{I} 购买 {#UseShrinePointFormat}+{$TempTextData.AddResources.SuperGems}{!Icons.SuperGemSmall} \n {G} 损失{$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+    		}
+		{
+      			Id = "Shop_UseSuperLockKeyDrop_HealthAsObolText"
+      			DisplayName = "{I} 购买 {#UseLockKeyFormat}+{$TempTextData.AddResources.SuperLockKeys}{!Icons.SuperLockKeySmall} \n {G} 损失{$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+    		}
+		{
+      			Id = "UseBlindBox_HealthAsObolText"
+      			DisplayName = "{I} 购买 {!Icons.RandomLootSmall} \n {G} 损失{$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+    		}
+		{
+      			Id = "UseStoreRewardRandomStack_HealthAsObolText"
+      			DisplayName = "{I} 购买 {!Icons.RandomPomSmall} Power-Up \n {G} 损失{$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+    		}
+		{
+      			Id = "Shop_UseHealDrop_HealthAsObolText"
+      			DisplayName = "{I} 购买 {#UseTextHealingFormat}{$TempTextData.TooltipHeal}{!Icons.HealthRestore_Small} \n {G} 损失{$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+    		}
+		{
+			Id = "Shop_ItemSacrifice"
+			DisplayName = "{$TempTextData.SacrificeCost} {!Icons.Health_Small}"
+			OverwriteLocalization = true
+		}
+		{
+    			Id = "HealthAsObolText_Alt"
+      			DisplayName = "{#CombatTextHighlightFormat}{$TempTextData.TraitName}{#PreviousFormat}: {$TempTextData.Amount} {!Icons.Health_Small}"     
+    		}
+		{
+			Id = "HealthAsObolTrait"
+			DisplayName = "后翼弃兵"
+			Description = "进入有卡戎的房间可以回复{!Icons.Health_Small}。你能够以{!Icons.Health_Small}替代金币在卡戎处购物。\n {!Icons.Bullet}{#PropertyFormat}{!Icons.Health_Small}回复: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta1}{#PreviousFormat}"
+		}
+		{
+			Id = "HealthAsObolTrait_Initial"
+			InheritFrom = "HealthAsObolTrait"
+			Description = "进入有卡戎的房间可以回复{!Icons.Health_Small}。你能够以{!Icons.Health_Small}替代金币在卡戎处购物。\n {!Icons.Bullet}{#PropertyFormat}{!Icons.Health_Small}回复: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}{#PreviousFormat}"
+		}
+		{
+			Id = "StatusOverTimeTrait"
+			DisplayName = "会幕圣所"
+			Description = "获得{$Keywords.Aura}:受到{$Keywords.EnvyCurse}或{$Keywords.JealousyCurse}影响的敌人将开始腐朽。\n {!Icons.Bullet}{#PropertyFormat}腐朽伤害: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDamage} {#PreviousFormat} {#ItalicFormat} (每 {$TooltipData.TooltipTickRate}秒。) \n {!Icons.Bullet}{#PropertyFormat}身光范围: \Column 380 {#UpgradeFormat}小{#AltUpgradeFormat}"
+		}
+		{
+			Id = "ForceHeraBoonTrait"
+			DisplayName = "伪王之颅"
+			Description = "你找到的下一个{$Keywords.GodBoon}将来自{#BoldFormat}赫拉{#PreviousFormat}。她的祝福将有{#AltUpgradeFormat}{$TooltipData.TooltipBonusChance:P} {#PreviousFormat}的几率成为{#RareFormat}稀有{#PreviousFormat}或更高等级。"
+		}
+		{
+			Id = "ForceHeraBoonTrait_Rack"
+			InheritFrom = "ForceHeraBoonTrait"
+			Description = "你找到的下一个{$Keywords.GodBoon}将来自{#BoldFormat}赫拉{#PreviousFormat}。她的祝福将有{#AltUpgradeFormat}{$TooltipData.TooltipBonusChance:P} {#PreviousFormat}的几率成为 {#RareFormat}稀有{#PreviousFormat}或更高等级。\n\n {#AwardFlavorFormat}{$TooltipData.SignoffText}"
+		}
+		{
+			Id = "ForceHeraBoonTrait_Inactive"
+			DisplayName = "伪王之颅"
+			Description = "赫拉的祝福将有{#AltUpgradeFormat}{$TooltipData.TooltipBonusChance:P} {#PreviousFormat}的几率成为{#RareFormat}稀有{#PreviousFormat}或更高等级。"
+		}
+		{
+			Id = "AuraExposedTrait"
+			DisplayName = "国之干城"
+			Description = "{$Keywords.Aura}: 敌人还将进入{$Keywords.Stagger}状态。\n {!Icons.Bullet}{#PropertyFormat}身光范围: \Column 380 {#UpgradeFormat}大{#AltUpgradeFormat}" 
+		}	
+		{
+			Id = "AuraRuptureTrait"
+			DisplayName = "潮信不失"
+			Description = "{$Keywords.Aura}: 敌人还将遭受{$Keywords.Rupture}。\n {!Icons.Bullet}{#PropertyFormat}身光范围: \Column 380 {#UpgradeFormat}很小{#AltUpgradeFormat}" 
+		}	
+		{
+			Id = "AuraBlindTrait"
+			DisplayName = "天威昭昭"
+			Description = "{$Keywords.Aura}: 敌人还将遭受{$Keywords.ApolloBlind}。\n {!Icons.Bullet}{#PropertyFormat}身光范围: \Column 380 {#UpgradeFormat}中{#AltUpgradeFormat}" 
+		}	
+		{
+			Id = "CurseLongerTrait"
+			DisplayName = "驻颜有术"
+			Description = "{$Keywords.Status}持续时间将延长，{$Keywords.Curse}除外。\n {!Icons.Bullet}{#PropertyFormat}持续时间增加: \Column 380 {#UpgradeFormat}+{$TooltipData.NewTotal1}秒。{#AltUpgradeFormat}" 
+		}	
+		{
+			Id = "BetterTrapsTrait"
+			DisplayName = "月下捉蛤"
+			Description = "{#BoldFormat}{$Keywords.HeraTrap}{#PreviousFormat}的生效体积将增大并且同时存在的数量将增加。\n {!Icons.Bullet}{#PropertyFormat}生效体积: \Column 380 {#UpgradeFormat}+150%{#AltUpgradeFormat} \n {!Icons.Bullet}{#PropertyFormat}数量上限: \Column 380 {#UpgradeFormat}+2{#AltUpgradeFormat}" 
+		}	
+		{
+			Id = "HeroicBoonsTrait"
+			DisplayName = "瑞雪丰年"
+			Description = "随机选取你的{$Keywords.GodBoonPlural}将其变为{$Keywords.Heroic}级别。\n {!Icons.Bullet}{#PropertyFormat}选取{$Keywords.GodBoonPlural}数量: \Column 380 {#UpgradeFormat}3{#PreviousFormat}" 
+		}
+		{
+			Id = "HeroicBoonsTrait_Tray"
+			InheritFrom = "HeroicBoonsTrait"
+			Description = "随机选取你的{$Keywords.GodBoonPlural}将其变为{$Keywords.Heroic}级别。\n {!Icons.Bullet}{#PropertyFormat}选取{$Keywords.GodBoonPlural}数量: \Column 380 {#UpgradeFormat}3{#PreviousFormat}" 
+		}
+		{
+			Id = "SlowerHangoverTrait"
+			DisplayName = "醉生梦死"
+			Description = "{$Keywords.Poison}将造成更高伤害，但生效速度减慢。\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.Poison}伤害提高: \Column 380 {#UpgradeFormat}+150%{#PreviousFormat}. \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.Poison} 伤害速度: \Column 380 {#OldFormat}{$TooltipData.TooltipBaseTickRate}秒{!Icons.RightArrow}{#AltPenaltyFormat}1.0秒{#PreviousFormat}" 
+		}	
+		{
+			Id = "KillMarkedTrait"
+			DisplayName = "定斩不饶"
+			Description = "标记一名敌人，使其受到更高的伤害。\n {!Icons.Bullet}{#PropertyFormat}伤害提高: \Column 380 {#UpgradeFormat}+100%{#PreviousFormat} \n {!Icons.Bullet}{#PropertyFormat}对{$Keywords.BossPlural}生效: \Column 380 {#UpgradeFormat}5秒。{#PreviousFormat}" 
+		}	
+		{
+			Id = "GaugeLightningTrait"
+			DisplayName = "不共戴天"
+			Description = "若{$Keywords.WrathGauge}累积变满，则每{#BoldFormatGraft}1秒{#PreviousFormat}在你身边引来一次天雷。\n {!Icons.Bullet}{#PropertyFormat}闪电伤害: \Column 380 {#PreviousFormat}{$TooltipData.NewTotal1}" 
+		}	
+		{
+			Id = "EnhancedNPCTrait"
+			DisplayName = "天界新约"
+			Description = "你可以从道途中的朋友们那里得到更多的帮助。\n {!Icons.Bullet}{#PropertyFormat}朋友的帮助: \Column 380 {#UpgradeFormat}全都要{#AltUpgradeFormat}\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.BossPlural}战后几率获得额外奖励 : \Column 380 {#UpgradeFormat}1{#AltUpgradeFormat}" 
+		}	
+		{
+			Id = "LtUpgrade_Hera"
+			DisplayName = "受到祝福的敌人现在会对你施加嫉妒的咒术"
+		}				
+		{
+			Id = "ClearRequiredTraitsHera"
+			DisplayName = "{!Icons.RunClearStar}赫拉的门徒{!Icons.RunClearStar}"
+		}
+		{
+			Id = "SynergyUpgrades2"
+			DisplayName = "还有很多双重祝福"
+			Description = "有朝一日，冥王之子定能获得奥林匹斯诸神的那些额外的双重祝福。"
+		}
+
+
+
+
+		{
+			Id = "NPC_Hephaestus_01"
+			DisplayName = "赫菲斯托斯"
+			Description = "锻造之神"
+		}		
+		{
+			Id = "HephaestusFirstPickUp"
+			DisplayName = "已见到赫菲斯托斯"
+		}
+		{
+			Id = "HephaestusUpgrade"
+			DisplayName = "赫菲斯托斯"
+			Description = "锻造之神"
+		}
+		{
+			Id = "HephaestusUpgrades"
+			DisplayName = "锻造之神"
+			Description = "有朝一日，冥王之子定能获得赫菲斯托斯的的各种祝福。"
+		}
+		{
+			Id = "HephaestusUpgrade_FlavorText01"
+			DisplayName = "刻苦的修炼是你能馈赠给自己的最好礼物。"
+		}
+		{
+			Id = "HephaestusUpgrade_FlavorText02"
+			DisplayName = "益求其精，如琢如磨。"
+		}
+		{
+			Id = "HephaestusUpgrade_FlavorText03"
+			DisplayName = "完美的分寸既可以说近在眼前，又好似远在天边。"
+		}	
+		{
+			Id = "HephaestusWeaponTrait"
+			DisplayName = "老道攻击"
+			Description = " " 
+		} 		
+		{
+			Id = "HephaestusWeaponTrait_Initial"
+			InheritFrom = "HephaestusWeaponTrait"
+			Description = " "
+		}
+		{
+			Id = "HephaestusSecondaryTrait"
+			DisplayName = "老道乱舞"
+			Description = " "
+		} 	
+		{
+			Id = "HephaestusSecondaryTrait_Initial"
+			InheritFrom = "HephaestusSecondaryTrait"
+			Description = " "
+		}		
+		{
+			Id = "HephaestusRushTrait"
+			DisplayName = "全力一跃"
+			Description = "{$Keywords.Dash}距离将增加。\n {!Icons.Bullet}{#PropertyFormat}冲刺距离：\Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta2}\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.HephaestusTrap}冷却时间: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipCooldown}秒。"
+		} 
+		{
+			Id = "HephaestusRushTrait_Initial"
+			InheritFrom = "HephaestusRushTrait"
+			Description = "{$Keywords.Dash}距离将增加。\n {!Icons.Bullet}{#PropertyFormat}冲刺距离: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal2}\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.HephaestusTrap}冷却时间: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipCooldown}秒。"
+		}
+		{
+			Id = "HephaestusSignoff"
+			DisplayName = "来自赫菲斯托斯"
+		}
+		{
+			Id = "HephaestusSignoff_Max"
+			DisplayName = """
+				你获得了来自{#AwardMaxFlavorFormat}赫菲斯托斯{#AwardDarkFlavorFormat}的{#AwardMaxFlavorFormat}专业羁绊
+
+				{#AwardDarkFlavorFormat}你是他洽谈过的委托人中最棒的那一位。
+			"""
+		}
+		{
+			Id = "HephaestusShoutTrait"
+			DisplayName = "金属暴徒"
+			Description = " "
+		}		
+		{
+			Id = "HephaestusShoutTrait_Tray"
+			InheritFrom = "HephaestusShoutTrait"
+			Description = " "
+		}	
+		{
+			Id = "HephaestusShoutTrait_Initial"
+			InheritFrom = "HephaestusShoutTrait"
+			Description = " "
+		} 
+		{
+			Id = "HephaestusRangedTrait"
+			DisplayName = "悬赏射击"
+			Description = " "
+		}
+		{
+			Id = "HephaestusRangedTrait_Initial"
+			InheritFrom = "HephaestusRangedTrait"
+			Description = " "
+		}
+		{
+			Id = "HephaestusRangedTrait_Tray"
+			InheritFrom = "HephaestusRangedTrait"
+			Description = " "
+		}
+		{
+			Id = "FullHealthExtraRewardTrait",
+			DisplayName = "趁热打铁"
+			Description = "在没有受到伤害的情况下清场了一个房间，将随机获得一项升级(+1等级祝福(5%)，+25金币(10%)，+10黑暗(50%)，+5宝石(35%))(Armor protects you from that happening)"
+    		}
+		{
+			Id = "FullHealthExtraRewardTrait_Initial",
+			InheritFrom = "FullHealthExtraRewardTrait"
+			Description = " "
+    		}
+		{
+			Id = "DropMoneyTrait"
+			DisplayName = "冶炼真金"
+			Description = " "
+		}
+		{
+			Id = "DropMoneyTrait_Initial"
+			InheritFrom = "DropMoneyTrait"
+			Description = " "
+		}
+		{
+			Id = "DamageBoostTrait"
+			DisplayName = "以逸待劳"
+			Description = " "
+		}
+		{
+			Id = "DamageBoostTrait_Initial"
+			InheritFrom = "DamageBoostTrait"
+			Description = " "
+		}
+		{
+			Id = "ArmorBossTrait"
+			DisplayName = "回炉再造"
+			Description = " "
+		}
+		{
+			Id = "ArmorBossTrait_Initial"
+			InheritFrom = "ArmorBossTrait"
+			Description = " "
+		}
+		{
+			Id = "ArmorEncounterTrait"
+			DisplayName = "巧夺天工"
+			Description = " "
+		}
+		{
+			Id = "ArmorEncounterTrait_Initial"
+			InheritFrom = "ArmorEncounterTrait"
+			Description = " "
+		}
+		{
+			Id = "ArmorDefianceTrait"
+			DisplayName = "持之以恒"
+			Description = " "
+		}
+		{
+			Id = "ArmorDefianceTrait_Initial"
+			InheritFrom = "ArmorDefianceTrait"
+			Description = " "
+		}
+		{
+			Id = "HephaestusDistantTrait"
+			DisplayName = "鞭长可及"
+			Description = " "
+		}
+		{
+			Id = "HephaestusDistantTrait_Initial"
+			InheritFrom = "HephaestusDistantTrait"
+			Description = " "
+		}		
+		{
+			Id = "HephaestusTrapTrait"
+			DisplayName = "匠心构造"
+			Description = " "
+		}
+		{
+			Id = "HephaestusTrapTrait_Initial"
+			InheritFrom = "HephaestusTrapTrait"
+			Description = " "
+		}
+		{
+			Id = "ArmorLegendaryTrait"
+			DisplayName = "无上兵主"
+			Description = " "
+		}
+		{
+			Id = "ForceHephaestusBoonTrait"
+			DisplayName = "根源种火"
+			Description = "你找到的下一个{$Keywords.GodBoon}将来自{#BoldFormat}代达罗斯之锤{#PreviousFormat}。你可以重置代达罗斯之锤的附魔选项。"
+		}
+		{
+			Id = "ForceHephaestusBoonTrait_Rack"
+			InheritFrom = "ForceHephaestusBoonTrait"
+			Description = "你找到的下一个{$Keywords.GodBoon}将来自{#BoldFormat}代达罗斯之锤{#PreviousFormat}。你可以重置代达罗斯之锤的附魔选项。\n\n {#AwardFlavorFormat}{$TooltipData.SignoffText}"
+		}
+		{
+			Id = "ForceHephaestusBoonTrait_Inactive"
+			DisplayName = "根源种火"
+			Description = "你可以重置代达罗斯之锤的附魔选项。"
+		}				
+		{
+			Id = "ClearRequiredTraitsHephaestus"
+			DisplayName = "{!Icons.RunClearStar}赫菲斯托斯的客户{!Icons.RunClearStar}"
+		}
+		{
+			Id = "HephaestusLegendaryUpgrades"
+			DisplayName = "十全武功之人"
+			Description = "有朝一日，冥王之子定能获得赫菲斯托斯的所有神级改造。"
+		}
+
+
+
+
+		{
+			Id = "NPC_Gaia_01"
+			DisplayName = "盖亚"
+			Description = "有名万物之母"
+		}		
+		{
+			Id = "NPC_GaiaUnnamed_01"
+			DisplayName = "? ? ?"
+			Description = ""
+		}
+		{
+			Id = "Location_Secret_G"
+			DisplayName = "盖亚园庭"
+		}
+		{
+			Id = "Secrets_G"
+			DisplayName = "盖亚园庭"
+		}
+		{
+			Id = "GaiaSignoff"
+			DisplayName = "来自原生者盖亚"
+		}
+		{
+			Id = "GaiaSignoff_Max"
+			DisplayName = """
+				你获得了来自{#AwardMaxFlavorFormat}原生者盖亚{#AwardDarkFlavorFormat}的{#AwardMaxFlavorFormat}天然羁绊
+
+				{#AwardDarkFlavorFormat}在她所有的儿孙中，你看起来是被包含在她最偏爱的那群里了。
+			"""
+   		}
+		{
+			Id = "GardenGate"
+			DisplayName = "园庭之门"
+			Description = "拜访盖亚的园庭，便会受赐回复一定的{!Icons.Health_Small}值。"
+		}
+		{
+			Id = "GardenGatePlural"
+			InheritFrom = "HealthGate"
+			DisplayName = "园庭之门"
+		}
+		{
+			Id = "GaiaBoonTrait"
+			DisplayName = "柳枝接穗"
+			Description = "进入{$Keywords.GardenGatePlural}时不再损失{!Icons.Health_Small}。来自{#BoldFormat}盖亚{#PreviousFormat}的祝福有{#UpgradeFormat}{$TooltipData.TooltipBonusChance:P}{#PreviousFormat}的几率成为{#RareFormat}稀有{#PreviousFormat}或更高的等级。"
+		}
+		{
+			Id = "GaiaBoonTrait_Rack"
+			InheritFrom = "GaiaBoonTrait"
+			Description = "进入{$Keywords.GardenGatePlural}时不再损失{!Icons.Health_Small}。来自{#BoldFormat}盖亚{#PreviousFormat}的祝福有{#UpgradeFormat}{$TooltipData.TooltipBonusChance:P}{#PreviousFormat}的几率成为{#RareFormat}稀有{#PreviousFormat}或更高的等级。\n\n {#AwardFlavorFormat}{$TooltipData.SignoffText}"
+		}
+		{
+			Id = "GaiaFirstPickUp"
+			DisplayName = "已见到原生者盖亚"
+		}
+		{
+			Id = "GaiaBlessings"
+			DisplayName = "原生恩赐"
+			Description = "有朝一日，冥王之子定能获得原生者盖亚提供的各种祝福。"
+		}
+		{
+			Id = "GaiaDeeds"
+			DisplayName = "原生之难"
+			Description = "有朝一日，冥王之子定能承担原生者盖亚提出的各项考验。"
+		}
+		{
+			Id = "CompleteGarden"
+			DisplayName = "珀尔赛福涅的花园"
+			Description = " "
+		}
+		{
+			Id = "GaiaCrops"
+			DisplayName = "花园收成"
+			Description = "有朝一日，冥王之子定能收获各式的收成，甚至那种不凡的稀有品种也包括其中，让原生者盖亚深为赞赏。"
+		}
+		{
+			Id = "GaiaCropsQuestComplete"
+			DisplayName = "成功培养25种庄稼，保证至少有一种是非常稀有的等级，然后禀报原生者盖亚。"
+		}
+		{
+			Id = "Fish_Gaia_Common_01"
+			DisplayName = "普通鱼"
+		}
+		{
+			Id = "Fish_Gaia_Rare_01"
+			DisplayName = "稀有鱼"
+		}
+		{
+			Id = "Fish_Gaia_Legendary_01"
+			DisplayName = "传奇鱼"
+		}
+		{
+			Id = "RunHistoryScreenResult_Secret_G"
+			DisplayName = "在{#AltPenaltyFormat}盖亚园庭{#PreviousFormat}枯萎了"
+		}
+		{
+			Id = "ClearRequiredTraitsGaia"
+			DisplayName = "{!Icons.RunClearStar}盖亚的儿孙{!Icons.RunClearStar}"
+		}
+		{
+      			Id = "GardenUpgrade_FlavorText01"
+      			DisplayName = " "
+    		}
+    		{
+      			Id = "GardenUpgrade_FlavorText02"
+      			DisplayName = " "
+    		}
+    		{
+      			Id = "GardenUpgrade_FlavorText03"
+      			DisplayName = " "
+    		}
+		{
+      			Id = "GardenUpgrade"
+      			DisplayName = "盖亚"
+      			Description = "万物鼻祖"
+    		}
+		{
+      			Id = "GaiaBlessingFormat"
+      			DisplayName = "盖亚祝福/考验"
+     			Description = "{^TooltipData.Name}\n{^TooltipData.OnExpire.TraitData.Name}"
+    		}
+    		{
+      			Id = "GaiaBlessingTrayFormat"
+      			DisplayName = "{#BoldFormat}{$TooltipData.LastDeedName}之{$TooltipData.LastBlessingName}{#PreviousFormat}"
+      			Description = " "
+    		}
+    {
+      Id = "GaiaCombo"
+      DisplayName = "{{GaiaDeed}} {{GaiaBlessing}}"
+    }
+    {
+      Id = "GaiaDeedNoMoneyTrait"
+      DisplayName = "Pauper's"
+      Description = "For the next {#BoldFormat}{$TooltipData.RemainingUses} {$Keywords.Encounter}{#PreviousFormat}, you cannot earn {!Icons.Currency_Small}."
+    }
+    {
+      Id = "GaiaDeedAmmoUseDelayTrait"
+      DisplayName = "Slippery"
+      Description = "For the next {#BoldFormat}{$TooltipData.RemainingUses} {$Keywords.Encounter}{#PreviousFormat}, you cannot collect {!Icons.Ammo} for {#AltPenaltyFormat}{$TooltipData.AmmoDropUseDelay} {#PreviousFormat}Sec."
+    }
+    {
+      Id = "GaiaDeedDeathWeaponTrait"
+      DisplayName = "Caustic"
+      Description = "For the next {#BoldFormat}{$TooltipData.RemainingUses} {$Keywords.Encounter}{#PreviousFormat}, slain foes toss an {#BoldFormat}{$Keywords.DeathWeapon} {#PreviousFormat}at you."
+    }
+    {
+      Id = "GaiaDeedHiddenRoomReward"
+      DisplayName = "Enshrouded"
+      Description = "For the next {#BoldFormat}{$TooltipData.RemainingUses} {$Keywords.Room}{#PreviousFormat}, chamber reward previews are hidden."
+    }
+    {
+      Id = "GaiaDeedDamageTrait"
+      DisplayName = "Excruciating"
+      Description = "For the next {#BoldFormat}{$TooltipData.RemainingUses} {$Keywords.Encounter}{#PreviousFormat}, you take {#AltPenaltyFormat}{$TooltipData.TooltipDamageDeed:P} {#PreviousFormat}damage."
+    }
+    {
+      Id = "GaiaDeedTrapDamageTrait"
+      DisplayName = "Abyssal"
+      Description = "For the next {#BoldFormat}{$TooltipData.RemainingUses} {$Keywords.Encounter}{#PreviousFormat}, you take {#AltPenaltyFormat}{$TooltipData.TooltipDamageIncrease:P} {#PreviousFormat}damage from {#BoldFormat}{$Keywords.Traps}{#PreviousFormat}."
+    }
+    {
+      Id = "GaiaDeedHealthTrait"
+      DisplayName = "Atrophic"
+      Description = "For the next {#BoldFormat}{$TooltipData.RemainingUses} {$Keywords.Encounter}{#PreviousFormat}, your Life Total is reduced by {#AltPenaltyFormat}{$TooltipData.TooltipHealthDeed}{!Icons.HealthDown_Small}{#PreviousFormat}."
+    }
+    {
+      Id = "GaiaDeedMoveSpeedTrait"
+      DisplayName = "Slothful"
+      Description = "For the next {#BoldFormat}{$TooltipData.RemainingUses} {$Keywords.Encounter}{#PreviousFormat}, you have {#AltPenaltyFormat}{$TooltipData.TooltipSpeed}% {#PreviousFormat}move speed."
+    }
+    {
+      Id = "GaiaDeedSpawnTrait"
+      DisplayName = "Roiling"
+      Description = "For the next {#BoldFormat}{$TooltipData.RemainingUses} {#PreviousFormat}standard {#BoldFormat}{$Keywords.Encounter}{#PreviousFormat}, you face {#AltPenaltyFormat}{$TooltipData.TooltipSpawnMultiplier:P} {#PreviousFormat}more foes."
+    }
+    {
+      Id = "GaiaDeedDashAttackTrait"
+      DisplayName = "Stabbing"
+      Description = "For the next {#BoldFormat}{$TooltipData.RemainingUses} {$Keywords.Encounter}{#PreviousFormat}, each time you {#BoldFormat}{$Keywords.Dash}{#PreviousFormat}, get hit for {#AltPenaltyFormat}-{$TooltipData.TooltipDamage}{!Icons.Health_Small}{#PreviousFormat}."
+    }
+    {
+      Id = "GaiaDeedPrimaryAttackTrait"
+      DisplayName = "Maimed"
+      Description = "For the next {#BoldFormat}{$TooltipData.RemainingUses} {$Keywords.Encounter}{#PreviousFormat}, each time you {#BoldFormat}{$Keywords.Attack}{#PreviousFormat}, get hit for {#AltPenaltyFormat}-{$TooltipData.TooltipDamage}{!Icons.Health_Small}{#PreviousFormat}."
+    }
+    {
+      Id = "GaiaDeedSecondaryAttackTrait"
+      DisplayName = "Flayed"
+      Description = "For the next {#BoldFormat}{$TooltipData.RemainingUses} {$Keywords.Encounter}{#PreviousFormat}, each time you {#BoldFormat}{$Keywords.Special}{#PreviousFormat}, get hit for {#AltPenaltyFormat}-{$TooltipData.TooltipDamage}{!Icons.Health_Small}{#PreviousFormat}."
+    }
+    {
+      Id = "GaiaDeedCastAttackTrait"
+      DisplayName = "Addled"
+      Description = "For the next {#BoldFormat}{$TooltipData.RemainingUses} {$Keywords.Encounter}{#PreviousFormat}, each time you {#BoldFormat}{$Keywords.Cast}{#PreviousFormat}, get hit for {#AltPenaltyFormat}-{$TooltipData.TooltipDamage}{!Icons.Health_Small}{#PreviousFormat}."
+    }
+    {
+      Id = "GaiaDeedDashRangeTrait"
+      DisplayName = "Halting"
+      Description = "For the next {#BoldFormat}{$TooltipData.RemainingUses} {$Keywords.Encounter}{#PreviousFormat}, your {#BoldFormat}{$Keywords.Dash} {#PreviousFormat} has {#AltPenaltyFormat}-{$TooltipData.TooltipPenalty}% {#PreviousFormat}range."
+    }
+    {
+      Id = "GaiaBlessingMeleeTrait"
+      DisplayName = "Strike"
+      Description = "Afterward, your {#BoldFormat}{$Keywords.Attack} {#PreviousFormat}deals {#AltUpgradeFormat}{$TooltipData.TooltipDamageBonus:P} {#PreviousFormat}damage."
+    }
+    {
+      Id = "GaiaBlessingMeleeTrait_Complete"
+      Description = "Your {#BoldFormat}{$Keywords.Attack} {#PreviousFormat}deals {#AltUpgradeFormat}{$TooltipData.TooltipDamageBonus:P} {#PreviousFormat}damage."
+    }
+    {
+      Id = "GaiaBlessingSecondaryTrait"
+      DisplayName = "Flourish"
+      Description = "Afterward, your {#BoldFormat}{$Keywords.Special} {#PreviousFormat}deals {#AltUpgradeFormat}{$TooltipData.TooltipDamageBonus:P} {#PreviousFormat} damage."
+    }
+    {
+      Id = "GaiaBlessingSecondaryTrait_Complete"
+      Description = "Your {#BoldFormat}{$Keywords.Special} {#PreviousFormat} deals {#AltUpgradeFormat}{$TooltipData.TooltipDamageBonus:P} {#PreviousFormat}damage."
+    }
+    {
+      Id = "GaiaBlessingDashAttackTrait"
+      DisplayName = "Lunge"
+      Description = "Afterward, your {#BoldFormat}{$Keywords.BlinkStrike} {#PreviousFormat}deals {#AltUpgradeFormat}{$TooltipData.TooltipDamageBonus:P} {#PreviousFormat}damage."
+    }
+    {
+      Id = "GaiaBlessingDashAttackTrait_Complete"
+      Description = "Your {#BoldFormat}{$Keywords.BlinkStrike} {#PreviousFormat}deals {#AltUpgradeFormat}{$TooltipData.TooltipDamageBonus:P} {#PreviousFormat}damage."
+    }
+    {
+      Id = "GaiaBlessingRangedTrait"
+      DisplayName = "Shot"
+      Description = "Afterward, your {#BoldFormat}{$Keywords.Cast} {#PreviousFormat}deals {#AltUpgradeFormat}{$TooltipData.TooltipDamageBonus:P} {#PreviousFormat}damage."
+    }
+    {
+      Id = "GaiaBlessingRangedTrait_Complete"
+      Description = "Your {#BoldFormat}{$Keywords.Cast} {#PreviousFormat}deals {#AltUpgradeFormat}{$TooltipData.TooltipDamageBonus:P} {#PreviousFormat}damage."
+    }
+    {
+      Id = "GaiaBlessingAmmoTrait"
+      DisplayName = "Grasp"
+      Description = "Afterward, gain {#AltUpgradeFormat}+{$TooltipData.TooltipCapacity}{!Icons.Ammo}{#PreviousFormat}."
+    }
+    {
+      Id = "GaiaBlessingAmmoTrait_Complete"
+      Description = "You have {#AltUpgradeFormat}+{$TooltipData.NewTotal1}{!Icons.Ammo}{#PreviousFormat}."
+    }
+    {
+      Id = "GaiaBlessingMaxHealthTrait"
+      DisplayName = "Soul"
+      Description = "Afterward, gain {#AltUpgradeFormat}+{$TooltipData.TooltipHealth}{!Icons.HealthUp_Small}{#PreviousFormat}."
+    }
+    {
+      Id = "GaiaBlessingMaxHealthTrait_Complete"
+      Description = "You have {#AltUpgradeFormat}+{$TooltipData.NewTotal1}{!Icons.HealthUp_Small}{#PreviousFormat}."
+    }
+    {
+      Id = "GaiaBlessingBoonRarityTrait"
+      DisplayName = "Favor"
+      Description = "Afterward, {#BoldFormat}{$Keywords.GodBoonPlural} {#PreviousFormat}have {#AltUpgradeFormat}{$TooltipData.TooltipBonusChance:P} {#PreviousFormat}chance to be {#RareFormat}Rare {#PreviousFormat}or better."
+    }
+    {
+      Id = "GaiaBlessingBoonRarityTrait_Complete"
+      Description = "{#BoldFormat}{$Keywords.GodBoonPlural} {#PreviousFormat}have {#AltUpgradeFormat}{$TooltipData.NewTotal1} {#PreviousFormat}chance to be {#RareFormat}Rare {#PreviousFormat}or better."
+    }
+    {
+      Id = "GaiaBlessingMoneyTrait"
+      DisplayName = "Affluence"
+      Description = "Afterward, any {!Icons.Currency_Small} you find is worth {#AltUpgradeFormat}{$TooltipData.TooltipMoneyRewardIncrease:P}{#PreviousFormat}."
+    }
+    {
+      Id = "GaiaBlessingMoneyTrait_Complete"
+      Description = "Any {!Icons.Currency_Small} you find is worth {#AltUpgradeFormat}{$TooltipData.NewTotal1}{#PreviousFormat}."
+    }
+    {
+      Id = "GaiaBlessingMetapointTrait"
+      DisplayName = "Eclipse"
+      Description = "Afterward, any {!Icons.MetaPoint_Small} and {!Icons.GemSmall} you find are worth {#AltUpgradeFormat}{$TooltipData.TooltipMetaPointRewardIncrease:P}{#PreviousFormat}."
+    }
+    {
+      Id = "GaiaBlessingMetapointTrait_Complete"
+      Description = "Any {!Icons.MetaPoint_Small} and {!Icons.GemSmall} you find are worth {#AltUpgradeFormat}{$TooltipData.NewTotal1}{#PreviousFormat}."
+    }
+    {
+      Id = "GaiaBlessingAlphaStrikeTrait"
+      DisplayName = "Assault"
+      Description = "Afterward, you deal {#AltUpgradeFormat}{$TooltipData.TooltipDamageBonus:P} {#PreviousFormat}damage striking undamaged foes."
+    }
+    {
+      Id = "GaiaBlessingAlphaStrikeTrait_Complete"
+      Description = "You deal {#AltUpgradeFormat}{$TooltipData.TooltipDamageBonus:P} {#PreviousFormat}damage striking undamaged foes."
+    }
+    {
+      Id = "GaiaBlessingBackstabTrait"
+      DisplayName = "Ambush"
+      Description = "Afterward, you deal {#AltUpgradeFormat}{$TooltipData.TooltipDamageBonus:P} {#PreviousFormat}damage striking foes from behind."
+    }
+    {
+      Id = "GaiaBlessingBackstabTrait_Complete"
+      Description = "You deal {#AltUpgradeFormat}{$TooltipData.TooltipDamageBonus:P} {#PreviousFormat}damage striking foes from behind."
+    }
+    {
+      Id = "GaiaBlessingExtraPomsTrait"
+      DisplayName = "焕生"
+      Description = "此后，获得{#AltUpgradeFormat}+5{#PreviousFormat}等级{!Icons.RandomPomSmall}。"
+    }
+    {
+      Id = "GaiaBlessingExtraPomsTrait_Complete"
+      Description = "获得{#AltUpgradeFormat}+5{#PreviousFormat}等级{!Icons.RandomPomSmall}。"
+    }
+    // Crops
+    {
+      Id = "Codex_GrowChapter"
+      DisplayName = "花园收成"
+    }
+    {
+      Id = "KitchenMenu_Confirm"
+      DisplayName = "交付食材"
+    }
+    {
+      Id = "KitchenMenu_Title"
+      DisplayName = "大厨的厨房"
+    }
+    {
+      Id = "KitchenMenu_Subtitle"
+      DisplayName = "大厨已经准备好为你操刀了。"
+    }
+    {
+      Id = "KitchenMenu_RewardTitle"
+      DisplayName = "料理所得"
+    }
+    {
+      Id = "KitchenMenu_FishTab"
+      DisplayName = "冥河生物"
+    }
+    {
+      Id = "KitchenMenu_GrowTab"
+      DisplayName = "花园收成"
+    }
+    {
+      Id = "Vegetable_Tartarus_Common_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Vegetable_Styx_Common_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Vegetable_Erebus_Common_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Vegetable_Asphodel_Rare_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Vegetable_Chaos_Rare_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Vegetable_Chaos_Legendary_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Fruit_Elysium_Common_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Fruit_Surface_Common_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Fruit_Home_Common_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Fruit_Gaia_Rare_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Fruit_Tartarus_Rare_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Fruit_Gaia_Legendary_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Herb_Asphodel_Common_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Herb_Chaos_Common_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Herb_Gaia_Common_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Herb_Elysium_Rare_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Herb_Styx_Rare_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Herb_Surface_Legendary_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Seed_Vegetable_Tartarus_Common_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Seed_Vegetable_Styx_Common_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Seed_Vegetable_Erebus_Common_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Seed_Vegetable_Asphodel_Rare_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Seed_Vegetable_Chaos_Rare_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Seed_Vegetable_Chaos_Legendary_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Seed_Fruit_Elysium_Common_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Seed_Fruit_Surface_Common_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Seed_Fruit_Home_Common_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Seed_Fruit_Gaia_Rare_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Seed_Fruit_Tartarus_Rare_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Seed_Fruit_Gaia_Legendary_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Seed_Herb_Asphodel_Common_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Seed_Herb_Chaos_Common_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Seed_Herb_Gaia_Common_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Seed_Herb_Elysium_Rare_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Seed_Herb_Styx_Rare_01"
+      DisplayName = "Mati"
+    }
+    {
+      Id = "Seed_Herb_Surface_Legendary_01"
+      DisplayName = "Mati"
+    }
+
+
+    {
+      Id = "Codex_OlympianGoddessChapter"
+      DisplayName = "奥林匹斯女神"
+    }
+	//Cerberus              
+    {
+      Id = "GoodBoyAssistTrait_Rack"
+      DisplayName = "伴偶索罗"
+      Description = "{$Keywords.Assist}在离你最近的敌人附近区域内造成{#AltUpgradeFormat}{$TooltipData.TooltipDamage} {#PreviousFormat}伤害，之后会沿着当前方向前进。\n\n {#BoldFormat}{$Keywords.Assist}{#PreviousFormat}：按 {AS} 向朋友紧急求助。{#ItalicFormat}每个{$Keywords.EncounterAlt}限用一次。 {#PreviousFormat}{#BoldFormat}每次逃脱行动{#PreviousFormat}{#ItalicFormat}最多{#PreviousFormat}可用{#AltUpgradeFormat}{$TooltipData.TooltipKeepsakeUses}{#PreviousFormat}次 \n\n {#AwardFlavorFormat}{$TooltipData.SignoffText}"
+    }
+    {
+      Id = "GoodBoyAssistTrait_Delta"
+      DisplayName = "伴偶索罗"
+      Description = "{$Keywords.Assist}在离你最近的敌人附近区域内造成{#AltUpgradeFormat}{$TooltipData.TooltipDamage} {#PreviousFormat}伤害，之后会沿着当前方向前进。\n\n {#BoldFormat}{$Keywords.Assist}{#PreviousFormat}：按 {AS} 向朋友紧急求助。{#ItalicFormat}每个{$Keywords.EncounterAlt})限用一次。{#PreviousFormat}{#BoldFormat}每次逃脱行动{#PreviousFormat}{#ItalicFormat}最多{#PreviousFormat}可用{#AltUpgradeFormat}{$TooltipData.DisplayDelta1}{#PreviousFormat}次 \n\n {#AwardFlavorFormat}{$TooltipData.SignoffText}"
+    }
+    {
+      Id = "GoodBoyAssistTrait"
+      DisplayName = "伴偶索罗"
+      Description = "{$Keywords.Assist}在离你最近的敌人附近区域内造成{#AltUpgradeFormat}{$TooltipData.TooltipDamage} {#PreviousFormat}伤害，之后会沿着当前方向前进。"
+    }
+    {
+      Id = "CodexData_GoodBoyAssistTrait_01"
+      Speaker = "Achilles"
+      DisplayName = "“……当索罗从黑暗之中醒来，他就立刻意识到，自己是注定要来陪伴黑夜之母和冥府的那群主宰之物的。然而，黑夜之母经常会让他一个人呆上很长一段时间，似乎永远都没有尽头。这使他变得孤独而痛苦。他担心有一天，她会离开他，再也不会回来……”"
+    }
+    {
+      Id = "CodexData_GoodBoyAssistTrait_02"
+      Speaker = "Achilles"
+      DisplayName = "“……当索罗从黑暗之中醒来，他就立刻意识到，自己是注定要来陪伴黑夜之母和冥府的那群主宰之物的。然而，黑夜之母经常会让他一个人呆上很长一段时间，似乎永远都没有尽头。这使他变得孤独而痛苦。他担心有一天，她会离开他，再也不会回来。{#CodexBoldFormat}后来某天，索罗担心自己再也见不到她了，便嚎叫大哭，可女神并没有现身。他又在墙上挖了几个坑，但女神也没有现身。他接着把填充物从床里都扒了出来，而女神还是没有现身。看着四周的惨况，索罗感觉自己可能是因为成了个坏孩子而正在被惩罚。之后黑夜之母回来了，她只是环顾四周，跪下来拍拍他的头，告诉他，即使她不能每时每刻都和他在一起，她永远还是会回到他身边的。她一边收拾烂摊子，一边解释说，他只是需要学会该如何保持耐心。现在，索罗知道只要他耐心等待，他永远不会孤独太久。毕竟，他是个好孩子。{#PreviousFormat}”"
+    }
+    {
+		Id = "CerberusSignoff_AssistMax"
+		DisplayName = """
+		来自{#AwardMaxFlavorFormat}刻耳柏洛斯{#AwardDarkFlavorFormat}，最好的孩子。
+			"""
+    }
+    //Moros Mirror
+		{
+			Id = "LowHealthDamage"
+			DisplayName = "捣毁袭击"
+			Description = "对未受伤的敌人造成{#TooltipUpgradeFormat}30%{#PreviousFormat}的额外伤害。每一级{#TooltipUpgradeFormat}{$TempTextData.BaseValue:P}{#PreviousFormat}。"
+    		}
+		{
+			Id = "GemHeal"
+			DisplayName = "妙手回春"
+			Description = " 当你拾取{!Icons.GemSmall}时，回复{#AltUpgradeFormat}{!Icons.HealthUp_Small}{#PreviousFormat}。每一级回复拾取总额的{#TooltipUpgradeFormat}{$TempTextData.BaseValue}%{#PreviousFormat}。"
+    		}
+		{
+			Id = "ExtraChanceFloor"
+			DisplayName = "绝处逢生"
+			Description = "生命值耗尽时，不会死去，而是回复{#TooltipBoldFormat}40%{!Icons.Health_Small}{#PreviousFormat}。{#ItalicFormat}每层区域{#PreviousFormat}限{#TooltipUpgradeFormat}1{#PreviousFormat}次。"
+    		}
+		{
+			Id = "ExtraChanceAlt2"
+			InheritFrom = "ExtraChance"
+			DisplayName = "Infernal Defiance"
+			Description = "生命值耗尽时，不会死去，而是至少回复{#TooltipBoldFormat}40%{!Icons.Health_Small}{#PreviousFormat}。{#ItalicFormat}每层区域{#PreviousFormat}限{#TooltipUpgradeFormat}1{#PreviousFormat}次。"
+		}
+		{
+			Id = "DashlessBonus"
+			DisplayName = "稳扎稳打"
+			Description = "{#PreviousFormat}若你保持3秒没有进行{#BoldFormatGraft}冲刺{#PreviousFormat}，则可造成额外的伤害且增加防御。每一级{#TooltipUpgradeFormat}{$TempTextData.BaseValue:P}{#PreviousFormat}。"
+    		}
+		{
+			Id = "CountAmmoBonus"
+			DisplayName = "无间之血"
+			Description = "每持有一颗{!Icons.Ammo}，造成额外的{#BoldFormatGraft}远程攻击{#PreviousFormat}伤害。每一级{#TooltipUpgradeFormat}{$TempTextData.BaseValue:P}{#PreviousFormat}。"
+    		}
+		{
+			Id = "AmmoBounce"
+			DisplayName = "不散之魂"
+			Description = "{!Icons.Ammo}在掉落前将弹射伤害另一名敌人。每一级{#TooltipUpgradeFormat}+{$TempTextData.BaseValue}{#PreviousFormat}弹射次数。"
+    		}
+		{
+			Id = "BonusMoneyMirror"
+			DisplayName = "致富有方"
+			Description = "你从各种渠道获得的金钱都将增加。每一级{#TooltipUpgradeFormat}{$TempTextData.BaseValue:P}{#PreviousFormat}{!Icons.Currency_Small}。"
+    		}
+		{
+			Id = "CombatRegeneration"
+			DisplayName = "皮糙肉厚"
+			Description = "在战斗中，若你的生命值低于{#BoldFormatGraft}30%{#PreviousFormat}，你将能够缓慢地恢复{!Icons.Health_Small_Tooltip}。每一级在{#ItalicFormat}每3秒中{#TooltipUpgradeFormat}+{$TempTextData.BaseValue}{!Icons.HealthRestore_Small} {#PreviousFormat}。"
+    		}
+		{
+			Id = "EpicBonus"
+			DisplayName = "紫气东来"
+			Description = "每受到一种{#EpicFormat}{$Keywords.Epic}{#PreviousFormat}或更高级别的祝福，你造成的伤害越高。每一级每种祝福提升{#TooltipUpgradeFormat}{$TempTextData.BaseValue:P}{#PreviousFormat}额外伤害。"
+    		}
+		{
+			Id = "EpicBonus_InRun"
+			DisplayName = "紫气东来"
+			Description = "每受到一种{#EpicFormat}{$Keywords.Epic}{#PreviousFormat}或更高级别的祝福，你造成的伤害越高。每一级每种祝福提升{#TooltipUpgradeFormat}{$TempTextData.BaseValue:P}{#PreviousFormat}额外伤害。\n {#ItalicFormat}当前额外伤害加成:{#PreviousFormat}{#TooltipUpgradeFormat}+{$TempTextData.CurrentValue}%{#PreviousFormat}"
+		}
+		{
+			Id = "NPCEncounterBonus"
+			DisplayName = "稀罕奇遇"
+			Description = "提升你遇到{#BoldFormatGraft}特殊{$Keywords.EncounterAlt}{#PreviousFormat}和{$Keywords.FountainPlural}的几率。每一级{#TooltipUpgradeFormat}{$TempTextData.BaseValue:P}{#PreviousFormat}。"
+    		}
+		{
+			Id = "PomFirstGod"
+			DisplayName = "神之纯粹"
+			Description = "你的第一个{#BoldFormatGraft}{$Keywords.GodBoon}{#PreviousFormat}将从更高的等级开始。{#TooltipUpgradeFormat}获得{#UseGiftPointFormat}+1 等级{#PreviousFormat}"
+    		}
+		{
+			Id = "PomFirstGodMetaUpgrade_Off"
+			DisplayName = "{!Icons.MirrorInactive}"
+			OverwriteLocalization = true
+		}
+		{
+			Id = "PomFirstGodMetaUpgrade_On"
+			DisplayName = "{!Icons.MirrorPurchasedCheckmark}"
+			OverwriteLocalization = true
+		}
+		{
+			Id = "RerollPom"
+			DisplayName = "掌控走向"
+			Description = "在{$Keywords.FountainPlural}，你可以花费{!Icons.ReRoll_Small}换得{#AltUpgradeFormat}+1 等级{!Icons.RandomPomSmall}{#PreviousFormat}。每一级可使用{#TooltipUpgradeFormat}1{#PreviousFormat}{!Icons.ReRoll_Small}。"
+    		}
+		{
+			Id = "ReRollPanelAlt2"
+			DisplayName = "{!Icons.ReRoll_Small} Reach Persuasion"
+			Description = "在{$Keywords.FountainPlural}，你可以花费{!Icons.ReRoll_Small}换得{#AltUpgradeFormat}+1 等级{!Icons.RandomPomSmall} {#PreviousFormat}。"
+		}
+		{
+			Id = "ReRollPanelAlt2_Small"
+			InheritFrom = "ReRollPanelAlt2"
+		}
+		{
+			Id = "LowHealthDamageMetaUpgrade"
+			DisplayName = "{$Keywords.LowHealthDamage}"
+			OverwriteLocalization = true
+		}
+		{
+			Id = "LowHealthDamageMetaUpgrade_ShortTotal"
+			DisplayName = "{$TempTextData.Amount:P}"
+			OverwriteLocalization = true
+		}
+		{
+			Id = "GemHealMetaUpgrade"
+			DisplayName = "{$Keywords.GemHeal}"
+			OverwriteLocalization = true
+		}
+		{
+			Id = "GemHealMetaUpgrade_ShortTotal"
+      		DisplayName = "{$TempTextData.Amount:P}{#MetaUpgradeDisplayMiscFormat}来自{!Icons.GemSmall}"
+		}
+		{
+			Id = "GemHealMetaUpgrade_ShortTotalNoIcon"
+			DisplayName = "{$TempTextData.Amount:P}"
+			OverwriteLocalization = true
+		}
+		{
+			Id = "ExtraChanceFloorMetaUpgrade"
+			DisplayName = "{$Keywords.ExtraChanceFloor}"
+			OverwriteLocalization = true
+		}
+		{
+			Id = "ExtraChanceFloorMetaUpgrade_ShortTotal"
+      		DisplayName = "{$TempTextData.Amount}{!Icons.ExtraChance}"
+			OverwriteLocalization = true
+		}
+		{
+			Id = "ExtraChanceFloorMetaUpgrade_ShortTotalNoIcon"
+			DisplayName = "{$TempTextData.Amount}"
+			OverwriteLocalization = true
+		}
+		{
+			Id = "DashlessMetaUpgrade"
+			DisplayName = "{$Keywords.DashlessBonus}"
+			OverwriteLocalization = true
+		}
+		{
+			Id = "DashlessMetaUpgrade_ShortTotal"
+			DisplayName = "{$TempTextData.Amount:P}"
+			OverwriteLocalization = true
+		}
+		{
+			Id = "DashlessMetaUpgrade_ShortTotalNoIcon"
+			DisplayName = "{$TempTextData.Amount:P}"
+			OverwriteLocalization = true
+		}
+		{
+			Id = "CountAmmoMetaUpgrade"
+			DisplayName = "{$Keywords.CountAmmoBonus}"
+			OverwriteLocalization = true
+		}
+		{
+			Id = "CountAmmoMetaUpgrade_ShortTotal"
+			DisplayName = "{$TempTextData.Amount:P}"
+			OverwriteLocalization = true
+		}
+		{
+			Id = "CountAmmoMetaUpgrade_ShortTotalNoIcon"
+			DisplayName = "{$TempTextData.Amount:P}"
+			OverwriteLocalization = true
+		}
+		{
+			Id = "BounceAmmoMetaUpgrade"
+			DisplayName = "{$Keywords.AmmoBounce}"
+			OverwriteLocalization = true
+		}
+		{
+			Id = "BounceAmmoMetaUpgrade_ShortTotal"
+			DisplayName = "+{$TempTextData.Amount}"
+			OverwriteLocalization = true
+		}
+		{
+			Id = "BounceAmmoMetaUpgrade_ShortTotalNoIcon"
+			DisplayName = "{$TempTextData.Amount}"
+			OverwriteLocalization = true
+		}
+		{
+			Id = "BonusMoneyMetaUpgrade"
+			DisplayName = "{$Keywords.BonusMoneyMirror}"
+			OverwriteLocalization = true
+		}
+		{
+			Id = "BonusMoneyMetaUpgrade_ShortTotal"
+			DisplayName = "{$TempTextData.Amount:P}{!Icons.Currency_Small}"
+			OverwriteLocalization = true
+		}
+		{
+			Id = "BonusMoneyMetaUpgrade_ShortTotalNoIcon"
+			DisplayName = "{$TempTextData.Amount:P}{!Icons.Currency_Small}"
+			OverwriteLocalization = true
+		}
+		{
+			Id = "RegenerationMetaUpgrade"
+			DisplayName = "{$Keywords.CombatRegeneration}"
+			OverwriteLocalization = true
+		}
+		{
+			Id = "RegenerationMetaUpgrade_ShortTotal"
+			DisplayName = "{$TempTextData.Amount}{!Icons.HealthRestore_Small}" // {#ItalicFormat}(每三秒。)
+			OverwriteLocalization = true
+		}
+		{
+			Id = "RegenerationMetaUpgrade_ShortTotalNoIcon"
+			DisplayName = "{$TempTextData.Amount}"
+			OverwriteLocalization = true
+		}
+		{
+			Id = "EpicBonusMetaUpgrade"
+			DisplayName = "{$Keywords.EpicBonus}"
+			OverwriteLocalization = true
+		}
+		{
+			Id = "EpicBonusMetaUpgrade_ShortTotal"
+			DisplayName = "{$TempTextData.Amount:P}每{#EpicFormat}{$Keywords.Epic}{#PreviousFormat}"
+		}
+		{
+			Id = "EpicBonusMetaUpgrade_ShortTotalNoIcon"
+			DisplayName = "{$TempTextData.Amount:P}"
+			OverwriteLocalization = true
+		}
+		{
+			Id = "RareNPCMetaUpgrade"
+			DisplayName = "{$Keywords.NPCEncounterBonus}"
+			OverwriteLocalization = true
+		}
+		{
+			Id = "RareNPCMetaUpgrade_ShortTotal"
+			DisplayName = "{$TempTextData.Amount:P}"
+			OverwriteLocalization = true
+		}
+		{
+			Id = "RareNPCMetaUpgrade_ShortTotalNoIcon"
+			DisplayName = "{$TempTextData.Amount:P}"
+			OverwriteLocalization = true
+		}
+		{
+			Id = "PomFirstGodMetaUpgrade"
+			DisplayName = "{$Keywords.PomFirstGod}"
+			OverwriteLocalization = true
+		}
+		{
+			Id = "PomFirstGodMetaUpgrade_ShortTotal"
+			DisplayName = "{$TempTextData.Amount}"
+			OverwriteLocalization = true
+		}
+		{
+			Id = "PomFirstGodMetaUpgrade_ShortTotalNoIcon"
+			DisplayName = "{$TempTextData.Amount}"
+			OverwriteLocalization = true
+		}
+		{
+			Id = "RerollPomMetaUpgrade"
+			DisplayName = "{$Keywords.RerollPom}"
+			OverwriteLocalization = true
+		}
+		{
+			Id = "RerollPomMetaUpgrade_ShortTotal"
+			DisplayName = "{$TempTextData.Amount}{!Icons.ReRoll_Small}"
+			OverwriteLocalization = true
+		}
+		{
+			Id = "RerollPomMetaUpgrade_ShortTotalNoIcon"
+			DisplayName = "{$TempTextData.Amount}"
+			OverwriteLocalization = true
+		}
+		{
+     		Id = "UseGemDrop_Health"
+			DisplayName = "{I}获得{#UseShrinePointFormat}+{$TempTextData.AddResources.Gems}{!Icons.GemSmall}     {#PreviousFormat}{#AltUpgradeFormat}+{$TempTextData.MaxHealthAmount}{!Icons.HealthUp_Small}{#PreviousFormat}"
+		}
+		{
+			Id = "UseGemDropRunProgress_Health"
+			DisplayName = "{I} 获得{#UseShrinePointFormat}+{$TempTextData.AddResources.Gems}{!Icons.GemSmall}     {#PreviousFormat}{#UseMoneyFormat}+{$TempTextData.DropMoney}{!Icons.Currency_Small}     {#PreviousFormat}{#AltUpgradeFormat}+{$TempTextData.MaxHealthAmount}{!Icons.HealthUp_Small}{#PreviousFormat}"
+		}
+		{
+			Id = "Shop_UseGemDrop_Health"
+			DisplayName = "{I} 购买{#UseShrinePointFormat}+{$TempTextData.AddResources.Gems}{!Icons.GemSmall}     {#PreviousFormat}{#AltUpgradeFormat}+{$TempTextData.MaxHealthAmount}{!Icons.HealthUp_Small}{#PreviousFormat}"
+		}
+		{
+			Id = "UseFountainHeal_Reroll"
+			DisplayName = "{I} 回复{#UseTextHealingFormat}{$TempTextData.TooltipHeal}{!Icons.HealthRestore_Small} \n {G} 升级{#UseGiftPointFormat}(-1{!Icons.ReRoll_Small})"
+		}
+		{
+			Id = "UseFountainHeal_CannotReroll"
+			DisplayName = "{I} 回复{#UseTextHealingFormat}{$TempTextData.TooltipHeal}{!Icons.HealthRestore_Small} \n {#UseTextDisabledFormat}无法使用"
+		}
+/*源汉化改进*/
+    {
+      Id = "WeaponUpgradeChoiceMenu_Title"
+      DisplayName = "代达罗斯之锤"
+    }
+    {
+      Id = "AthenaUpgrade_FlavorText01"
+      DisplayName = "瞩目吧，这就是灰眼女神强大的防御能力。"
+    }
+    {
+      Id = "AthenaUpgrade_FlavorText03"
+      DisplayName = "来自奥林匹斯王国灰眼娇女的祝福。"
+    }
+    {
+      Id = "ZeusUpgrade_FlavorText01"
+      DisplayName = "天界和奥林匹斯的主宰。"
+    }
+    {
+      Id = "ZeusUpgrade_FlavorText03"
+      DisplayName = "手握闪电的天空之主与奥林匹斯众神的首脑。"
+    }
+    {
+      Id = "PoseidonUpgrade_FlavorText03"
+      DisplayName = "海洋和陆地上的所有生灵都会战栗于他的心血来潮。"
+    }
+    {
+      Id = "AresUpgrade_FlavorText01"
+      DisplayName = "他的杀意使他化名为“人类的末日”"
+    }
+    {
+      Id = "AresUpgrade_FlavorText02"
+      DisplayName = "他的工作将保证人类永不获得神性。"
+    }
+    {
+      Id = "AphroditeUpgrade_FlavorText01"
+      DisplayName = "奥林匹斯最光彩照人的女神将凡人玩弄在股掌之上。"
+    }
+    {
+      Id = "WeaponUpgrade_FlavorText01"
+      DisplayName = "为哈迪斯完成了他的邪恶设计后，工艺大师丢下了自己的工具。"
+    }
+    {
+      Id = "DionysusUpgrade_FlavorText03"
+      DisplayName = "人类时常想从清晰的理性和敏感的官能中解脱出来。"
+    }
+    {
+      Id = "DemeterUpgrade_FlavorText03"
+      DisplayName = "这位年岁最高的奥林匹斯主神具有掌管天地万物的神力。"
+    }
+    {
+      Id = "IceStrikeArrayTrait"
+      DisplayName = "冰镇美酒"
+      Description = "{$Keywords.Cast}会稍作延迟，然后在目标位置造成{$Keywords.Cloud}的爆炸，对附近的敌人造成伤害并施加{$Keywords.Chill}。\n {!Icons.Bullet}{#PropertyFormat}爆炸伤害：\Column 380 {#UpgradeFormat}{$TooltipData.TooltipDamage:P}"
+    }
+    {
+      Id = "ZeusRangedTrait"
+      DisplayName = "闪电射击"
+      Description = "{$Keywords.Cast}射出连环闪电，在敌人之间弹射。 \n {!Icons.Bullet}{#PropertyFormat}投弹伤害：\Column 380 {$TooltipData.DisplayDelta1}"
+    }
+    {
+      Id = "ZeusBoltAoETrait"
+      DisplayName = "高压雷电"
+      Description = "增加天雷的伤害范围。 \n {!Icons.Bullet}{#PropertyFormat}天雷伤害半径：\Column 380 {$TooltipData.DisplayDelta1}"
+    }
+    {
+      Id = "PerfectDashBoltTraitActivated"
+      DisplayName = "我闪！"
+    }
+    {
+      Id = "AresWeaponTrait"
+      DisplayName = "创伤诅咒"
+      Description = "{$Keywords.Attack}施加{$Keywords.Curse}。 \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.Curse}伤害：\Column 380 {#PreviousFormat}{$TooltipData.DisplayDelta1}"
+    }
+    {
+      Id = "ShieldLoadAmmo_DionysusRangedTrait"
+      DisplayName = "梦幻泡影"
+      Description = "{$Keywords.Cast}对周围的敌人造成伤害，并留下一团{$Keywords.Cloud}。\n {!Icons.Bullet}{#PropertyFormat}爆炸伤害：\Column 380 {$TooltipData.DisplayDelta2}"
+    }
+    {
+      Id = "SpearSpinChargeAreaDamageTrait"
+      DisplayName = "烈焰扫击"
+      Description = "{$Keywords.Spin} 蓄力时，你会获得{$Keywords.Sturdy}效果，可造成{#AltUpgradeFormat}{$TooltipData.TooltipDamage} {#PreviousFormat}脉冲伤害。"
+    }
+    {
+      Id = "RareBoonChance"
+      DisplayName = "上面关照"
+      Description = "{#BoldFormatGraft}{$Keywords.GodBoon} {#PreviousFormat}有更高的几率成为{#RareFormat}{$Keywords.Rare}{#PreviousFormat}，每级提高{#TooltipUpgradeFormat}{$TempTextData.BaseValue:P} {#PreviousFormat}。"
+    }
+    {
+      Id = "ArthurAspect"
+      DisplayName = "誓约胜利之剑"
+      Description = "{#ItalicFormat}招式变化{#PreviousFormat}：{$Keywords.Attack}出招更重；{$Keywords.Special}会生成防御结界，使敌人减速。"
+    }
+    {
+      Id = "ArthurSpecial"
+      DisplayName = "风王结界"
+      Description = "{#ItalicFormat}亚瑟形态{#PreviousFormat}：按 {A3} 可以召唤守护结界，持续{#BoldFormatGraft}7 秒{#PreviousFormat}。"
+    }
+    {
+      Id = "ZeusUpgrades"
+      DisplayName = "奥林匹斯之王"
+      Description = "有朝一日，冥王之子定能获得宙斯的各种祝福。"
+    }
+    {
+      Id = "WeaponUpgrade"
+      DisplayName = "代达罗斯之锤"
+    }
+    {
+      Id = "NPC_Chaos_01"
+      DisplayName = "卡俄斯"
+      Description = "无名万物之始"
+    }
+    {
+      Id = "NPC_Persephone_01A"
+      DisplayName = "珀尔塞福涅"
+      Description = "冥后"
+    }
+    {
+      Id = "NPC_Persephone_Home_01"
+      InheritFrom = "NPC_Persephone_01"
+      Description = "冥后"
+    }
+    {
+      Id = "ClearRequiredTraitsHermes"
+      DisplayName = "赫尔墨斯的东家"
+    }
+    {
+      Id = "ClearRequiredTraitsChaos"
+      DisplayName = "卡俄斯的苗裔"
+    }
+
   ]
 }
