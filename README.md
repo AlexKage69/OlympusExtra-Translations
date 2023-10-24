@@ -8,7 +8,7 @@ Dependency on OlympusExtra being installed correctly.
 To Run:
 Download this repository under Mods/ and un-comment modfile.txt, for example to support french: 
 
-:: Include "modfile_de.txt"
+```:: Include "modfile_de.txt"
 :: Include "modfile_es.txt"
 Include "modfile_fr.txt"
 :: Include "modfile_it.txt"
@@ -18,6 +18,7 @@ Include "modfile_fr.txt"
 :: Include "modfile_pt-BR.txt"
 :: Include "modfile_ru.txt"
 :: Include "modfile_zh-CN.txt"
+```
 
 Then run modimporter.exe.
 
@@ -27,6 +28,7 @@ Fill free to fill up the BLANKS in the text and add them as new Pull Requests.
 DisplayName and Description from english are captionned in comments.
 
 ____________________________ OLD EXPLANATION _______________________
+
 If you want to fill it up, all you have to do is search in the OlympusExtra Mod code like Apollo.lua for example.
 
 For file _LootData.pl.sjson, search "LootData", if nothing then nothing.
