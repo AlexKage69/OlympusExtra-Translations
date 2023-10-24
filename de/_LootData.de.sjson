@@ -489,7 +489,7 @@ DisplayName = ""
 {
 /*
 Event: ApolloRunProgress05
-Apollo: Facing a three-headed dog, eh Zagzag? Well, I'll offer you a bit of informational poetry. {#DialogueItalicFormat}Ahem{#PreviousFormat}. “The trick with any beast is ter know how to calm 'em. Jus' play 'im a bit o' music an' he'll fall straight ter sleep!”
+Apollo: Facing a three-headed dog, eh Zagzag? Well, I'll offer you a bit of informational poetry. {#DialogueItalicFormat}Ahem{#PreviousFormat}. ï¿½The trick with any beast is ter know how to calm 'em. Jus' play 'im a bit o' music an' he'll fall straight ter sleep!ï¿½
 */
 Id = "Apollo_0078"
 Speaker = "Apollo"
@@ -1151,7 +1151,7 @@ DisplayName = ""
 {
 /*
 Event: ApolloRejection09
-Apollo: Let me sing you a song, Cousin. It's called “Zagreus dies once more.” It's very catchy.
+Apollo: Let me sing you a song, Cousin. It's called ï¿½Zagreus dies once more.ï¿½ It's very catchy.
 */
 Id = "Apollo_0106"
 Speaker = "Apollo"
