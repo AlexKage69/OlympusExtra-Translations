@@ -1,6 +1,32 @@
 # OlympusExtra-Translations
+
 These are translation packages for OlympusExtra Mod for Hades.
 
+Latest support is 1.3.3.
+Dependency on OlympusExtra being installed correctly.
+
+To Run:
+Download this repository under Mods/ and un-comment modfile.txt, for example to support french: 
+
+:: Include "modfile_de.txt"
+:: Include "modfile_es.txt"
+Include "modfile_fr.txt"
+:: Include "modfile_it.txt"
+:: Include "modfile_ja.txt"
+:: Include "modfile_ko.txt"
+:: Include "modfile_pl.txt"
+:: Include "modfile_pt-BR.txt"
+:: Include "modfile_ru.txt"
+:: Include "modfile_zh-CN.txt"
+
+Then run modimporter.exe.
+
+To Help with Translation:
+I created a automatic process to extract the translation from the game for OlympusExtra. 
+Fill free to fill up the BLANKS in the text and add them as new Pull Requests.
+DisplayName and Description from english are captionned in comments.
+
+____________________________ OLD EXPLANATION _______________________
 If you want to fill it up, all you have to do is search in the OlympusExtra Mod code like Apollo.lua for example.
 
 For file _LootData.pl.sjson, search "LootData", if nothing then nothing.
