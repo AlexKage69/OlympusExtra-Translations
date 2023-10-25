@@ -10,42 +10,42 @@ Texts = [
 */
     {
       Id = "UpgradeChoiceMenu_Title_ApolloUpgrade"
-      DisplayName = ""
+      DisplayName = "阿波罗的祝福"
     }
 /*
       DisplayName = "Apollo Grew Displeased!"
 */
     {
       Id = "Player_GodDispleased_ApolloUpgrade"
-      DisplayName = ""
+      DisplayName = "阿波罗不高兴了！"
     }
 /*
       DisplayName = "Boons of Hera"
 */
     {
       Id = "UpgradeChoiceMenu_Title_HeraUpgrade"
-      DisplayName = ""
+      DisplayName = "赫拉的祝福"
     }
 /*
       DisplayName = "Hera Grew Displeased!"
 */
     {
       Id = "Player_GodDispleased_HeraUpgrade"
-      DisplayName = ""
+      DisplayName = "赫拉不高兴了！"
     }
 /*
       DisplayName = "Boons of Hestia"
 */
     {
       Id = "UpgradeChoiceMenu_Title_HestiaUpgrade"
-      DisplayName = ""
+      DisplayName = "赫斯提亚的祝福"
     }
 /*
       DisplayName = "Hestia Grew Displeased!"
 */
     {
       Id = "Player_GodDispleased_HestiaUpgrade"
-      DisplayName = ""
+      DisplayName = "赫斯提亚不高兴了！"
     }
 ]
 }
