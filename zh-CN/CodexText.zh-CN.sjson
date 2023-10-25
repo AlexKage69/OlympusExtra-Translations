@@ -11,7 +11,7 @@ Texts = [
     {
       Id = "CodexData_Apollo_0001"
       Speaker = "Achilles"
-      DisplayName = ""
+      DisplayName = "“……跟他的孪生姐姐阿尔忒弥斯相同的是，阿波罗是箭术之神并且酷爱狩猎。此外他还是诗歌之神，司掌音乐舞蹈、真实与预言，甚至能够治病驱疾。然而他最引人注目的乃是光明之神的一面，常常被与太阳联系到一起；就像他的姐姐被与月亮联系到一起一样……”"
     }
 /*
       DisplayName = "'...Much like his twin sister Artemis, Apollo is the god of archery and loves a good hunt. However, he is also the god of poetry, music and dance, truth and prophecy, even healing and diseases. But most notably of all, he is the god of light, as closely tied to the sun as his sister is the moon. {#CodexBoldFormat}Unlike his sister, he is friendly and outgoing, and the two of them frequently seem to be in conflict with one another. I suppose this is similar to many mortal sibling relationships; as masters of the sun and the moon, it seems inevitable that they are two sides of the same coin...{#PreviousFormat}'"
@@ -19,7 +19,7 @@ Texts = [
     {
       Id = "CodexData_Apollo_0002"
       Speaker = "Achilles"
-      DisplayName = ""
+      DisplayName = "“……跟他的孪生姐姐阿尔忒弥斯相同的是，阿波罗是箭术之神并且酷爱狩猎。此外他还是诗歌之神，司掌音乐舞蹈、真实与预言，甚至能够治病驱疾。然而他最引人注目的乃是光明之神的一面，常常被与太阳联系到一起；就像他的姐姐被与月亮联系到一起一样。{#CodexBoldFormat}跟他的姐姐所不同的是，阿波罗的性子跳脱而外向，这让他们两个常常有着些冲突。可我猜这跟凡人的兄弟姐妹间的小打小闹没什么两样；作为日月之主宰，他们不可避免地是同枚硬币的一体两面……{#PreviousFormat}”"
     }
 /*
       DisplayName = "'...Much like his twin sister Artemis, Apollo is the god of archery and loves a good hunt. However, he is also the god of poetry, music and dance, truth and prophecy, even healing and diseases. But most notably of all, he is the god of light, as closely tied to the sun as his sister is the moon. Unlike his sister, he is friendly and outgoing, and the two of them frequently seem to be in conflict with one another. I suppose this is similar to many mortal sibling relationships; as masters of the sun and the moon, it seems inevitable that they are two sides of the same coin. {#CodexBoldFormat}Much like Dionysus, Apollo is beloved by much of mortal-kind for the joy his music and healing brings to them. I have heard that when he directs the Muses in chorus, it is enough to move even Zeus himself to tears.'{#PreviousFormat}'"
@@ -27,7 +27,7 @@ Texts = [
     {
       Id = "CodexData_Apollo_0003"
       Speaker = "Achilles"
-      DisplayName = ""
+      DisplayName = "“……跟他的孪生姐姐阿尔忒弥斯相同的是，阿波罗是箭术之神并且酷爱狩猎。此外他还是诗歌之神，司掌音乐舞蹈、真实与预言，甚至能够治病驱疾。然而他最引人注目的乃是光明之神的一面，常常被与太阳联系到一起；就像他的姐姐被与月亮联系到一起一样。跟他的姐姐所不同的是，阿波罗的性子跳脱而外向，这让他们两个常常有着些冲突。可我猜这跟凡人的兄弟姐妹间的小打小闹没什么两样；作为日月之主宰，他们不可避免地是同枚硬币的一体两面。{#CodexBoldFormat}阿波罗跟迪奥尼索司一样地被很多凡人所爱戴，因为他带来的音乐与治愈使人们感到幸福。我听说，当他指挥缪斯女神合唱时，就连宙斯都能被感动得流下眼泪。{#PreviousFormat}”"
     }
 /*
       DisplayName = "'...The Mistress of the Heavens, a queen above all other queens. She stands side by side with the great Lord Zeus, ruling over Olympus together. A prideful and benevolent Goddess who presides over all mortal unions and offers protection to women bringing new life to the world. This is what I knew of Queen Hera as a mortal, and only in death did I learn the truth was not as I, and most mortals, imagined...'"
@@ -35,7 +35,7 @@ Texts = [
     {
       Id = "CodexData_Hera_0001"
       Speaker = "Achilles"
-      DisplayName = ""
+      DisplayName = "“……天界的女主人，诸后的天后；是她同伟大的神王宙斯并肩而立，共同统治奥林匹斯山。这位德高望重的女神执掌着凡人间的婚姻，并且为给凡间带来新生命的妇女们提供保佑。这是在我还是凡人的时候了解到的赫拉陛下，而如今在我死后，我才发现真相并不像我和大多数凡人所想象的那样……”"
     }
 /*
       DisplayName = "'... The Mistress of the Heavens, a queen above all other queens. She stands side by side with the great Lord Zeus, ruling over Olympus together. A prideful and benevolent Goddess who presides over all mortal unions and offers protection to women bringing new life to the world. This is what I knew of Queen Hera as a mortal, and only in death did I learn the truth was not as I, and most mortals, imagined. {#CodexBoldFormat}While Queen Hera is a benevolent Goddess to most mortals, her benevolence hides a terribly vengeful nature. The many illegitimate lovers and offsprings of Lord Zeus who continuously arrive at the Master's House, telling of their miserable ends by her hand, have made it clear...{#PreviousFormat}'"
@@ -43,7 +43,7 @@ Texts = [
     {
       Id = "CodexData_Hera_0002"
       Speaker = "Achilles"      
-      DisplayName = ""
+      DisplayName = "“……天界的女主人，诸后的天后；是她同伟大的神王宙斯并肩而立，共同统治奥林匹斯山。这位德高望重的女神执掌着凡人间的婚姻，并且为给凡间带来新生命的妇女们提供保佑。这是在我还是凡人的时候了解到的赫拉陛下，而如今在我死后，我才发现真相并不像我和大多数凡人所想象的那样。{#CodexBoldFormat}虽然赫拉陛下对大多数凡人来说是一位仁慈的女神，但她仁慈一面的背后却暗藏着热衷于复仇的睚眦必报。宙斯大人的那些数不过来的情妇与私生子们总是不曾间断地投告到他的殿宇，念叨着他们在她的手下所承受的那些悲惨遭遇，也说明了这点……{#PreviousFormat}”"
     }
 /*
       DisplayName = "'... The Mistress of the Heavens, a queen above all other queens. She stands side by side with the great Lord Zeus, ruling over Olympus together. A prideful and benevolent Goddess who presides over all mortal unions and offers protection to women bringing new life to the world. This is what I knew of Queen Hera as a mortal, and only in death did I learn the truth was not as I, and most mortals, imagined.  While Queen Hera is a benevolent Goddess to most mortals, her benevolence hides a terribly vengeful nature. The many illegitimate lovers and offsprings of Lord Zeus who continuously arrive at the Master's House, telling of their miserable ends by her hand, have made it clear. {#CodexBoldFormat}I do not know if Queen Hera has always been this way, or if envy or jealousy, perhaps even both, have made her so. What I do know however, is that any foolish enough to cross the Queen Hera has never died peacefully, and none ever will.{#PreviousFormat}'"
@@ -51,7 +51,7 @@ Texts = [
     {
       Id = "CodexData_Hera_0003"
       Speaker = "Achilles" 
-      DisplayName = ""
+      DisplayName = "“……天界的女主人，诸后的天后；是她同伟大的神王宙斯并肩而立，共同统治奥林匹斯山。这位德高望重的女神执掌着凡人间的婚姻，并且为给凡间带来新生命的妇女们提供保佑。这是在我还是凡人的时候了解到的赫拉陛下，而如今在我死后，我才发现真相并不像我和大多数凡人所想象的那样。虽然赫拉陛下对大多数凡人来说是一位仁慈的女神，但她仁慈一面的背后却暗藏着热衷于复仇的睚眦必报。宙斯大人的那些数不过来的情妇与私生子们总是不曾间断地投告到他的殿宇，念叨着他们在她的手下所承受的那些悲惨遭遇，也说明了这点。{#CodexBoldFormat}我不知道赫拉陛下是生来如此，还是长久地嫉恨和怨妒令她面目全非。我所知道的就仅限于，所有那些愚蠢透顶到胆敢冒犯她的人没一个能安稳地断气，也不会有那么一个人能吧。{#PreviousFormat}”"
     }
 /*
       DisplayName = "'...I believe that few Olympians have such high regard for mortal life as the goddess of the hearth. Far kinder and more forgiving than her sisters, she was once tasked by Zeus with tending the fires and feeding all of Olympus. Indeed, I was always most grateful in my mortal days to have her blessing on cold and dark nights...'"
@@ -59,7 +59,7 @@ Texts = [
     {
       Id = "CodexData_Hestia_0001"
       Speaker = "Achilles"
-      DisplayName = ""
+      DisplayName = "“……我无比确信的是在奥林匹斯众神中很少有像炉灶女神赫斯提亚那般珍视凡人性命的存在。她远比她的姐妹们温柔而宽容，她从前被宙斯委任照看火种以及为奥林匹斯上下烹饪料理的职责。我凡间的那些日子，一直感激着她在漆黑寒冷的夜晚里对我的保佑……”"
     }
 /*
       DisplayName = "'...I believe that few Olympians have such high regard for mortal life as the goddess of the hearth. Far kinder and more forgiving than her sisters, she was once tasked by Zeus with tending the fires and feeding all of Olympus. Indeed, I was always most grateful in my mortal days to have her blessing on cold and dark nights. {#CodexBoldFormat}Although she no longer resides on the mountaintop with the rest of her family, I have reason to believe that she remains in contact with not only her sisters, but several in the Master's domain as well...{#PreviousFormat}'"
@@ -67,7 +67,7 @@ Texts = [
     {
       Id = "CodexData_Hestia_0002"
       Speaker = "Achilles"
-      DisplayName = ""
+      DisplayName = "“……我无比确信的是在奥林匹斯众神中很少有像炉灶女神赫斯提亚那般珍视凡人性命的存在。她远比她的姐妹们温柔而宽容，她从前被宙斯委任照看火种以及为奥林匹斯上下烹饪料理的职责。我凡间的那些日子，一直感激着她在漆黑寒冷的夜晚里对我的保佑。{#CodexBoldFormat}尽管她已经不再居住于奥林匹斯山伴随家人，赫斯提亚依旧保持着不时地同她的兄弟姐妹甚至冥王联系的习惯……{#PreviousFormat}”"
     }
 /*
       DisplayName = "'...I believe that few Olympians have such high regard for mortal life as the goddess of the hearth. Far kinder and more forgiving than her sisters, she was once tasked by Zeus with tending the fires and feeding all of Olympus. Indeed, I was always most grateful in my mortal days to have her blessing on cold and dark nights. Although she no longer resides on the mountaintop with the rest of her family, I have reason to believe that she remains in contact with not only her sisters, but several in the Master's domain as well. {#CodexBoldFormat}Unlike most of her Olympic brethren, she remains ever hopeful that one day all the gods may forgive their past disagreements, and live together in harmony.{#PreviousFormat}'"
@@ -75,7 +75,7 @@ Texts = [
     {
       Id = "CodexData_Hestia_0003"
       Speaker = "Achilles"
-      DisplayName = ""
+      DisplayName = "“……我无比确信的是在奥林匹斯众神中很少有像炉灶女神赫斯提亚那般珍视凡人性命的存在。她远比她的姐妹们温柔而宽容，她从前被宙斯委任照看火种以及为奥林匹斯上下烹饪料理的职责。我凡间的那些日子，一直感激着她在漆黑寒冷的夜晚里对我的保佑。尽管她已经不再居住于奥林匹斯山伴随家人，赫斯提亚依旧保持着不时地同她的兄弟姐妹甚至冥王联系的习惯。{#CodexBoldFormat}与她居住在奥林匹斯山上的亲戚们不同，她依旧希望着有朝一日众神们能抛弃过去的分歧，再次融洽地生活在一起。{#PreviousFormat}”"
     }
 /*
       DisplayName = "'...Unlike its heart, the vessel which encases a Centaur's soul has lost most of its original owner's tenacity. Charon is the only one who knows how to collect these, making them only available from his shop, I believe...'"
@@ -83,7 +83,7 @@ Texts = [
     {
       Id = "CodexData_Hestia_0004"
       Speaker = "Achilles"
-      DisplayName = ""
+      DisplayName = "“……不同于半人马之心，萦绕半人马灵魂附生的血管已经失去了其原有的强韧。我想卡戎是唯一一个知道收集并在商店里出售它们的家伙……”"
     }
 /*
       DisplayName = "'...Unlike its heart, the vessel which encases a Centaur's soul has lost most of its original owner's tenacity. Charon is the only one who knows how to collect these, making them only available from his shop, I believe. {#CodexBoldFormat}Rumor has it the goddess of the hearth somehow convinced the boatman to share this knowledge, and might now be called upon in certain circumstances to provide those in need with this rare artifact as well.{#PreviousFormat}'"
@@ -91,7 +91,7 @@ Texts = [
     {
       Id = "CodexData_Hestia_0005"
       Speaker = "Achilles"
-      DisplayName = ""
+      DisplayName = "“……不同于半人马之心，萦绕半人马灵魂附生的血管已经失去了其原有的强韧。我想卡戎是唯一一个知道收集并在商店里出售它们的家伙。{#CodexBoldFormat}谣传炉灶女神不知怎的就说服了摆渡人了分享他有关于此的知识，然后这件珍稀的制品在某些特定的情况下就被摆上了货架。{#PreviousFormat}”"
     }
 ]
 }
