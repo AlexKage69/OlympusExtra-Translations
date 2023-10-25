@@ -10,63 +10,63 @@ Texts = [
 */
      {
       Id = "Sisyphus_EnhancedOfferText01"
-      DisplayName = ""
+      DisplayName = "{#DialogueItalicFormat}西西弗斯信赖地给出了所有奖励。"
     }
 /*
       DisplayName = "{#DialogueItalicFormat}Eurydice shares in totality her delectable treats."
 */
     {
       Id = "Eurydice_EnhancedOfferText01"
-      DisplayName = ""
+      DisplayName = "{#DialogueItalicFormat}欧律狄克分享了她全部的美食。"
     }
 /*
       DisplayName = "{#DialogueItalicFormat}Patroclus gives away all his premium goods."
 */
     {
       Id = "Patroclus_EnhancedOfferText01"
-      DisplayName = ""
+      DisplayName = "{#DialogueItalicFormat}普特洛克勒斯贡献了一切高级商品。"
     }
 /*
       DisplayName = "{#DialogueItalicFormat}Hera offers a choice of benefits on behalf of Sisyphus."
 */
     {
       Id = "Hera_OfferText01"
-      DisplayName = ""
+      DisplayName = "{#DialogueItalicFormat}赫拉可以提供西西弗斯的一项奖励。"
     }
 /*
       DisplayName = "{#DialogueItalicFormat}Hera offers one of Eurydice's deltectable treats."
 */
     {
       Id = "Hera_OfferText02"
-      DisplayName = ""
+      DisplayName = "{#DialogueItalicFormat}赫拉可以提供欧律狄克的一顿美食。"
     }
 /*
       DisplayName = "{#DialogueItalicFormat}Hera offers a choice of premium goods from Patroclus."
 */
     {
       Id = "Hera_OfferText03"
-      DisplayName = ""
+      DisplayName = "{#DialogueItalicFormat}赫拉可以提供普特洛克勒斯的一样高级商品。"
     }
 /*
       DisplayName = "{#DialogueItalicFormat}Hestia offers a choice of benefits on behalf of Sisyphus."
 */
     {
       Id = "Hestia_OfferText01"
-      DisplayName = ""
+      DisplayName = "{#DialogueItalicFormat}赫斯提亚可以提供西西弗斯的一项奖励。"
     }
 /*
       DisplayName = "{#DialogueItalicFormat}Hestia offers one of Eurydice's deltectable treats."
 */
     {
       Id = "Hestia_OfferText02"
-      DisplayName = ""
+      DisplayName = "{#DialogueItalicFormat}赫斯提亚可以提供欧律狄克的一顿美食。"
     }
 /*
       DisplayName = "{#DialogueItalicFormat}Hestia offers a choice of premium goods from Patroclus."
 */
     {
       Id = "Hestia_OfferText03"
-      DisplayName = ""
+      DisplayName = "{#DialogueItalicFormat}赫斯提亚可以提供普特洛克勒斯的一样高级商品。"
     }
 ]
 }
