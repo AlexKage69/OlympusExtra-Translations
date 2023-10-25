@@ -11,15 +11,15 @@ Texts = [
 */
 		{
 			Id = "NPC_Apollo_01"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "阿波罗"
+			Description = "光明之神"
 		}		
 /*
 			DisplayName = "Met Apollo"
 */
 		{
 			Id = "ApolloFirstPickUp"
-			DisplayName = ""
+			DisplayName = "已见到阿波罗"
 		}
 /*
 			DisplayName = "Apollo"
@@ -27,8 +27,8 @@ Texts = [
 */
 		{
 			Id = "ApolloUpgrade"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "阿波罗"
+			Description = "光明之神"
 		}
 /*
 			DisplayName = "God of Light"
@@ -36,8 +36,8 @@ Texts = [
 */
 		{
 			Id = "ApolloUpgrades"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "光明之神"
+			Description = "有朝一日，冥王之子定能获得阿波罗的各种祝福。"
 		}
 /*
 			DisplayName = "Sheet Collector"
@@ -45,47 +45,47 @@ Texts = [
 */
 		{
 			Id = "CosmeticsMusic"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "采风集乐"
+			Description = "有朝一日，冥王之子定能集齐宫廷音乐家所提供的所有乐谱。"
 		}
 /*
 			DisplayName = "his music is a gateway to the mind, listen up and see what you find."
 */
 		{
 			Id = "ApolloUpgrade_FlavorText01"
-			DisplayName = ""
+			DisplayName = "音乐是通往心灵大门的钥匙，听听你的发现。"
 		}
 /*
 			DisplayName = "only the purest entities may see beyond his power."
 */
 		{
 			Id = "ApolloUpgrade_FlavorText02"
-			DisplayName = ""
+			DisplayName = "只有最纯正之人才能理解他的境界。"
 		}
 /*
 			DisplayName = "he shines so brightly, he can ward off evil."
 */
 		{
 			Id = "ApolloUpgrade_FlavorText03"
-			DisplayName = ""
+			DisplayName = "救助苦难，驱散厄运之神。"
 		}		
 /*
 			DisplayName = "Blind"
 			Description = "{#ItalicFormat}{$Keywords.Status}{#PreviousFormat}: For {#BoldFormatGraft}{$TooltipData.TooltipBlindDuration} Sec{#PreviousFormat}., victim have a {#UpgradeFormat}{$TooltipData.TooltipBlindPower:P} {#PreviousFormat}chance to miss their next attack."
 */
 		{
-      		Id = "ApolloBlind"
-			DisplayName = ""
-			Description = ""
+      			Id = "ApolloBlind"
+			DisplayName = "失明"
+			Description = "{#ItalicFormat}{$Keywords.Status}{#PreviousFormat}: 持续至少 {#BoldFormatGraft}{$TooltipData.TooltipBlindDuration} 秒{#PreviousFormat}，受害者有至少 {#UpgradeFormat}{$TooltipData.TooltipBlindPower:P}{#PreviousFormat}的几率Miss下一次攻击。"
 		}
 /*
 			DisplayName = "Protection"
 			Description = "Damage from distant foes is less effective."
 */
 		{
-      		Id = "DamageResist"
-			DisplayName = ""
-			Description = ""
+      			Id = "DamageResist"
+			DisplayName = "庇护"
+			Description = "敌人远程攻击造成的伤害下降。"
 		}
 /*
 			DisplayName = "Blinding Strike"
@@ -93,8 +93,8 @@ Texts = [
 */
 		{
 			Id = "ApolloWeaponTrait"
-			DisplayName = ""
-			Description = "" 
+			DisplayName = "失明攻击"
+			Description = "{$Keywords.Attack}更强，可以施加{$Keywords.ApolloBlind}。 \n {!Icons.Bullet}{#PropertyFormat}攻击伤害:  \Column 380 {#PreviousFormat}{$TooltipData.DisplayDelta1}" 
 		} 		
 /*
 			Description = "Your {$Keywords.Attack} deals more damage and inflicts {$Keywords.ApolloBlind}. \n {!Icons.Bullet}{#PropertyFormat}Attack Damage: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}"
@@ -102,7 +102,7 @@ Texts = [
 		{
 			Id = "ApolloWeaponTrait_Initial"
 			InheritFrom = "ApolloWeaponTrait"
-			Description = ""
+			Description = "{$Keywords.Attack} 更强，可以施加{$Keywords.ApolloBlind}。 \n {!Icons.Bullet}{#PropertyFormat}攻击伤害： \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}"
 		}
 /*
 			DisplayName = "Blinding Flourish"
@@ -110,8 +110,8 @@ Texts = [
 */
 		{
 			Id = "ApolloSecondaryTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "失明乱舞"
+			Description = "{$Keywords.Special}更强，可以施加{$Keywords.ApolloBlind}。 \n {!Icons.Bullet}{#PropertyFormat}特殊攻击伤害： \Column 380 {#PreviousFormat}{$TooltipData.DisplayDelta1}"
 		} 	
 /*
 			Description = "Your {$Keywords.Special} deals more damage and inflicts {$Keywords.ApolloBlind}. \n {!Icons.Bullet}{#PropertyFormat}Special Damage: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}"
@@ -119,7 +119,7 @@ Texts = [
 		{
 			Id = "ApolloSecondaryTrait_Initial"
 			InheritFrom = "ApolloSecondaryTrait"
-			Description = ""
+			Description = "{$Keywords.Special}更强，可以施加{$Keywords.ApolloBlind}。 \n {!Icons.Bullet}{#PropertyFormat}特殊攻击伤害： \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}"
 		}		
 /*
 			DisplayName = "Radiant Dash"
@@ -127,8 +127,8 @@ Texts = [
 */
 		{
 			Id = "ApolloDashTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "璀璨冲刺"
+			Description = "{$Keywords.Dash}时创造一个光环，对敌人造成伤害并施加{$Keywords.ApolloBlind}。 \n {!Icons.Bullet}{#PropertyFormat}冲刺伤害: \Column 380 {#PreviousFormat}{$TooltipData.DisplayDelta1}"
 		} 
 /*
 			Description = "Your {$Keywords.Dash} summons light where you started, dealing damage and inflicting {$Keywords.ApolloBlind}. \n {!Icons.Bullet}{#PropertyFormat}Light Damage: \Column 380 {#PreviousFormat}{$TooltipData.NewTotal1}"
@@ -136,14 +136,14 @@ Texts = [
 		{
 			Id = "ApolloDashTrait_Initial"
 			InheritFrom = "ApolloDashTrait"
-			Description = ""
+			Description = "{$Keywords.Dash}时创造一个光环，对敌人造成伤害并施加{$Keywords.ApolloBlind}。 \n {!Icons.Bullet}{#PropertyFormat}冲刺伤害: \Column 380 {#PreviousFormat}{$TooltipData.NewTotal1}"
 		}
 /*
 			DisplayName = "From Apollo"
 */
 		{
 			Id = "ApolloSignoff"
-			DisplayName = ""
+			DisplayName = "来自阿波罗"
 		}
 /*
 			DisplayName = """
@@ -153,9 +153,9 @@ Texts = [
 		{
 			Id = "ApolloSignoff_Max"
 			DisplayName = ""
-				From {#AwardMaxFlavorFormat}Apollo{#AwardDarkFlavorFormat}; you share a {#AwardMaxFlavorFormat}Harmonious Bond
+				你获得了来自{#AwardMaxFlavorFormat}阿波罗{#AwardDarkFlavorFormat}的{#AwardMaxFlavorFormat}悦耳羁绊\n  \n
 
-				{#AwardDarkFlavorFormat}Sometimes it takes a prophet to foresee a great friendship.
+				{#AwardDarkFlavorFormat}有时候，只有先知才能预见一段伟大的友谊。
 			"""
 		}
 /*
@@ -163,23 +163,23 @@ Texts = [
 			Description = "Detonates after a brief moment, inflicting {$Keywords.ApolloBlind} on foes in the area for {#BoldFormatGraft}{$TooltipData.TooltipBlindDuration} Sec{#PreviousFormat}."
 */
 		{
-      		Id = "FlashBomb"
-			DisplayName = ""
-			Description = ""
+      			Id = "FlashBomb"
+			DisplayName = "闪光炸弹"
+			Description = "片刻后引爆，对区域内的敌人造成{$Keywords.ApolloBlind}，持续{#BoldFormatGraft}{$TooltipData.TooltipBlindDuration}秒{#PreviousFormat}。"
 		}
 /*
 			DisplayName = "Miss"
 */
 		{
 			Id = "Combat_Miss"
-			DisplayName = ""
+			DisplayName = "Miss"
 		}
 /*
 			DisplayName = "Blind"
 */
 		{
 			Id = "Combat_Blinded"
-			DisplayName = ""
+			DisplayName = "失明"
 		}
 /*
 			DisplayName = "Apollo's Aid"
@@ -187,8 +187,8 @@ Texts = [
 */
 		{
 			Id = "ApolloShoutTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "阿波罗之援"
+			Description = "{$Keywords.Wrath}后，进入{$Keywords.Invulnerable}状态以光柱追击并灼烧敌人。 持续时间{#BoldFormat}{$TooltipData.AddShout.SuperDuration}秒{#PreviousFormat}。 \n {!Icons.Bullet}{#PropertyFormat}光柱伤害: \Column 380 {$TooltipData.DisplayDelta1}{#ItalicFormat}(每{$TooltipData.TooltipInterval}秒){#PreviousFormat}  \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.EXWrath}: \Column 380 {#OldFormat}1.5x 光柱伤害"
 		}		
 /*
 			Description = "Your {$Keywords.Wrath} makes you {$Keywords.Invulnerable} and fires a beam of light for {#BoldFormat}{$TooltipData.AddShout.SuperDuration} Sec{#PreviousFormat}. \n {!Icons.Bullet}{#PropertyFormat}Beam Damage: \Column 380 {$TooltipData.DisplayDelta1} {#ItalicFormat}(every {$TooltipData.TooltipInterval} Sec.){#PreviousFormat} \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.EXWrath}: \Column 380 {#OldFormat}1.5x Beam Damage"
@@ -196,7 +196,7 @@ Texts = [
 		{
 			Id = "ApolloShoutTrait_Tray"
 			InheritFrom = "ApolloShoutTrait"
-			Description = ""
+			Description = "{$Keywords.Wrath}后，进入{$Keywords.Invulnerable}状态以光柱追击并灼烧敌人。 持续时间{#BoldFormat}{$TooltipData.AddShout.SuperDuration}秒{#PreviousFormat}。 \n {!Icons.Bullet}{#PropertyFormat}光柱伤害: \Column 380 {$TooltipData.DisplayDelta1}{#ItalicFormat}(每{$TooltipData.TooltipInterval}秒){#PreviousFormat}  \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.EXWrath}: \Column 380 {#OldFormat}1.5x 光柱伤害"
 		}	
 /*
 			Description = "Your {$Keywords.Wrath} makes you {$Keywords.Invulnerable} and fires a beam of light for {#BoldFormat}{$TooltipData.AddShout.SuperDuration} Sec{#PreviousFormat}. \n {!Icons.Bullet}{#PropertyFormat}Beam Damage: \Column 380 {$TooltipData.NewTotal1} {#ItalicFormat}(every {$TooltipData.TooltipInterval} Sec.){#PreviousFormat} \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.EXWrath}: \Column 380 {#UpgradeFormat}1.5x Beam Damage"
@@ -204,7 +204,7 @@ Texts = [
 		{
 			Id = "ApolloShoutTrait_Initial"
 			InheritFrom = "ApolloShoutTrait"
-			Description = ""
+			Description = "{$Keywords.Wrath}后，进入{$Keywords.Invulnerable}状态以光柱追击并灼烧敌人。 持续时间{#BoldFormat}{$TooltipData.AddShout.SuperDuration}秒{#PreviousFormat}。 \n {!Icons.Bullet}{#PropertyFormat}造成伤害: \Column 380 {$TooltipData.NewTotal1}{#ItalicFormat}(每{$TooltipData.TooltipInterval}秒){#PreviousFormat}  \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.EXWrath}: \Column 380 {#UpgradeFormat}1.5x 光柱伤害"
 		} 
 /*
 			DisplayName = "Blinding Bomb"
@@ -212,8 +212,8 @@ Texts = [
 */
 		{
 			Id = "ApolloRangedTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "致盲射击"
+			Description = "{$Keywords.Cast}掷出一枚{$Keywords.FlashBomb}。 \n {!Icons.Bullet}{#PropertyFormat}投弹伤害：\Column 380 {$TooltipData.DisplayDelta1}"
 		}
 /*
 			Description = "Your {$Keywords.Cast} lobs a {$Keywords.FlashBomb}. \n {!Icons.Bullet}{#PropertyFormat}Cast Damage: \Column 380 {$TooltipData.NewTotal1}"
@@ -221,7 +221,7 @@ Texts = [
 		{
 			Id = "ApolloRangedTrait_Initial"
 			InheritFrom = "ApolloRangedTrait"
-			Description = ""
+			Description = "{$Keywords.Cast}掷出一枚{$Keywords.FlashBomb}。\n {!Icons.Bullet}{#PropertyFormat}投弹伤害: \Column 380 {$TooltipData.NewTotal1}"
 		}
 /*
 			Description = "Your {$Keywords.Cast} lobs a {$Keywords.FlashBomb}. \n {!Icons.Bullet}{#PropertyFormat}Cast Damage: \Column 380 {#PreviousFormat}{$TooltipData.NewTotal1}"
@@ -229,7 +229,7 @@ Texts = [
 		{
 			Id = "ApolloRangedTrait_Tray"
 			InheritFrom = "ApolloRangedTrait"
-			Description = ""
+			Description = "{$Keywords.Cast}掷出一枚{$Keywords.FlashBomb}。\n {!Icons.Bullet}{#PropertyFormat}投弹伤害: \Column 380 {#PreviousFormat}{$TooltipData.NewTotal1}"
 		}
 /*
 			DisplayName = "Brilliant Flare"
@@ -237,8 +237,8 @@ Texts = [
 */
 		{
 			Id = "ShieldLoadAmmo_ApolloRangedTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "炽光迸发"
+			Description = "{$Keywords.Cast}可以对周围的敌人造成伤害，并留存产生{$Keywords.FlashBomb}的效果。\n {!Icons.Bullet}{#PropertyFormat}爆炸伤害: \Column 380 {$TooltipData.DisplayDelta1}"
 		}
 /*
 			Description = "Your {$Keywords.Cast} damages foes around you, leaving behind a {$Keywords.FlashBomb}. \n {!Icons.Bullet}{#PropertyFormat}Blast Damage: \Column 380 {#PreviousFormat}{$TooltipData.NewTotal1}"
@@ -246,7 +246,7 @@ Texts = [
 		{
 			Id = "ShieldLoadAmmo_ApolloRangedTrait_Tray"
 			InheritFrom = "ShieldLoadAmmo_ApolloRangedTrait"
-			Description = ""
+			Description = "{$Keywords.Cast}可以对周围的敌人造成伤害，并留存产生{$Keywords.FlashBomb}的效果。\n {!Icons.Bullet}{#PropertyFormat}爆炸伤害: \Column 380 {#PreviousFormat}{$TooltipData.NewTotal1}"
 		}
 /*
 			Description = "Your {$Keywords.Cast} damages foes around you, leaving behind a {$Keywords.FlashBomb}. \n {!Icons.Bullet}{#PropertyFormat}Blast Damage: \Column 380 {$TooltipData.NewTotal1}"
@@ -254,7 +254,7 @@ Texts = [
 		{
 			Id = "ShieldLoadAmmo_ApolloRangedTrait_Initial"
 			InheritFrom = "ShieldLoadAmmo_ApolloRangedTrait"
-			Description = ""
+			Description = "{$Keywords.Cast}可以对周围的敌人造成伤害，并留存产生{$Keywords.FlashBomb}的效果。\n {!Icons.Bullet}{#PropertyFormat}爆炸伤害: \Column 380 {$TooltipData.NewTotal1}"
 		}
 /*
 */
@@ -280,22 +280,22 @@ Texts = [
 */
 		{
 			Id = "FountainDefenseTrait",
-			DisplayName = ""
-			Description = ""
+			DisplayName = "宴会音乐"
+			Description = "饮用{$Keywords.Fountain}后，有几率抵御远距离的敌人的伤害。 \n {!Icons.Bullet}{#PropertyFormat}每次饮用{$Keywords.Fountain}伤害抵抗: \Column 380 {$TooltipData.DisplayDelta1}"
     	}
 /*
 			DisplayName = "{#CombatTextHighlightFormat}Melodic Concert!{#PreviousFormat}!"
 */
 		{
 			Id = "FountainDefenseText",
-			DisplayName = ""
+			DisplayName = "{#CombatTextHighlightFormat}神乐{#PreviousFormat}！"
     	}
 /*
-      		DisplayName = "{#CombatTextHighlightFormat}{$TempTextData.TraitName}{#PreviousFormat}: {$TempTextData.Amount:P} Resist!"     
+      			DisplayName = "{#CombatTextHighlightFormat}{$TempTextData.TraitName}{#PreviousFormat}: {$TempTextData.Amount:P} Resist!"     
 */
 		{
-    		Id = "FountainDefenseText_Alt"
-      		DisplayName = ""     
+    			Id = "FountainDefenseText_Alt"
+      			DisplayName = "{#CombatTextHighlightFormat}{$TempTextData.TraitName}{#PreviousFormat}:{$TempTextData.Amount:P}抵抗！"     
     	}
 /*
 			Description = "Using a {$Keywords.Fountain} grants you permanent {$Keywords.DamageResist}. \n {!Icons.Bullet}{#PropertyFormat}Damage Resistance per {$Keywords.Fountain}: \Column 380 {$TooltipData.NewTotal1}"
@@ -303,7 +303,7 @@ Texts = [
 		{
 			Id = "FountainDefenseTrait_Initial",
 			InheritFrom = "FountainDefenseTrait"
-			Description = ""
+			Description = "饮用{$Keywords.Fountain}后，将永久获得{$Keywords.DamageResist}效果。 \n {!Icons.Bullet}{#PropertyFormat}每次饮用{$Keywords.Fountain}伤害抵抗: \Column 380 {$TooltipData.NewTotal1}"
     	}
 /*
 			Description = "Using a {$Keywords.Fountain} grants you permanent {$Keywords.DamageResist}. \n {!Icons.Bullet}{#PropertyFormat}Total Bonus Damage Resistance: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipTotalDefense:P}"
@@ -311,7 +311,7 @@ Texts = [
 		{
 			Id = "FountainDefenseTrait_Tray",
 			InheritFrom = "FountainDefenseTrait"
-			Description = ""
+			Description = "饮用{$Keywords.Fountain}后，将永久获得{$Keywords.DamageResist}效果。 \n {!Icons.Bullet}{#PropertyFormat}总伤害抵抗: \Column 380 {$TooltipData.DisplayDelta1}"
     	}
 /*
 			DisplayName = "Divine Law"
@@ -319,8 +319,8 @@ Texts = [
 */
 		{
 			Id = "ApolloBlindedTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "神圣格律"
+			Description = "处于{$Keywords.ApolloBlind}状态的敌人会受到更高伤害。\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.ApolloBlind}时伤害加成： \Column 380 {$TooltipData.DisplayDelta1}"
 		}
 /*
 			Description = "{$Keywords.ApolloBlind}-afflicted foes are also more susceptible to damage. \n {!Icons.Bullet}{#PropertyFormat}Damage vs. {$Keywords.ApolloBlind}: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}"
@@ -328,7 +328,7 @@ Texts = [
 		{
 			Id = "ApolloBlindedTrait_Initial"
 			InheritFrom = "ApolloBlindedTrait"
-			Description = ""
+			Description = "处于{$Keywords.ApolloBlind}状态的敌人会受到更高伤害。 \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.ApolloBlind}时伤害加成：: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}"
 		}
 /*
 			DisplayName = "Golden Fleece"
@@ -336,8 +336,8 @@ Texts = [
 */
 		{
 			Id = "RerollObolTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "黄金羊毛"
+			Description = "每{$TooltipData.TooltipObolCount}{!Icons.Currency_Small}将会使你获得 {#TooltipUpgradeFormat}1{#PreviousFormat}{!Icons.ReRoll_Small}。"
 		}
 /*
 			Description = "Gain {#TooltipUpgradeFormat}1 {#PreviousFormat}{!Icons.ReRoll_Small} for every {$TooltipData.TooltipObolCount}{!Icons.Currency_Small}. Receive {#TooltipUpgradeFormat}1 {#PreviousFormat}{!Icons.ReRoll_Small} now."
@@ -345,7 +345,7 @@ Texts = [
 		{
 			Id = "RerollObolTrait_Initial"
 			InheritFrom = "RerollObolTrait"
-			Description = ""
+			Description = "立即获得 {#TooltipUpgradeFormat}1{#PreviousFormat}{!Icons.ReRoll_Small}。每{$TooltipData.TooltipObolCount}{!Icons.Currency_Small}将会使你获得{#TooltipUpgradeFormat}1{#PreviousFormat}{!Icons.ReRoll_Small}。"
 		}
 /*
 			Description = "Gain {#TooltipUpgradeFormat}1 {#PreviousFormat}{!Icons.ReRoll_Small} for every {$TooltipData.TooltipObolCount}{!Icons.Currency_Small}. Receive {#TooltipUpgradeFormat}1 {#PreviousFormat}{!Icons.ReRoll_Small} now."
@@ -353,7 +353,7 @@ Texts = [
 		{
 			Id = "RerollObolDrop"
 			InheritFrom = "RerollObolTrait"
-			Description = ""
+			Description = "立即获得 {#TooltipUpgradeFormat}1{#PreviousFormat}{!Icons.ReRoll_Small}。每{$TooltipData.TooltipObolCount}{!Icons.Currency_Small}将会使你获得{#TooltipUpgradeFormat}1{#PreviousFormat}{!Icons.ReRoll_Small}。"
 		}
 /*
 			DisplayName = "Future Sight"
@@ -361,8 +361,8 @@ Texts = [
 */
 		{
 			Id = "RerollBoonTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "预知将来"
+			Description = "每{$TooltipData.TooltipBoonCount}{$Keywords.GodBoon} 将会使你获得{#TooltipUpgradeFormat}1{#PreviousFormat}{!Icons.ReRoll_Small}。"
 		}
 /*
 			Description = "Gain {#TooltipUpgradeFormat}1 {#PreviousFormat}{!Icons.ReRoll_Small} for every {$TooltipData.TooltipBoonCount} {$Keywords.GodBoon}. Receive {#TooltipUpgradeFormat}1 {#PreviousFormat}{!Icons.ReRoll_Small} now."
@@ -370,7 +370,7 @@ Texts = [
 		{
 			Id = "RerollBoonTrait_Initial"
 			InheritFrom = "RerollBoonTrait"
-			Description = ""
+			Description = "立即获得{#TooltipUpgradeFormat}1{#PreviousFormat}{!Icons.ReRoll_Small}。每{$TooltipData.TooltipBoonCount}{$Keywords.GodBoon} 将会使你获得{#TooltipUpgradeFormat}1{#PreviousFormat}{!Icons.ReRoll_Small}"
 		}	
 /*
 			Description = "Gain {#TooltipUpgradeFormat}1 {#PreviousFormat}{!Icons.ReRoll_Small} for every {$TooltipData.TooltipBoonCount} {$Keywords.GodBoon}. Receive {#TooltipUpgradeFormat}1 {#PreviousFormat}{!Icons.ReRoll_Small} now."
@@ -378,7 +378,7 @@ Texts = [
 		{
 			Id = "RerollBoonDrop"
 			InheritFrom = "RerollBoonTrait"
-			Description = ""
+			Description = "立即获得{#TooltipUpgradeFormat}1{#PreviousFormat}{!Icons.ReRoll_Small}。每{$TooltipData.TooltipBoonCount}{$Keywords.GodBoon} 将会使你获得{#TooltipUpgradeFormat}1{#PreviousFormat}{!Icons.ReRoll_Small}。"
 		}	
 /*
 			DisplayName = "Icarus Wings"
@@ -386,8 +386,8 @@ Texts = [
 */
 		{
 			Id = "ApolloRetaliateTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "临日之翼"
+			Description = "受到伤害后，对周围的敌人造成伤害并施加 {$Keywords.ApolloBlind}。 \n {!Icons.Bullet}{#PropertyFormat}复仇伤害: \Column 380{$TooltipData.DisplayDelta1}"
 		}
 /*
 			Description = "After you take damage, damage foes around you and inflict {$Keywords.ApolloBlind}. \n {!Icons.Bullet}{#PropertyFormat}Revenge Damage: \Column 380 {$TooltipData.NewTotal1}"
@@ -395,7 +395,7 @@ Texts = [
 		{
 			Id = "ApolloRetaliateTrait_Initial"
 			InheritFrom = "ApolloRetaliateTrait"
-			Description = ""
+			Description = "受到伤害后，对周围的敌人造成伤害并施加 {$Keywords.ApolloBlind}。 \n {!Icons.Bullet}{#PropertyFormat}复仇伤害: \Column 380{$TooltipData.NewTotal1}"
 		}
 /*
 			DisplayName = "Wishing Well"
@@ -403,22 +403,22 @@ Texts = [
 */
 		{
 			Id = "FountainCoinTrait",
-			DisplayName = ""
-			Description = ""
+			DisplayName = "许愿宝池"
+			Description = "饮用{$Keywords.Fountain}后，将会获得额外的{!Icons.Currency_Small}。 \n {!Icons.Bullet}{#PropertyFormat}}每次饮用{$Keywords.Fountain}获得{!Icons.Currency_Small}: \Column 380 {#UpgradeFormat}+{$TooltipData.FountainCoinBonus} {!Icons.Currency_Small}"
     	}
 /*
 			DisplayName = "{#CombatTextHighlightFormat}Wishing Well!{#PreviousFormat}!"
 */
 		{
 			Id = "FountainCoinText",
-			DisplayName = ""
+			DisplayName = "{#CombatTextHighlightFormat}还愿{#PreviousFormat}！"
     	}
 /*
-      		DisplayName = "{#CombatTextHighlightFormat}{$TempTextData.TraitName}{#PreviousFormat}: {$TempTextData.Amount} {!Icons.Currency_Small}"     
+      			DisplayName = "{#CombatTextHighlightFormat}{$TempTextData.TraitName}{#PreviousFormat}: {$TempTextData.Amount} {!Icons.Currency_Small}"     
 */
 		{
-    		Id = "FountainCoinText_Alt"
-      		DisplayName = ""     
+    			Id = "FountainCoinText_Alt"
+      			DisplayName = "{#CombatTextHighlightFormat}{$TempTextData.TraitName}{#PreviousFormat}: {$TempTextData.Amount} {!Icons.Currency_Small}"     
     	}
 /*
 			Description = "Using a {$Keywords.Fountain} gives you bonus {!Icons.Currency_Small}. \n {!Icons.Bullet}{#PropertyFormat}Bonus {!Icons.Currency_Small} per {$Keywords.Fountain}: \Column 380 {#UpgradeFormat}+{$TooltipData.FountainCoinBonus} {!Icons.Currency_Small}"
@@ -426,7 +426,7 @@ Texts = [
 		{
 			Id = "FountainCoinTrait_Initial",
 			InheritFrom = "FountainCoinTrait"
-			Description = ""
+			Description = "饮用{$Keywords.Fountain}将会获得额外的{!Icons.Currency_Small}。 \n {!Icons.Bullet}{#PropertyFormat}每次饮用{$Keywords.Fountain}获得{!Icons.Currency_Small}: \Column 380 {#UpgradeFormat}+{$TooltipData.FountainCoinBonus} {!Icons.Currency_Small}"
     	}
 /*
 			Description = "Using a {$Keywords.Fountain} gives you bonus {!Icons.Currency_Small}. \n {!Icons.Bullet}{#PropertyFormat}Bonus {!Icons.Currency_Small} per {$Keywords.Fountain}: \Column 380 {#UpgradeFormat}+{$TooltipData.FountainCoinBonus} {!Icons.Currency_Small}"
@@ -434,7 +434,7 @@ Texts = [
 		{
 			Id = "FountainCoinTrait_Tray",
 			InheritFrom = "FountainCoinTrait"
-			Description = ""
+			Description = "饮用{$Keywords.Fountain}将会获得额外的{!Icons.Currency_Small}。 \n {!Icons.Bullet}{#PropertyFormat}每次饮用{$Keywords.Fountain}获得{!Icons.Currency_Small}: \Column 380 {#UpgradeFormat}+{$TooltipData.FountainCoinBonus} {!Icons.Currency_Small}"
     	}
 /*
 			DisplayName = "Panacea's Elixir"
@@ -442,8 +442,8 @@ Texts = [
 */
 		{
 			Id = "ApolloHealTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "灵丹妙药"
+			Description = "受{$Keywords.ApolloBlind}影响的敌人被杀时可能掉落{!Icons.HealthRestore_Small}。\n {!Icons.Bullet} {#PropertyFormat}掉落几率:  \Column 380{#UpgradeFormat}{$TooltipData.TooltipDropChance:P} {#PreviousFormat}"
 		}
 /*
 			Description = "{$Keywords.ApolloBlind}-afflicted foes have a chance to drop {!Icons.HealthRestore_Small} items when slain. \n {!Icons.Bullet} {#PropertyFormat}Drop Chance:  \Column 380{#UpgradeFormat}{$TooltipData.TooltipDropChance:P} {#PreviousFormat}"
@@ -451,7 +451,7 @@ Texts = [
 		{
 			Id = "ApolloHealTrait_Initial"
 			InheritFrom = "ApolloHealTrait"
-			Description = ""
+			Description = "受{$Keywords.ApolloBlind}影响的敌人被杀时可能掉落{!Icons.HealthRestore_Small}。\n {!Icons.Bullet} {#PropertyFormat}掉落几率:  \Column 380{#UpgradeFormat}{$TooltipData.TooltipDropChance:P} {#PreviousFormat}"
 		}
 /*
 			DisplayName = "Purest Light"
@@ -459,8 +459,8 @@ Texts = [
 */
 		{
 			Id = "MissChanceTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "纯净阳光"
+			Description = "{$Keywords.ApolloBlind}效果造成Miss的几率更大。 \n {!Icons.Bullet}{#PropertyFormat}Miss几率: \Column 380 {#PreviousFormat}{#UpgradeFormat}60%"
 		}
 /*
 			DisplayName = "Shining Lyre"
@@ -468,8 +468,8 @@ Texts = [
 */
 		{
 			Id = "ForceApolloBoonTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "闪亮竖琴"
+			Description = "你找到的下一个{$Keywords.GodBoon}将来自{#BoldFormat}阿波罗{#PreviousFormat}。他的祝福将有 {#AltUpgradeFormat}{$TooltipData.TooltipBonusChance:P} {#PreviousFormat}的几率成为{#RareFormat}稀有{#PreviousFormat}或更高等级。"
 		}
 /*
 			Description = "The next {$Keywords.GodBoon} you find will be from {#BoldFormat}Apollo{#PreviousFormat}. His blessings have {#AltUpgradeFormat}{$TooltipData.TooltipBonusChance:P} {#PreviousFormat} chance to be {#RareFormat}Rare {#PreviousFormat}or better. \n\n {#AwardFlavorFormat}{$TooltipData.SignoffText}"
@@ -477,7 +477,7 @@ Texts = [
 		{
 			Id = "ForceApolloBoonTrait_Rack"
 			InheritFrom = "ForceApolloBoonTrait"
-			Description = ""
+			Description = "你找到的下一个{$Keywords.GodBoon}将来自{#BoldFormat}阿波罗{#PreviousFormat}。他的祝福将有 {#AltUpgradeFormat}{$TooltipData.TooltipBonusChance:P} {#PreviousFormat}的几率成为{#RareFormat}稀有{#PreviousFormat}或更高等级。\n\n {#AwardFlavorFormat}{$TooltipData.SignoffText}"
 		}
 /*
 			DisplayName = "Shining Lyre"
@@ -485,8 +485,8 @@ Texts = [
 */
 		{
 			Id = "ForceApolloBoonTrait_Inactive"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "闪亮竖琴"
+			Description = "阿波罗的祝福将有 {#AltUpgradeFormat}{$TooltipData.TooltipBonusChance:P} {#PreviousFormat}的几率成为{#RareFormat}稀有{#PreviousFormat}或更高等级。"
 		}
 /*
 			DisplayName = "Famed Duet"
@@ -494,8 +494,8 @@ Texts = [
 */
 		{
 			Id = "FamedDuetTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "双生协奏"
+			Description = "{$Keywords.Wrath}将发射12道环绕周身的光束。"
 		}	
 /*
 			DisplayName = "War Song"
@@ -503,8 +503,8 @@ Texts = [
 */
 		{
 			Id = "WarSongTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "吹角连营"
+			Description = "{$Keywords.FlashBomb}可同时施加{$Keywords.Curse}和{$Keywords.ApolloBlind}。\n {!Icons.Bullet}{#PropertyFormat}投弹伤害: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipCurseDamage}"
 		}	
 /*
 			DisplayName = "Hyacinth"
@@ -512,8 +512,8 @@ Texts = [
 */
 		{
 			Id = "HyacinthTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "风信子花"
+			Description = "同时受到{$Keywords.ApolloBlind}和{$Keywords.Weak}影响的敌人将在{#BoldFormatGraft}{$TooltipData.TooltipDeathThreshold}%{#PreviousFormat}{!Icons.KEnemyHealth_Small}时被粉碎。（对{$Keywords.BossPlural}无效。）"
     	}
 /*
 			DisplayName = "Sea Shanty"
@@ -521,15 +521,15 @@ Texts = [
 */
 		{
 			Id = "SeaChanteyTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "渔夫号子"
+			Description = "{$Keywords.BossPlural}战中，造成的伤害{#AltUpgradeFormat}{$TooltipData.OutgoingMultiplier:P} {#PreviousFormat}，但受到的伤害{#AltPenaltyFormat}{$TooltipData.IncomingMultiplier:P} {#PreviousFormat}。"
 		}	
 /*
 			DisplayName = "{#CombatTextHighlightFormat}Sea Shanty!{#PreviousFormat}!"
 */
 		{
 			Id = "SeaChanteyText",
-			DisplayName = ""
+			DisplayName = "{#CombatTextHighlightFormat}渔歌{#PreviousFormat}！"
     	}
 /*
 			DisplayName = "Chilling Melody"
@@ -537,8 +537,8 @@ Texts = [
 */
 		{
 			Id = "BlindDurationTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "战栗乐谱"
+			Description = "{$Keywords.ApolloBlind}效果在敌人Miss后不会失效。\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.ApolloBlind}持续: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}秒"
 		}
 /*
 			DisplayName = "Archery Lessons"
@@ -546,8 +546,8 @@ Texts = [
 */
 		{
 			Id = "DamageReduceDistanceTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "箭术对策"
+			Description = "{$Keywords.Deflect}成功触发时，获得{#BoldFormat}{$TooltipData.TooltipDamageResistDuration}秒{#PreviousFormat}的{$Keywords.DamageResist}。\n {!Icons.Bullet}{#PropertyFormat}额外抵抗: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDamageResistModifier}% "
 		}	
 /*
 			DisplayName = "Master Bolt" 
@@ -555,8 +555,8 @@ Texts = [
 */
 		{
 			Id = "MasterBoltTrait"
-			DisplayName = "" 
-			Description = ""
+			DisplayName = "如雷贯耳" 
+			Description = "所有处于{$Keywords.ApolloBlind}状态的敌人每秒还会受到一次天雷伤害。\n {!Icons.Bullet}{#PropertyFormat}雷电伤害: \Column 380 {#UpgradeFormat}{$TooltipData.MasterBoltDamage}"
 		}
 /*
 			DisplayName = "Blinding Fog" 
@@ -564,8 +564,8 @@ Texts = [
 */
 		{
 			Id = "MasterLobApolloTrait"
-			DisplayName = "" 
-			Description = ""
+			DisplayName = "光化学雾" 
+			Description = "使用{$Keywords.FlashBomb}时，你身边同时生成一个{$Keywords.Cloud}。\n {!Icons.Bullet}{#PropertyFormat}伤害: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDamage}"
 		}
 /*
 			DisplayName = "Festive Bomb" 
@@ -573,8 +573,8 @@ Texts = [
 */
 		{
 			Id = "MasterLobDionysusTrait"
-			DisplayName = "" 
-			Description = ""
+			DisplayName = "佳节礼炮" 
+			Description = "使用{$Keywords.Cloud}时，你身边同时生成一个{$Keywords.FlashBomb}。\n {!Icons.Bullet}{#PropertyFormat}伤害: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDamage}"
 		}
 /*
 			DisplayName = "Scintillating Feast"
@@ -582,8 +582,8 @@ Texts = [
 */
 		{
 			Id = "ApolloLightningCloudTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "光芒盛宴"
+			Description = "{$Keywords.Cloud}会持续引来天雷。 \n {!Icons.Bullet}{#PropertyFormat}雷电伤害: \Column 380 {$TooltipData.DisplayDelta1}"
 		}
 /*
 			Description = "Your {$Keywords.Cloud} effects also deal lightning damage periodically. \n {!Icons.Bullet}{#PropertyFormat} Lightning Damage: \Column 380 {$TooltipData.NewTotal1}"
@@ -591,7 +591,7 @@ Texts = [
 		{
 			Id = "ApolloLightningCloudTrait_Initial"
 			InheritFrom = "LightningCloudTrait"
-			Description = ""
+			Description = "{$Keywords.Cloud}会持续引来天雷。 \n {!Icons.Bullet}{#PropertyFormat}雷电伤害: \Column 380 {$TooltipData.NewTotal1}"
 		}
 /*
 			DisplayName = "Ice Wine"
@@ -599,36 +599,36 @@ Texts = [
 */
 		{
 			Id = "ApolloIceStrikeArrayTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "冰镇美酒"
+			Description = "{$Keywords.Cast}会稍作延迟，然后在目标位置造成{$Keywords.Cloud}的爆炸，对附近的敌人造成伤害并施加{$Keywords.Chill}。 \n {!Icons.Bullet}{#PropertyFormat}爆炸伤害: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDamage:P}"
 		}
 /*
 			DisplayName = "Blessed foes now blind you."
 */
 		{
 			Id = "LtUpgrade_Apollo"
-			DisplayName = ""
+			DisplayName = "受到祝福的敌人现在会让你失明。"
 		}	
 /*
 			DisplayName = "{!Icons.RunClearStar}Disciple of Apollo{!Icons.RunClearStar}"
 */
 		{
 			Id = "ClearRequiredTraitsApollo"
-			DisplayName = ""
+			DisplayName = "{!Icons.RunClearStar}阿波罗的门徒{!Icons.RunClearStar}"
 		}
 /*
 			DisplayName = "Met Tisiphonesssss"
 */
 		{
 			Id = "MusicMusicPlayerMainThemeMusicPlayer"
-			DisplayName = ""
+			DisplayName = "《遇到提西福涅涅涅》"
 		}
 /*
 			DisplayName = "Olympian Goddesses"
 */
 		{
 			Id = "Codex_OlympianGoddessChapter"
-			DisplayName = ""
+			DisplayName = "奥林匹斯女神"
 		}			
 /*
 			DisplayName = "Companion Solo"
@@ -636,8 +636,8 @@ Texts = [
 */
 		{
 			Id = "GoodBoyAssistTrait_Rack"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "伴偶索罗"
+			Description = "{$Keywords.Assist}在一片较宽的区域内造成{#AltUpgradeFormat}{$TooltipData.TooltipDamage} {#PreviousFormat}伤害。\n\n {#BoldFormat}{$Keywords.Assist}{#PreviousFormat}：按 {AS} 向朋友紧急求助。{#ItalicFormat}每个{$Keywords.EncounterAlt}限用一次。 {#PreviousFormat}{#BoldFormat}每次逃脱行动{#PreviousFormat}{#ItalicFormat}最多{#PreviousFormat}可用{#AltUpgradeFormat}{$TooltipData.TooltipKeepsakeUses}{#PreviousFormat}次 \n\n {#AwardFlavorFormat}{$TooltipData.SignoffText}"
 		}
 /*
 			DisplayName = "Companion Solo"
@@ -645,8 +645,8 @@ Texts = [
 */
 		{
 			Id = "GoodBoyAssistTrait_Delta"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "伴偶索罗"
+			Description = "{$Keywords.Assist}在一片较宽的区域内造成{#AltUpgradeFormat}{$TooltipData.TooltipDamage} {#PreviousFormat}伤害。\n\n {#BoldFormat}{$Keywords.Assist}{#PreviousFormat}：按 {AS} 向朋友紧急求助。{#ItalicFormat}每个{$Keywords.EncounterAlt})限用一次。{#PreviousFormat}{#BoldFormat}每次逃脱行动{#PreviousFormat}{#ItalicFormat}最多{#PreviousFormat}可用{#AltUpgradeFormat}{$TooltipData.DisplayDelta1}{#PreviousFormat}次 \n\n {#AwardFlavorFormat}{$TooltipData.SignoffText}"
 		}
 /*
 			DisplayName = "Companion Solo"
@@ -654,8 +654,8 @@ Texts = [
 */
 		{
 			Id = "GoodBoyAssistTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "伴偶索罗"
+			Description = "{$Keywords.Assist}在一片较宽的区域内造成{#AltUpgradeFormat}{$TooltipData.TooltipDamage} {#PreviousFormat}伤害。"
 		}
 /*
 			DisplayName = "'...When Solo first emerged from the darkness, he knew instantly that he was meant to be by the side of Mother Night and the other ruling creatures of the Underworld. However, Mother Night would frequently leave him alone for stretches of time that seemed to stretch on forever, and he grew lonely and distressed. He worried that someday, she would leave him and never return...'"
@@ -663,7 +663,7 @@ Texts = [
 		{
 			Id = "CodexData_GoodBoyAssistTrait_01"
 			Speaker = "Achilles"
-			DisplayName = ""
+			DisplayName = "“……当索罗从黑暗之中醒来，他就立刻意识到，自己是注定要来陪伴黑夜之母和冥府的那群主宰之物的。然而，黑夜之母经常会让他一个人呆上很长一段时间，似乎永远都没有尽头。这使他变得孤独而痛苦。他担心有一天，她会离开他，再也不会回来……”"
 		}    
 /*
 			DisplayName = "'...When Solo first emerged from the darkness, he knew instantly that he was meant to be by the side of Mother Night and the other ruling creatures of the Underworld. However, Mother Night would frequently leave him alone for periods of time that seemed to stretch on forever, and he grew lonely and distressed. He worried that someday, she would leave and never return. {#CodexBoldFormat}One day, fearing he'd never see her again, Solo howled and howled, but she did not come back. He scratched gouges in the wall, but she did not come back. He tore the stuffing out of his bed, but still she didn't return. Looking around at the mess he'd made, Solo realized he might be punished for being a bad boy. But when Mother Night returned, she only looked around, knelt and patted his head, and told him that even though she couldn't be with him every minute of the day, she would always, always return to him eventually. He just needed to learn how to be patient, she explained, as she cleaned up the mess. Now, Solo knows if he just waits patiently, he'll never be lonely for too long. After all, he is a good boy.{#PreviousFormat}'"
@@ -671,7 +671,7 @@ Texts = [
 		{
 			Id = "CodexData_GoodBoyAssistTrait_02"
 			Speaker = "Achilles"
-			DisplayName = ""
+			DisplayName = "“……当索罗从黑暗之中醒来，他就立刻意识到，自己是注定要来陪伴黑夜之母和冥府的那群主宰之物的。然而，黑夜之母经常会让他一个人呆上很长一段时间，似乎永远都没有尽头。这使他变得孤独而痛苦。他担心有一天，她会离开他，再也不会回来。{#CodexBoldFormat}后来某天，索罗担心自己再也见不到她了，便嚎叫大哭，可女神并没有现身。他又在墙上挖了几个坑，但女神也没有现身。他接着把填充物从床里都扒了出来，而女神还是没有现身。看着四周的惨况，索罗感觉自己可能是因为成了个坏孩子而正在被惩罚。之后黑夜之母回来了，她只是环顾四周，跪下来拍拍他的头，告诉他，即使她不能每时每刻都和他在一起，她永远还是会回到他身边的。她一边收拾烂摊子，一边解释说，他只是需要学会该如何保持耐心。现在，索罗知道只要他耐心等待，他永远不会孤独太久。毕竟，他是个好孩子。{#PreviousFormat}”"
 		}
 /*
 			DisplayName = """
@@ -680,7 +680,7 @@ Texts = [
 		{
 			Id = "CerberusSignoff_AssistMax"
 			DisplayName = ""
-				From {#AwardMaxFlavorFormat}Cerberus {#AwardDarkFlavorFormat}, goodest boy
+				来自{#AwardMaxFlavorFormat}刻耳柏洛斯{#AwardDarkFlavorFormat}，最好的孩子。
 			"""
 		}
 /*
@@ -689,15 +689,15 @@ Texts = [
 */
 		{
 			Id = "NPC_Hera_01"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "赫拉"
+			Description = "天后"
 		}		
 /*
 			DisplayName = "Met Hera"
 */
 		{
 			Id = "HeraFirstPickUp"
-			DisplayName = ""
+			DisplayName = "已见到赫拉"
 		}
 /*
 			DisplayName = "Hera"
@@ -705,8 +705,8 @@ Texts = [
 */
 		{
 			Id = "HeraUpgrade"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "赫拉"
+			Description = "天后"
 		}
 /*
 			DisplayName = "Queen of Olympus"
@@ -714,74 +714,74 @@ Texts = [
 */
 		{
 			Id = "HeraUpgrades"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "天后"
+			Description = "有朝一日，冥王之子定能获得赫拉的各种祝福。"
 		}
 /*
 			DisplayName = "loyalty is the greatest weapon your allies can get from you."
 */
 		{
 			Id = "HeraUpgrade_FlavorText01"
-			DisplayName = ""
+			DisplayName = "忠贞是你能赠予盟友的最强武器。"
 		}
 /*
 			DisplayName = "royalty is only a title when others gives it to you."
 */
 		{
 			Id = "HeraUpgrade_FlavorText02"
-			DisplayName = ""
+			DisplayName = "若是仰人鼻息，王权也不过是虚名。"
 		}
 /*
 			DisplayName = "justice has many forms; judge, jury and executioner."
 */
 		{
 			Id = "HeraUpgrade_FlavorText03"
-			DisplayName = ""
+			DisplayName = "正义乃是三位一体；裁决，审理和刑罚缺一不可。"
 		}	
 /*
 			DisplayName = "Jealousy"
 			Description = "{#ItalicFormat}{$Keywords.Status}{#PreviousFormat}: For {#BoldFormatGraft}{$TooltipData.TooltipJealousyDuration} Sec{#PreviousFormat}., {$Keywords.Attack} and {$Keywords.Special} deal more damage by {#UpgradeFormat}{$TooltipData.TooltipJealousyPower:P}{#PreviousFormat} for each {$Keywords.Status} applied on victim."
 */
 		{
-      		Id = "JealousyCurse"
-			DisplayName = ""
-			Description = ""
+      			Id = "JealousyCurse"
+			DisplayName = "怨妒"
+			Description = "{#ItalicFormat}{$Keywords.Status}{#PreviousFormat}:持续{#BoldFormatGraft}{$TooltipData.TooltipJealousyDuration}秒{#PreviousFormat}，每种敌人身上的{$Keywords.Status}将使{$Keywords.Attack}和{$Keywords.Special}对受害者多施加{#UpgradeFormat}{$TooltipData.TooltipJealousyPower:P}{#PreviousFormat}的伤害。"
 		}
 /*
 			DisplayName = "Envy"
 			Description = "{#ItalicFormat}{$Keywords.Status}{#PreviousFormat}: For {#BoldFormatGraft}{$TooltipData.TooltipEnvyDuration} Sec{#PreviousFormat}., applying {$Keywords.Status} removes {$Keywords.EnvyCurse} to deal damage. If the {$Keywords.Status} is not Envy, double it."
 */
 		{
-      		Id = "EnvyCurse"
-			DisplayName = ""
-			Description = ""
+      			Id = "EnvyCurse"
+			DisplayName = "嫉恨"
+			Description = "{#ItalicFormat}{$Keywords.Status}{#PreviousFormat}:持续{#BoldFormatGraft}{$TooltipData.TooltipEnvyDuration}秒{#PreviousFormat}，施加{$Keywords.Status}将造成额外伤害，之后移除{$Keywords.EnvyCurse}。若此{$Keywords.Status}不是{$Keywords.EnvyCurse}，则伤害加倍。"
 		}
 /*
 			DisplayName = "Trap Jar"
 			Description = "An inanimate object dealing damage to foes upon broken."
 */
 		{
-      		Id = "HeraTrap"
-			DisplayName = ""
-			Description = ""
+      			Id = "HeraTrap"
+			DisplayName = "厌胜"
+			Description = "一种被打破后对周围的敌人造成伤害的陷阱罐。"
 		}
 /*
 			DisplayName = "Aura"
 			Description = "{#ItalicFormat}{$Keywords.Status}{#PreviousFormat}: Nearby foes are affected by a special effect."
 */
 		{
-      		Id = "Aura"
-			DisplayName = ""
-			Description = ""
+      			Id = "Aura"
+			DisplayName = "身光"
+			Description = "{#ItalicFormat}{$Keywords.Status}{#PreviousFormat}:进入范围的敌人将受到特殊影响。"
 		}
 /*
 			DisplayName = "Special Sale"
 			Description = "One of the items from the Well of Charon is cheaper than the others."
 */
 		{
-      		Id = "SpecialDiscount"
-			DisplayName = ""
-			Description = ""
+      			Id = "SpecialDiscount"
+			DisplayName = "内部价格"
+			Description = "卡戎之井的某项道具的价格将进一步降低。"
 		}
 /*
 			DisplayName = "Spiteful Strike"
@@ -789,8 +789,8 @@ Texts = [
 */
 		{
 			Id = "HeraWeaponTrait"
-			DisplayName = ""
-			Description = "" 
+			DisplayName = "刻毒诅咒"
+			Description = "{$Keywords.Attack}施加{$Keywords.EnvyCurse}。\n {!Icons.Bullet}{#PropertyFormat}嫉恨伤害: \Column 380 {#PreviousFormat}{$TooltipData.DisplayDelta1}" 
 		} 		
 /*
 			Description = "Your {$Keywords.Attack} inflicts {$Keywords.EnvyCurse}. \n {!Icons.Bullet}{#PropertyFormat}Envy Damage: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}"
@@ -798,7 +798,7 @@ Texts = [
 		{
 			Id = "HeraWeaponTrait_Initial"
 			InheritFrom = "HeraWeaponTrait"
-			Description = ""
+			Description = "{$Keywords.Attack}施加{$Keywords.EnvyCurse}。\n {!Icons.Bullet}{#PropertyFormat}嫉恨伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}"
 		}
 /*
 			DisplayName = "Spiteful Flourish"
@@ -806,8 +806,8 @@ Texts = [
 */
 		{
 			Id = "HeraSecondaryTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "苛烈诅咒"
+			Description = "{$Keywords.Special}施加{$Keywords.EnvyCurse}。\n {!Icons.Bullet}{#PropertyFormat}嫉恨伤害: \Column 380 {#PreviousFormat}{$TooltipData.DisplayDelta1}"
 		} 	
 /*
 			Description = "Your {$Keywords.Special} inflicts {$Keywords.EnvyCurse}. \n {!Icons.Bullet}{#PropertyFormat}Envy Damage: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}"
@@ -815,7 +815,7 @@ Texts = [
 		{
 			Id = "HeraSecondaryTrait_Initial"
 			InheritFrom = "HeraSecondaryTrait"
-			Description = ""
+			Description = "{$Keywords.Special}时施加{$Keywords.EnvyCurse}。\n {!Icons.Bullet}{#PropertyFormat}嫉恨伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}"
 		}		
 /*
 			DisplayName = "Trap Dash"
@@ -823,8 +823,8 @@ Texts = [
 */
 		{
 			Id = "HeraRushTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "构陷冲刺"
+			Description = "{$Keywords.Dash}将在你身后留下一个可以施加{$Keywords.JealousyCurse}状态的{$Keywords.HeraTrap}。\n {!Icons.Bullet}{#PropertyFormat}厌胜伤害: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta1}\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.HeraTrap}冷却时间: \Column 380 {#UpgradeFormat}4秒。"
 		} 
 /*
 			Description = "Your {$Keywords.Dash} leaves a {$Keywords.HeraTrap} behind that inclicts {$Keywords.JealousyCurse}. \n {!Icons.Bullet}{#PropertyFormat}Trap Damage: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.HeraTrap} Cooldown: \Column 380 {#UpgradeFormat}4 sec."
@@ -832,21 +832,21 @@ Texts = [
 		{
 			Id = "HeraRushTrait_Initial"
 			InheritFrom = "HeraRushTrait"
-			Description = ""
+			Description = "{$Keywords.Dash}将在你身后留下一个可以施加{$Keywords.JealousyCurse}状态的{$Keywords.HeraTrap}。\n {!Icons.Bullet}{#PropertyFormat}厌胜伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.HeraTrap}冷却时间: \Column 380 {#UpgradeFormat}4秒。"
 		}
 /*
 			DisplayName = "{!Icons.RunClearStar}"			
 */
 		{
 			Id = "HeraRushIcon"
-			DisplayName = ""			
+			DisplayName = "{!Icons.RunClearStar}"			
 		}
 /*
 			DisplayName = "From Hera"
 */
 		{
 			Id = "HeraSignoff"
-			DisplayName = ""
+			DisplayName = "来自赫拉"
 		}
 /*
 			DisplayName = """
@@ -856,9 +856,9 @@ Texts = [
 		{
 			Id = "HeraSignoff_Max"
 			DisplayName = ""
-				From {#AwardMaxFlavorFormat}Hera{#AwardDarkFlavorFormat}; you share a {#AwardMaxFlavorFormat}Compassionate Bond
+				你获得了来自{#AwardMaxFlavorFormat}赫拉{#AwardDarkFlavorFormat}的{#AwardMaxFlavorFormat}御前羁绊
 
-				{#AwardDarkFlavorFormat}Together, you are the founding members of the Warmth and Compassion Brigade.
+				{#AwardDarkFlavorFormat}奥林匹斯的天后研究完已经勉强决定了，由你来当这一届的小英雄。
 			"""
 		}
 /*
@@ -867,8 +867,8 @@ Texts = [
 */
 		{
 			Id = "HeraShoutTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "赫拉之援"
+			Description = "{$Keywords.WrathDerivedStocks}将随机获得另一位奥林匹斯神明的{$Keywords.WrathDerivedStocks}效果。\n {!Icons.Bullet}{#PropertyFormat}伤害提高: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta1}%{#PreviousFormat}"
 		}		
 /*
 			Description = "Your {$Keywords.WrathDerivedStocks} summons another god's or goddess's {$Keywords.WrathDerivedStocks}. \n {!Icons.Bullet}{#PropertyFormat}Damage Boost: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta1}%{#PreviousFormat} \n {#ItalicFormat}Current God: {$TooltipData.CurrentGod}{#PreviousFormat}"
@@ -876,7 +876,7 @@ Texts = [
 		{
 			Id = "HeraShoutTrait_Tray"
 			InheritFrom = "HeraShoutTrait"
-			Description = ""
+			Description = "{$Keywords.WrathDerivedStocks}将随机获得另一位奥林匹斯神明的{$Keywords.WrathDerivedStocks}效果。\n {!Icons.Bullet}{#PropertyFormat}伤害提高: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta1}%{#PreviousFormat} \n {#ItalicFormat}当前神明为: {$TooltipData.CurrentGod}{#PreviousFormat}"
 		}	
 /*
 			Description = "Your {$Keywords.WrathDerivedStocks} summons another god's or goddess's {$Keywords.WrathDerivedStocks}.  \n {!Icons.Bullet}{#PropertyFormat}Damage Boost: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}%{#PreviousFormat}"
@@ -884,7 +884,7 @@ Texts = [
 		{
 			Id = "HeraShoutTrait_Initial"
 			InheritFrom = "HeraShoutTrait"
-			Description = ""
+			Description = "{$Keywords.WrathDerivedStocks}将随机获得另一位奥林匹斯神明的{$Keywords.WrathDerivedStocks}效果。 \n {!Icons.Bullet}{#PropertyFormat}伤害提高: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}%{#PreviousFormat}"
 		} 
 /*
 			DisplayName = "Resentful Shot"
@@ -892,8 +892,8 @@ Texts = [
 */
 		{
 			Id = "HeraRangedTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "不忿射击"
+			Description = "{$Keywords.Cast}掷出一枚可以分裂成数个小球并且施加{$Keywords.JealousyCurse}的球体。\n {!Icons.Bullet}{#PropertyFormat}投弹伤害: \Column 380 {$TooltipData.DisplayDelta1} \n {!Icons.Bullet}{#PropertyFormat}小球伤害: \Column 380 {$TooltipData.DisplayDelta2}"
 		}
 /*
 			Description = "Your {$Keywords.Cast} is a orb that inflicts {$Keywords.JealousyCurse} and split into smaller orbs. \n {!Icons.Bullet}{#PropertyFormat}Cast Damage: \Column 380 {#OldFormat}{$TooltipData.BaseRangedDamage}{!Icons.RightArrow}{$TooltipData.NewTotal1} \n {!Icons.Bullet}{#PropertyFormat}Small Orb Damage: \Column 380 {$TooltipData.NewTotal2}"
@@ -901,7 +901,7 @@ Texts = [
 		{
 			Id = "HeraRangedTrait_Initial"
 			InheritFrom = "HeraRangedTrait"
-			Description = ""
+			Description = "{$Keywords.Cast}掷出一枚可以分裂成数个小球并且施加{$Keywords.JealousyCurse}的球体。\n {!Icons.Bullet}{#PropertyFormat}投弹伤害: \Column 380 {#OldFormat}{$TooltipData.BaseRangedDamage}{!Icons.RightArrow}{$TooltipData.NewTotal1} \n {!Icons.Bullet}{#PropertyFormat}小球伤害: \Column 380 {$TooltipData.NewTotal2}"
 		}
 /*
 			Description = "Your {$Keywords.Cast} is a orb that inflicts {$Keywords.JealousyCurse} and split into smaller orbs. \n {!Icons.Bullet}{#PropertyFormat}Cast Damage: \Column 380 {$TooltipData.NewTotal1} \n {!Icons.Bullet}{#PropertyFormat}Small Orb Damage: \Column 380 {$TooltipData.NewTotal2}"
@@ -909,7 +909,7 @@ Texts = [
 		{
 			Id = "HeraRangedTrait_Tray"
 			InheritFrom = "HeraRangedTrait"
-			Description = ""
+			Description = "{$Keywords.Cast}掷出一枚可以分裂成数个小球并且施加{$Keywords.JealousyCurse}的球体。\n {!Icons.Bullet}{#PropertyFormat}投弹伤害: \Column 380 {$TooltipData.NewTotal1} \n {!Icons.Bullet}{#PropertyFormat}小球伤害: \Column 380 {$TooltipData.NewTotal2}"
 		}
 /*
 			DisplayName = "Resentful Flare"
@@ -917,8 +917,8 @@ Texts = [
 */
 		{
 			Id = "ShieldLoadAmmo_HeraRangedTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "怨忿四起"
+			Description = "{$Keywords.Cast}可以对周围的敌人造成伤害，并施加{$Keywords.JealousyCurse}。 \n {!Icons.Bullet}{#PropertyFormat}爆炸伤害: \Column 380 {$TooltipData.DisplayDelta1}"
 		}
 /*
 			Description = "Your {$Keywords.Cast} inflicts {$Keywords.JealousyCurse} around you. \n {!Icons.Bullet}{#PropertyFormat}Cast Damage: \Column 380 {$TooltipData.NewTotal1}"
@@ -926,7 +926,7 @@ Texts = [
 		{
 			Id = "ShieldLoadAmmo_HeraRangedTrait_Tray"
 			InheritFrom = "ShieldLoadAmmo_HeraRangedTrait"
-			Description = ""
+			Description = "{$Keywords.Cast}可以对周围的敌人造成伤害，并施加{$Keywords.JealousyCurse}。\n {!Icons.Bullet}{#PropertyFormat}爆炸伤害: \Column 380 {$TooltipData.NewTotal1}"
 		}
 /*
 			Description = "Your {$Keywords.Cast} inflicts {$Keywords.JealousyCurse} around you. \n {!Icons.Bullet}{#PropertyFormat}Cast Damage: \Column 380 {#OldFormat}{$TooltipData.BaseRangedDamage}{!Icons.RightArrow}{$TooltipData.NewTotal2}"
@@ -934,7 +934,7 @@ Texts = [
 		{
 			Id = "ShieldLoadAmmo_HeraRangedTrait_Initial"
 			InheritFrom = "ShieldLoadAmmo_HeraRangedTrait"
-			Description = ""
+			Description = "{$Keywords.Cast}可以对周围的敌人造成伤害，并施加{$Keywords.JealousyCurse}。\n {!Icons.Bullet}{#PropertyFormat}爆炸伤害: \Column 380 {#OldFormat}{$TooltipData.BaseRangedDamage}{!Icons.RightArrow}{$TooltipData.NewTotal2}"
 		}
 /*
 */
@@ -960,8 +960,8 @@ Texts = [
 */
 		{
 			Id = "DiscountHeraTrait",
-			DisplayName = ""
-			Description = ""
+			DisplayName = "特供关系"
+			Description = "所有的道具都将打折。有几率出现某件商品能以{$Keywords.SpecialDiscount}购买。\n {!Icons.Bullet}{#PropertyFormat}折扣幅度: \Column 380 {#UpgradeFormat}-{$TooltipData.TooltipDiscount}%{#PreviousFormat} \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.SpecialDiscount}: \Column 380 {#UpgradeFormat}-20%{#PreviousFormat}"
     	}
 /*
 			Description = "All items are discounted. Sometimes, a {$Keywords.SpecialDiscount} is available. \n {!Icons.Bullet}{#PropertyFormat}Discount: \Column 380 {#UpgradeFormat}-{$TooltipData.TooltipDiscount}%{#PreviousFormat} \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.SpecialDiscount}: \Column 380 {#UpgradeFormat}-20%{#PreviousFormat}"
@@ -969,7 +969,7 @@ Texts = [
 		{
 			Id = "DiscountHeraTrait_Initial",
 			InheritFrom = "DiscountHeraTrait"
-			Description = ""
+			Description = "所有的道具都将打折。有几率出现某件商品能以{$Keywords.SpecialDiscount}购买。\n {!Icons.Bullet}{#PropertyFormat}折扣幅度: \Column 380 {#UpgradeFormat}-{$TooltipData.TooltipDiscount}%{#PreviousFormat} \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.SpecialDiscount}: \Column 380 {#UpgradeFormat}-20%{#PreviousFormat}"
     	}
 /*
 			DisplayName = "Royal Favor"
@@ -977,8 +977,8 @@ Texts = [
 */
 		{
 			Id = "PrivilegeHeraTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "正宫主母"
+			Description = "持有的{#BoldFormatGraft}{$Keywords.GodBoonPlural}{#PreviousFormat}中每有一个来自同一位奥林匹斯神，则造成额外伤害。 \n {!Icons.Bullet}{#PropertyFormat}累计增加伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal2}{#PreviousFormat}"
 		}
 /*
 			Description = "For each of your {#BoldFormatGraft}{$Keywords.GodBoonPlural} {#PreviousFormat} from the same Olympian, deal bonus damage. \n {!Icons.Bullet}{#PropertyFormat}Bonus Damage Per Boon: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}{#PreviousFormat}"
@@ -986,7 +986,7 @@ Texts = [
 		{
 			Id = "PrivilegeHeraTrait_Initial"
 			InheritFrom = "PrivilegeHeraTrait"
-			Description = ""
+			Description = "持有的{#BoldFormatGraft}{$Keywords.GodBoonPlural}{#PreviousFormat}中每有一个来自同一位奥林匹斯神，则造成额外伤害。\n {!Icons.Bullet}{#PropertyFormat}每个祝福增加伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}{#PreviousFormat}"
 		}
 /*
 			Description = "For each of your {#BoldFormatGraft}{$Keywords.GodBoonPlural} {#PreviousFormat} from the same Olympian, deal bonus damage. \n {!Icons.Bullet}{#PropertyFormat}Total Bonus Damage: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal2}{#PreviousFormat} \n {#ItalicFormat}From {$TooltipData.SameGodName}{#PreviousFormat}"
@@ -994,7 +994,7 @@ Texts = [
 		{
 			Id = "PrivilegeHeraTrait_Tray"
 			InheritFrom = "PrivilegeHeraTrait"
-			Description = ""
+			Description = "持有的{#BoldFormatGraft}{$Keywords.GodBoonPlural}{#PreviousFormat}中每有一个来自同一位奥林匹斯神，则造成额外伤害。\n {!Icons.Bullet}{#PropertyFormat}累计增加伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal2}{#PreviousFormat} \n {#ItalicFormat}来自{$TooltipData.SameGodName}{#PreviousFormat}"
 		}
 /*
 			DisplayName = "Noble Status"
@@ -1002,8 +1002,8 @@ Texts = [
 */
 		{
 			Id = "FamilyHeraTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "位高权重"
+			Description = "若至少有3名敌人受到{$Keywords.Status}影响，则造成额外伤害。\n {!Icons.Bullet}{#PropertyFormat}增加伤害: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta1}{#PreviousFormat}"
 		}
 /*
 			Description = "When 3 or more foes are {$Keywords.Status} afflicted, deal more damage. \n {!Icons.Bullet}{#PropertyFormat}Bonus Damage: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}{#PreviousFormat}"
@@ -1011,7 +1011,7 @@ Texts = [
 		{
 			Id = "FamilyHeraTrait_Initial"
 			InheritFrom = "FamilyHeraTrait"
-			Description = ""
+			Description = "若至少有3名敌人受到{$Keywords.Status}影响，则造成额外伤害。\n {!Icons.Bullet}{#PropertyFormat}增加伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}{#PreviousFormat}"
 		}
 /*
 			DisplayName = "Royal Inheritance"
@@ -1019,8 +1019,8 @@ Texts = [
 */
 		{
 			Id = "MoreRewardTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "永不加赋"
+			Description = "净化池，地狱宝藏和暗影之罐的收益将提高。\n {!Icons.Bullet}{#PropertyFormat}收益提高: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta1}{#PreviousFormat}"
 		}
 /*
 			Description = "Pools of Purging, Infernal Troves and Urns are more rewarding. \n {!Icons.Bullet}{#PropertyFormat}Bonus Reward: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}{#PreviousFormat}"
@@ -1028,7 +1028,7 @@ Texts = [
 		{
 			Id = "MoreRewardTrait_Initial"
 			InheritFrom = "MoreRewardTrait"
-			Description = ""
+			Description = "净化池，地狱宝藏和暗影之罐的收益将提高。\n {!Icons.Bullet}{#PropertyFormat}收益提高: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}{#PreviousFormat}"
 		}
 /*
 			DisplayName = "Constant Torment"
@@ -1036,8 +1036,8 @@ Texts = [
 */
 		{
 			Id = "PeriodicCurseTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "告密罗织"
+			Description = "每隔一段时间，一名随机的敌人将被施加{$Keywords.JealousyCurse}。\n {!Icons.Bullet}{#PropertyFormat}时间间隔: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipTimeInterval}秒{#PreviousFormat}"
 		}
 /*
 			Description = "Every few seconds, a random foe is inflicted by {$Keywords.JealousyCurse}. \n {!Icons.Bullet}{#PropertyFormat}Time Interval: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipTimeInterval} sec{#PreviousFormat}"
@@ -1045,7 +1045,7 @@ Texts = [
 		{
 			Id = "PeriodicCurseTrait_Initial"
 			InheritFrom = "PeriodicCurseTrait"
-			Description = ""
+			Description = "每隔一段时间，一名随机的敌人将被施加{$Keywords.JealousyCurse}。\n {!Icons.Bullet}{#PropertyFormat}时间间隔: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipTimeInterval}秒{#PreviousFormat}"
 		}
 /*
 			DisplayName = "Richful Tribune"
@@ -1053,8 +1053,8 @@ Texts = [
 */
 		{
 			Id = "EnvyBurstTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "作法自毙"
+			Description = "{$Keywords.EnvyCurse}可能发生爆散效果。爆散至少能发生一次。\n {!Icons.Bullet}{#PropertyFormat}爆散伤害: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta2}{#PreviousFormat} \n {!Icons.Bullet}{#PropertyFormat}爆散几率: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipChance:P}{#PreviousFormat}"
 		}
 /*
 			Description = "Your {$Keywords.EnvyCurse} may burst. Your first burst is always guaranteed. \n {!Icons.Bullet}{#PropertyFormat}Burst Damage: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal2}{#PreviousFormat} \n {!Icons.Bullet}{#PropertyFormat}Burst Chance: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipChance:P}{#PreviousFormat} "
@@ -1062,23 +1062,23 @@ Texts = [
 		{
 			Id = "EnvyBurstTrait_Initial"
 			InheritFrom = "EnvyBurstTrait"
-			Description = ""
+			Description = "{$Keywords.EnvyCurse}可能发生爆散效果。爆散至少能发生一次。\n {!Icons.Bullet}{#PropertyFormat}爆散伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal2}{#PreviousFormat} \n {!Icons.Bullet}{#PropertyFormat}爆散几率: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipChance:P}{#PreviousFormat}"
 		}
 /*
-      		DisplayName = "{#CombatTextHighlightFormat}{$TempTextData.TraitName}{#PreviousFormat}: {$TempTextData.Amount} Summon!"     
+      			DisplayName = "{#CombatTextHighlightFormat}{$TempTextData.TraitName}{#PreviousFormat}: {$TempTextData.Amount} Summon!"     
 */
 		{
-    		Id = "MoreCompanionText_Alt"
-      		DisplayName = ""     
-    	}
+    			Id = "MoreCompanionText_Alt"
+      			DisplayName = "{#CombatTextHighlightFormat}{$TempTextData.TraitName}{#PreviousFormat}:{$TempTextData.Amount:P}护驾！"     
+    		}
 /*
 			DisplayName = "Favored Chaperone"
 			Description = "Visiting Charon replenishes {#UpgradeFormat}+1 {#PreviousFormat} use of your {#BoldFormat}Chthonic Companion{#PreviousFormat}'s {$Keywords.Assist}. \n {!Icons.Bullet}{#PropertyFormat}Chthonic Companion Bonus Damage: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta1}{#PreviousFormat}"
 */
 		{
 			Id = "MoreCompanionTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "心腹廷臣"
+			Description = "进入有卡戎的房间将使你的{#BoldFormat}冥界伴偶{#PreviousFormat}{#BoldFormat}{$Keywords.Assist}{#UpgradeFormat}+1{#PreviousFormat}次数。\n {!Icons.Bullet}{#PropertyFormat}冥界伴偶伤害增加: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta1}{#PreviousFormat}"
 		}
 /*
 			Description = "Visiting Charon gives {#UpgradeFormat}+1 {#PreviousFormat} use of your {#BoldFormat}Chthonic Companion{#PreviousFormat}'s {$Keywords.Assist}. \n {!Icons.Bullet}{#PropertyFormat}Chthonic Companion Bonus Damage: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}{#PreviousFormat}"
@@ -1086,112 +1086,112 @@ Texts = [
 		{
 			Id = "MoreCompanionTrait_Initial"
 			InheritFrom = "MoreCompanionTrait"
-			Description = ""
+			Description = "进入有卡戎的房间将使你的{#BoldFormat}冥界伴偶{#PreviousFormat}{#BoldFormat}{$Keywords.Assist}{#UpgradeFormat}+1{#PreviousFormat}次数。\n {!Icons.Bullet}{#PropertyFormat}冥界伴偶伤害增加: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}{#PreviousFormat}"
 		}
 /*
 			DisplayName = "{I} Buy \n {G} Sacrifice {$TempTextData.SacrificeCost}{!Icons.Health_Small}"
 */
 		{
 			Id = "Shop_UseText_HealthAsObolText"
-			DisplayName = ""
+			DisplayName = "{I} 购买 \n {G} 损失{$TempTextData.SacrificeCost}{!Icons.Health_Small}"
 		}
 /*
 			DisplayName = "{I} Buy Power-Up \n {G} Sacrifice {$TempTextData.SacrificeCost}{!Icons.Health_Small}"
 */
 		{
 			Id = "Shop_UseStackUpgrade_HealthAsObolText"
-			DisplayName = ""
+			DisplayName = "{I} 购买强化 \n {G} 损失{$TempTextData.SacrificeCost}{!Icons.Health_Small}"
 		}
 /*
-      DisplayName = "{I} Buy Upgrade \n {G} Sacrifice {$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+      			DisplayName = "{I} Buy Upgrade \n {G} Sacrifice {$TempTextData.SacrificeCost}{!Icons.Health_Small}"
 */
 		{
-      Id = "Shop_UseWeaponUpgrade_HealthAsObolText"
-      DisplayName = ""
-    }
+      			Id = "Shop_UseWeaponUpgrade_HealthAsObolText"
+      			DisplayName = "{I} 购买升级 \n {G} 损失{$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+    		}
 /*
-      DisplayName = "{I} Buy {#UseTextHealingFormat}+{$TempTextData.TooltipMaxHealth}{!Icons.HealthUp_Small} \n {G} Sacrifice {$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+      			DisplayName = "{I} Buy {#UseTextHealingFormat}+{$TempTextData.TooltipMaxHealth}{!Icons.HealthUp_Small} \n {G} Sacrifice {$TempTextData.SacrificeCost}{!Icons.Health_Small}"
 */
-	{
-      Id = "Shop_UseMaxHealthDrop_HealthAsObolText"
-      DisplayName = ""
-    }
+		{
+      			Id = "Shop_UseMaxHealthDrop_HealthAsObolText"
+      			DisplayName = "{I} 购买 {#UseTextHealingFormat}+{$TempTextData.TooltipMaxHealth}{!Icons.HealthUp_Small} \n {G} 损失{$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+    		}
 /*
-      DisplayName = "{I} Buy {#UseMetaPointFormat}+{$TempTextData.AddResources.MetaPoints}{!Icons.MetaPoint_Small} \n {G} Sacrifice {$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+      			DisplayName = "{I} Buy {#UseMetaPointFormat}+{$TempTextData.AddResources.MetaPoints}{!Icons.MetaPoint_Small} \n {G} Sacrifice {$TempTextData.SacrificeCost}{!Icons.Health_Small}"
 */
-	{
-      Id = "Shop_UseMetaPointDrop_HealthAsObolText"
-      DisplayName = ""
-    }
+		{
+     			 Id = "Shop_UseMetaPointDrop_HealthAsObolText"
+     			 DisplayName = "{I} 购买 {#UseMetaPointFormat}+{$TempTextData.AddResources.MetaPoints}{!Icons.MetaPoint_Small} \n {G} 损失{$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+   		}
 /*
-      DisplayName = "{I} Buy {#UseLockKeyFormat}+{$TempTextData.AddResources.LockKeys}{!Icons.LockKeySmall} \n {G} Sacrifice {$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+      			DisplayName = "{I} Buy {#UseLockKeyFormat}+{$TempTextData.AddResources.LockKeys}{!Icons.LockKeySmall} \n {G} Sacrifice {$TempTextData.SacrificeCost}{!Icons.Health_Small}"
 */
-	{
-      Id = "Shop_UseLockKeyDrop_HealthAsObolText"
-      DisplayName = ""
-    }
+		{
+      			Id = "Shop_UseLockKeyDrop_HealthAsObolText"
+      			DisplayName = "{I} 购买 {#UseLockKeyFormat}+{$TempTextData.AddResources.LockKeys}{!Icons.LockKeySmall} \n {G} 损失{$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+    		}
 /*
-      DisplayName = "{I} Buy {#UseGiftPointFormat}+{$TempTextData.AddResources.GiftPoints}{!Icons.GiftPointSmall} \n {G} Sacrifice {$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+      			DisplayName = "{I} Buy {#UseGiftPointFormat}+{$TempTextData.AddResources.GiftPoints}{!Icons.GiftPointSmall} \n {G} Sacrifice {$TempTextData.SacrificeCost}{!Icons.Health_Small}"
 */
-	{
-      Id = "Shop_UseGiftPointDrop_HealthAsObolText"
-      DisplayName = ""
-    }
+		{
+      			Id = "Shop_UseGiftPointDrop_HealthAsObolText"
+      			DisplayName = "{I} 购买 {#UseGiftPointFormat}+{$TempTextData.AddResources.GiftPoints}{!Icons.GiftPointSmall} \n {G} 损失{$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+    		}
 /*
-      DisplayName = "{I} Buy {#UseGiftPointFormat}+{$TempTextData.AddResources.SuperGiftPoints}{!Icons.SuperGiftPointSmall} \n {G} Sacrifice {$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+      			DisplayName = "{I} Buy {#UseGiftPointFormat}+{$TempTextData.AddResources.SuperGiftPoints}{!Icons.SuperGiftPointSmall} \n {G} Sacrifice {$TempTextData.SacrificeCost}{!Icons.Health_Small}"
 */
-	 {
-      Id = "Shop_UseSuperGiftPointDrop_HealthAsObolText"
-      DisplayName = ""
-    }
+	 	{
+      			Id = "Shop_UseSuperGiftPointDrop_HealthAsObolText"
+      			DisplayName = "{I} 购买 {#UseGiftPointFormat}+{$TempTextData.AddResources.SuperGiftPoints}{!Icons.SuperGiftPointSmall} \n {G} 损失{$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+    		}
 /*
-      DisplayName = "{I} Buy {#UseShrinePointFormat}+{$TempTextData.AddResources.Gems}{!Icons.GemSmall} \n {G} Sacrifice {$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+      			DisplayName = "{I} Buy {#UseShrinePointFormat}+{$TempTextData.AddResources.Gems}{!Icons.GemSmall} \n {G} Sacrifice {$TempTextData.SacrificeCost}{!Icons.Health_Small}"
 */
-	 {
-      Id = "Shop_UseGemDrop_HealthAsObolText"
-      DisplayName = ""
-    }
+	 	{
+      			Id = "Shop_UseGemDrop_HealthAsObolText"
+      			DisplayName = "{I} 购买 {#UseShrinePointFormat}+{$TempTextData.AddResources.Gems}{!Icons.GemSmall} \n {G} 损失{$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+    		}
 /*
-      DisplayName = "{I} Buy {#UseShrinePointFormat}+{$TempTextData.AddResources.SuperGems}{!Icons.SuperGemSmall} \n {G} Sacrifice {$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+      			DisplayName = "{I} Buy {#UseShrinePointFormat}+{$TempTextData.AddResources.SuperGems}{!Icons.SuperGemSmall} \n {G} Sacrifice {$TempTextData.SacrificeCost}{!Icons.Health_Small}"
 */
-	{
-      Id = "Shop_UseSuperGemDrop_HealthAsObolText"
-      DisplayName = ""
-    }
+		{
+      			Id = "Shop_UseSuperGemDrop_HealthAsObolText"
+      			DisplayName = "{I} 购买 {#UseShrinePointFormat}+{$TempTextData.AddResources.SuperGems}{!Icons.SuperGemSmall} \n {G} 损失{$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+    		}
 /*
-      DisplayName = "{I} Buy {#UseLockKeyFormat}+{$TempTextData.AddResources.SuperLockKeys}{!Icons.SuperLockKeySmall} \n {G} Sacrifice {$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+      			DisplayName = "{I} Buy {#UseLockKeyFormat}+{$TempTextData.AddResources.SuperLockKeys}{!Icons.SuperLockKeySmall} \n {G} Sacrifice {$TempTextData.SacrificeCost}{!Icons.Health_Small}"
 */
-	{
-      Id = "Shop_UseSuperLockKeyDrop_HealthAsObolText"
-      DisplayName = ""
-    }
+		{
+      			Id = "Shop_UseSuperLockKeyDrop_HealthAsObolText"
+      			DisplayName = "{I} 购买 {#UseLockKeyFormat}+{$TempTextData.AddResources.SuperLockKeys}{!Icons.SuperLockKeySmall} \n {G} 损失{$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+   		}
 /*
-      DisplayName = "{I} Buy {!Icons.RandomLootSmall} \n {G} Sacrifice {$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+      			DisplayName = "{I} Buy {!Icons.RandomLootSmall} \n {G} Sacrifice {$TempTextData.SacrificeCost}{!Icons.Health_Small}"
 */
-	{
-      Id = "UseBlindBox_HealthAsObolText"
-      DisplayName = ""
-    }
+		{
+      			Id = "UseBlindBox_HealthAsObolText"
+      			DisplayName = "{I} 购买 {!Icons.RandomLootSmall} \n {G} 损失{$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+    		}
 /*
-      DisplayName = "{I} Buy {!Icons.RandomPomSmall} Power-Up \n {G} Sacrifice {$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+      			DisplayName = "{I} Buy {!Icons.RandomPomSmall} Power-Up \n {G} Sacrifice {$TempTextData.SacrificeCost}{!Icons.Health_Small}"
 */
-	{
-      Id = "UseStoreRewardRandomStack_HealthAsObolText"
-      DisplayName = ""
-    }
+		{
+      			Id = "UseStoreRewardRandomStack_HealthAsObolText"
+      			DisplayName = "{I} 购买{!Icons.RandomPomSmall}强化 \n {G} 损失{$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+    		}
 /*
-      DisplayName = "{I} Buy {#UseTextHealingFormat}{$TempTextData.TooltipHeal}{!Icons.HealthRestore_Small} \n {G} Sacrifice {$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+      			DisplayName = "{I} Buy {#UseTextHealingFormat}{$TempTextData.TooltipHeal}{!Icons.HealthRestore_Small} \n {G} Sacrifice {$TempTextData.SacrificeCost}{!Icons.Health_Small}"
 */
-	{
-      Id = "Shop_UseHealDrop_HealthAsObolText"
-      DisplayName = ""
-    }
+		{
+			Id = "Shop_UseHealDrop_HealthAsObolText"
+      			DisplayName = "{I} 购买 {#UseTextHealingFormat}{$TempTextData.TooltipHeal}{!Icons.HealthRestore_Small} \n {G} 损失{$TempTextData.SacrificeCost}{!Icons.Health_Small}"
+    		}
 /*
 			DisplayName = "{$TempTextData.SacrificeCost} {!Icons.Health_Small}"
 */
 		{
 			Id = "Shop_ItemSacrifice"
-			DisplayName = ""
+			DisplayName = "{$TempTextData.SacrificeCost} {!Icons.Health_Small}"
 			OverwriteLocalization = true
 		}
 /*
@@ -1199,16 +1199,16 @@ Texts = [
 */
 		{
     		Id = "HealthAsObolText_Alt"
-      		DisplayName = ""     
-    	}
+      		DisplayName = "{#CombatTextHighlightFormat}{$TempTextData.TraitName}{#PreviousFormat}: {$TempTextData.Amount} {!Icons.Health_Small}"     
+    		}
 /*
 			DisplayName = "Queen's Gambit"
 			Description = "Visiting Charon restores some {!Icons.Health_Small}. You may pay Charon with {!Icons.Health_Small}. \n {!Icons.Bullet}{#PropertyFormat}{!Icons.Health_Small} restored: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta1}{#PreviousFormat}"
 */
 		{
 			Id = "HealthAsObolTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "后翼弃兵"
+			Description = "进入有卡戎的房间可以回复{!Icons.Health_Small}。你能够以{!Icons.Health_Small}替代金币在卡戎处购物。\n {!Icons.Bullet}{#PropertyFormat}{!Icons.Health_Small}回复: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta1}{#PreviousFormat}"
 		}
 /*
 			Description = "Visiting Charon restores some {!Icons.Health_Small}. You may pay Charon with {!Icons.Health_Small}. \n {!Icons.Bullet}{#PropertyFormat}{!Icons.Health_Small} restored: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}{#PreviousFormat}"
@@ -1216,7 +1216,7 @@ Texts = [
 		{
 			Id = "HealthAsObolTrait_Initial"
 			InheritFrom = "HealthAsObolTrait"
-			Description = ""
+			Description = "进入有卡戎的房间可以回复{!Icons.Health_Small}。你能够以{!Icons.Health_Small}替代金币在卡戎处购物。\n {!Icons.Bullet}{#PropertyFormat}{!Icons.Health_Small}回复: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}{#PreviousFormat}"
 		}
 /*
 			DisplayName = "Sovereign Sanctuary"
@@ -1224,8 +1224,8 @@ Texts = [
 */
 		{
 			Id = "StatusOverTimeTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "会幕圣所"
+			Description = "获得{$Keywords.Aura}:受到{$Keywords.EnvyCurse}或{$Keywords.JealousyCurse}影响的敌人将开始腐朽。\n {!Icons.Bullet}{#PropertyFormat}腐朽伤害: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDamage} {#PreviousFormat} {#ItalicFormat} (每 {$TooltipData.TooltipTickRate}秒。) \n {!Icons.Bullet}{#PropertyFormat}身光范围: \Column 380 {#UpgradeFormat}小{#AltUpgradeFormat}"
 		}
 /*
 			DisplayName = "Skull Ornaments"
@@ -1233,8 +1233,8 @@ Texts = [
 */
 		{
 			Id = "ForceHeraBoonTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "伪王之颅"
+			Description = "你找到的下一个{$Keywords.GodBoon}将来自{#BoldFormat}赫拉{#PreviousFormat}。她的祝福将有{#AltUpgradeFormat}{$TooltipData.TooltipBonusChance:P} {#PreviousFormat}的几率成为{#RareFormat}稀有{#PreviousFormat}或更高等级。"
 		}
 /*
 			Description = "The next {$Keywords.GodBoon} you find will be from {#BoldFormat}Hera{#PreviousFormat}. Her blessings have {#AltUpgradeFormat}{$TooltipData.TooltipBonusChance:P} {#PreviousFormat} chance to be {#RareFormat}Rare {#PreviousFormat} or better. \n\n {#AwardFlavorFormat}{$TooltipData.SignoffText}"
@@ -1242,7 +1242,7 @@ Texts = [
 		{
 			Id = "ForceHeraBoonTrait_Rack"
 			InheritFrom = "ForceHeraBoonTrait"
-			Description = ""
+			Description = "你找到的下一个{$Keywords.GodBoon}将来自{#BoldFormat}赫拉{#PreviousFormat}。她的祝福将有{#AltUpgradeFormat}{$TooltipData.TooltipBonusChance:P} {#PreviousFormat}的几率成为 {#RareFormat}稀有{#PreviousFormat}或更高等级。\n\n {#AwardFlavorFormat}{$TooltipData.SignoffText}"
 		}
 /*
 			DisplayName = "Skull Ornaments"
@@ -1250,8 +1250,8 @@ Texts = [
 */
 		{
 			Id = "ForceHeraBoonTrait_Inactive"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "伪王之颅"
+			Description = "赫拉的祝福将有{#AltUpgradeFormat}{$TooltipData.TooltipBonusChance:P} {#PreviousFormat}的几率成为{#RareFormat}稀有{#PreviousFormat}或更高等级。"
 		}
 /*
 			DisplayName = "Regal Aegis"
@@ -1259,8 +1259,8 @@ Texts = [
 */
 		{
 			Id = "AuraExposedTrait"
-			DisplayName = ""
-			Description = "" 
+			DisplayName = "国之干城"
+			Description = "{$Keywords.Aura}: 敌人将进入{$Keywords.Stagger}状态。\n {!Icons.Bullet}{#PropertyFormat}身光范围: \Column 380 {#UpgradeFormat}大{#AltUpgradeFormat}" 
 		}	
 /*
 			DisplayName = "Unyielding Undertow"
@@ -1268,8 +1268,8 @@ Texts = [
 */
 		{
 			Id = "AuraRuptureTrait"
-			DisplayName = ""
-			Description = "" 
+			DisplayName = "潮信不失"
+			Description = "{$Keywords.Aura}: 敌人将遭受{$Keywords.Rupture}。\n {!Icons.Bullet}{#PropertyFormat}身光范围: \Column 380 {#UpgradeFormat}很小{#AltUpgradeFormat}" 
 		}	
 /*
 			DisplayName = "Blinding Radiance"
@@ -1277,8 +1277,8 @@ Texts = [
 */
 		{
 			Id = "AuraBlindTrait"
-			DisplayName = ""
-			Description = "" 
+			DisplayName = "天威昭昭"
+			Description = "{$Keywords.Aura}: 敌人将遭受{$Keywords.ApolloBlind}。\n {!Icons.Bullet}{#PropertyFormat}身光范围: \Column 380 {#UpgradeFormat}中{#AltUpgradeFormat}" 
 		}	
 /*
 			DisplayName = "Unfading Charms"
@@ -1286,8 +1286,8 @@ Texts = [
 */
 		{
 			Id = "CurseLongerTrait"
-			DisplayName = ""
-			Description = "" 
+			DisplayName = "驻颜有术"
+			Description = "{$Keywords.Status}持续时间将延长，{$Keywords.Curse}除外。\n {!Icons.Bullet}{#PropertyFormat}持续时间增加: \Column 380 {#UpgradeFormat}+{$TooltipData.NewTotal1}秒。{#AltUpgradeFormat}" 
 		}	
 /*
 			DisplayName = "Moonlit Snares"
@@ -1295,8 +1295,8 @@ Texts = [
 */
 		{
 			Id = "BetterTrapsTrait"
-			DisplayName = ""
-			Description = "" 
+			DisplayName = "蟆仙跳月"
+			Description = "{#BoldFormat}{$Keywords.HeraTrap}{#PreviousFormat}的生效体积将增大并且同时存在的数量将增加。\n {!Icons.Bullet}{#PropertyFormat}生效体积: \Column 380 {#UpgradeFormat}+150%{#AltUpgradeFormat} \n {!Icons.Bullet}{#PropertyFormat}数量上限: \Column 380 {#UpgradeFormat}+2{#AltUpgradeFormat}" 
 		}	
 /*
 			DisplayName = "Cold Service"
@@ -1304,8 +1304,8 @@ Texts = [
 */
 		{
 			Id = "HeroicBoonsTrait"
-			DisplayName = ""
-			Description = "" 
+			DisplayName = "瑞雪丰年"
+			Description = "随机选取你的{$Keywords.GodBoonPlural}将其变为{$Keywords.Heroic}级别。\n {!Icons.Bullet}{#PropertyFormat}选取{$Keywords.GodBoonPlural}数量: \Column 380 {#UpgradeFormat}3{#PreviousFormat}" 
 		}
 /*
 			Description = "Your {$Keywords.GodBoonPlural} become {$Keywords.Heroic}. \n {!Icons.Bullet}{#PropertyFormat}Random {$Keywords.GodBoonPlural} Affected: \Column 380 {#UpgradeFormat}3{#PreviousFormat}" 
@@ -1313,7 +1313,7 @@ Texts = [
 		{
 			Id = "HeroicBoonsTrait_Tray"
 			InheritFrom = "HeroicBoonsTrait"
-			Description = "" 
+			Description = "随机选取你的{$Keywords.GodBoonPlural}将其变为{$Keywords.Heroic}级别。\n {!Icons.Bullet}{#PropertyFormat}选取{$Keywords.GodBoonPlural}数量: \Column 380 {#UpgradeFormat}3{#PreviousFormat}" 
 		}
 /*
 			DisplayName = "Vile Venom"
@@ -1321,8 +1321,8 @@ Texts = [
 */
 		{
 			Id = "SlowerHangoverTrait"
-			DisplayName = ""
-			Description = "" 
+			DisplayName = "毒酿穿肠"
+			Description = "{$Keywords.Poison}将造成更高伤害，但生效速度减慢。\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.Poison}伤害提高: \Column 380 {#UpgradeFormat}+150%{#PreviousFormat}. \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.Poison} 伤害速度: \Column 380 {#OldFormat}{$TooltipData.TooltipBaseTickRate}秒{!Icons.RightArrow}{#AltPenaltyFormat}1.0秒{#PreviousFormat}" 
 		}	
 /*
 			DisplayName = "Death Sentence"
@@ -1330,8 +1330,8 @@ Texts = [
 */
 		{
 			Id = "KillMarkedTrait"
-			DisplayName = ""
-			Description = "" 
+			DisplayName = "定斩不饶"
+			Description = "标记一名敌人，使其受到更高的伤害。\n {!Icons.Bullet}{#PropertyFormat}伤害提高: \Column 380 {#UpgradeFormat}+100%{#PreviousFormat} \n {!Icons.Bullet}{#PropertyFormat}对{$Keywords.BossPlural}生效时限: \Column 380 {#UpgradeFormat}5秒。{#PreviousFormat}" 
 		}	
 /*
 			DisplayName = "Sparkling Union"
@@ -1339,8 +1339,8 @@ Texts = [
 */
 		{
 			Id = "GaugeLightningTrait"
-			DisplayName = ""
-			Description = "" 
+			DisplayName = "阴阳交震"
+			Description = "若{$Keywords.WrathGauge}累积变满，则每{#BoldFormatGraft}1秒{#PreviousFormat}在你身边引来一次天雷。\n {!Icons.Bullet}{#PropertyFormat}闪电伤害: \Column 380 {#PreviousFormat}{$TooltipData.NewTotal1}" 
 		}	
 /*
 			DisplayName = "Royal Pact"
@@ -1348,22 +1348,22 @@ Texts = [
 */
 		{
 			Id = "EnhancedNPCTrait"
-			DisplayName = ""
-			Description = "" 
+			DisplayName = "天界新约"
+			Description = "你可以从道途中的朋友们那里得到更多的帮助。\n {!Icons.Bullet}{#PropertyFormat}朋友的帮助: \Column 380 {#UpgradeFormat}全都要{#AltUpgradeFormat}\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.BossPlural}战后几率获得额外奖励 : \Column 380 {#UpgradeFormat}1{#AltUpgradeFormat}" 
 		}	
 /*
 			DisplayName = "Blessed foes now curse you."
 */
 		{
 			Id = "LtUpgrade_Hera"
-			DisplayName = ""
+			DisplayName = "受到祝福的敌人现在会对你施加嫉妒的咒术"
 		}				
 /*
 			DisplayName = "{!Icons.RunClearStar}Disciple of Hera{!Icons.RunClearStar}"
 */
 		{
 			Id = "ClearRequiredTraitsHera"
-			DisplayName = ""
+			DisplayName = "{!Icons.RunClearStar}赫拉的门徒{!Icons.RunClearStar}"
 		}
 /*
 			DisplayName = "More Divine Pairings"
@@ -1371,8 +1371,8 @@ Texts = [
 */
 		{
 			Id = "SynergyUpgrades2"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "还有很多双重祝福"
+			Description = "有朝一日，冥王之子定能获得奥林匹斯诸神的那些额外的双重祝福。"
 		}
 /*
 			DisplayName = "Hestia"
@@ -1380,15 +1380,15 @@ Texts = [
 */
 		{
 			Id = "NPC_Hestia_01"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "赫斯提亚"
+			Description = "炉灶女神"
 		}		
 /*
 			DisplayName = "Met Hestia"
 */
 		{
 			Id = "HestiaFirstPickUp"
-			DisplayName = ""
+			DisplayName = "已见到赫斯提亚"
 		}
 /*
 			DisplayName = "Hestia"
@@ -1396,8 +1396,8 @@ Texts = [
 */
 		{
 			Id = "HestiaUpgrade"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "赫斯提亚"
+			Description = "炉灶女神"
 		}
 /*
 			DisplayName = "Goddess of the Hearth"
@@ -1405,8 +1405,8 @@ Texts = [
 */
 		{
 			Id = "HestiaUpgrades"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "炉灶女神"
+			Description = "有朝一日，冥王之子定能获得赫斯提亚的各种祝福。"
 		}
 /*
 			DisplayName = "The Warmth of Home"
@@ -1414,50 +1414,50 @@ Texts = [
 */
 		{
 			Id = "HomeWarmthQuest"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "温馨的家"
+			Description = "有朝一日，冥王之子将在炉灶女神的授意下雇用承包商上下翻新，让他的父亲感到家的温馨。"
 		}
 /*
 			DisplayName = "Commission Candles from the House Contractor"
 */
 		{
 			Id = "HestiaHomeWarmthQuest01"
-			DisplayName = ""
+			DisplayName = "在圣殿承包商处购置烛台。"
 		}		
 /*
 			DisplayName = "Commission Some Fiery Items from the House Contractor"
 */
 		{
 			Id = "HestiaHomeWarmthQuest02"
-			DisplayName = ""
+			DisplayName = "在圣殿承包商处购置热情洋溢的改造项目。"
 		}		
 /*
 			DisplayName = "Commission a Fireplace from the House Contractor"
 */
 		{
 			Id = "HestiaHomeWarmthQuest03"
-			DisplayName = ""
+			DisplayName = "在圣殿承包商处购置壁炉。"
 		}		
 /*
 			DisplayName = "Play a Fiery Song at the Music Stand"
 */
 		{
 			Id = "HestiaHomeWarmthQuest04"
-			DisplayName = ""
+			DisplayName = "在宫廷音乐家处奏响热情洋溢的歌曲。"
 		}		
 /*
 			DisplayName = "Commission Deathlike Flames from the House Contractor"
 */
 		{
 			Id = "HestiaHomeWarmthQuest05"
-			DisplayName = ""
+			DisplayName = "在圣殿承包商处购置冥火。"
 		}		
 /*
 			DisplayName = "Report Back to the Goddess of the Hearth"
 */
 		{
 			Id = "HestiaHomeWarmthQuest06"
-			DisplayName = ""
+			DisplayName = "向炉灶女神禀报。"
 		}		
 /*
 			DisplayName = "Centaur Heart"
@@ -1465,8 +1465,8 @@ Texts = [
 */
 		{
 			Id = "CentaurHeart"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "半人马之心"
+			Description = "获得{#UseTextHealingFormat}+{$TooltipData.TooltipMaxHealth}{!Icons.HealthUp_Small} {#PreviousFormat}"
 		}
 /*
 			DisplayName = "Centaur Soul"
@@ -1474,15 +1474,15 @@ Texts = [
 */
 		{
 			Id = "CentaurSoul"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "半人马灵魂"
+			Description = "获得{#UseTextHealingFormat}+{$TooltipData.TooltipMaxHealth}{!Icons.HealthUp_Small} \n{#PreviousFormat}{#ItalicFormat}（{!Icons.Health_Small}并不恢复）{#PreviousFormat}"
 		}
 /*
 			DisplayName = "Centaur Soul"
 */
 		{
 			Id = "RoomRewardEmptyHealthDrop"
-			DisplayName = ""
+			DisplayName = "半人马灵魂"
 		}
 /*
 			DisplayName = "Mini-Bosses"
@@ -1490,29 +1490,29 @@ Texts = [
 */
 		{
 			Id = "MiniBoss"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "小Boss"
+			Description = "强于一般的敌对生物，通常出现于{!Icons.MiniBoss}"
 		}
 /*
 			DisplayName = "she ensures the fires of Olympus never go out."
 */
 		{
 			Id = "HestiaUpgrade_FlavorText01"
-			DisplayName = ""
+			DisplayName = "她确保奥林匹斯之火永不熄灭。"
 		}
 /*
 			DisplayName = "a house is made of bricks and beams, a home is made of hopes and dreams."
 */
 		{
 			Id = "HestiaUpgrade_FlavorText02"
-			DisplayName = ""
+			DisplayName = "房子以土砖瓦石建成，家园以美梦期许建成。"
 		}
 /*
 			DisplayName = "home is the place you feel you belong."
 */
 		{
 			Id = "HestiaUpgrade_FlavorText03"
-			DisplayName = ""
+			DisplayName = "家，是你永远的归处。"
 		}	
 /*
 			DisplayName = "Embracing Strike"
@@ -1520,8 +1520,8 @@ Texts = [
 */
 		{
 			Id = "HestiaWeaponTrait"
-			DisplayName = ""
-			Description = "" 
+			DisplayName = "合抱攻击"
+			Description = "{$Keywords.Attack}更强，可以吸引敌人。\n {!Icons.Bullet}{#PropertyFormat}攻击伤害: \Column 380 {#PreviousFormat}{$TooltipData.DisplayDelta1}" 
 		} 		
 /*
 			Description = "Your {$Keywords.Attack} deals more damage and attracts foes. \n {!Icons.Bullet}{#PropertyFormat}Attack Damage: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}"
@@ -1529,7 +1529,7 @@ Texts = [
 		{
 			Id = "HestiaWeaponTrait_Initial"
 			InheritFrom = "HestiaWeaponTrait"
-			Description = ""
+			Description = "{$Keywords.Attack}更强，可以吸引敌人。\n {!Icons.Bullet}{#PropertyFormat}攻击伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}"
 		}
 /*
 			DisplayName = "Embracing Flourish"
@@ -1537,8 +1537,8 @@ Texts = [
 */
 		{
 			Id = "HestiaSecondaryTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "合抱乱舞"
+			Description = "{$Keywords.Special}更强，可以吸引敌人。\n {!Icons.Bullet}{#PropertyFormat}特殊攻击伤害: \Column 380 {#PreviousFormat}{$TooltipData.DisplayDelta1}"
 		} 	
 /*
 			Description = "Your {$Keywords.Special} deals more damage and attracts foes. \n {!Icons.Bullet}{#PropertyFormat}Special Damage: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}"
@@ -1546,7 +1546,7 @@ Texts = [
 		{
 			Id = "HestiaSecondaryTrait_Initial"
 			InheritFrom = "HestiaSecondaryTrait"
-			Description = ""
+			Description = "{$Keywords.Special}更强，可以吸引敌人。\n {!Icons.Bullet}{#PropertyFormat}特殊攻击伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}"
 		}		
 /*
 			DisplayName = "Flaring Rush"
@@ -1554,8 +1554,8 @@ Texts = [
 */
 		{
 			Id = "HestiaDashTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "点燃冲刺"
+			Description = "{$Keywords.Dash}时将留下一串火焰。\n {!Icons.Bullet}{#PropertyFormat}冲刺伤害: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta1} \n {!Icons.Bullet}{#PropertyFormat}持续伤害: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta2}"
 		} 
 /*
 			Description = "Your {$Keywords.Dash} creates a trail of fire. \n {!Icons.Bullet}{#PropertyFormat}Burst Damage: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1} \n {!Icons.Bullet}{#PropertyFormat}Damage Over Time: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal2}"
@@ -1563,14 +1563,14 @@ Texts = [
 		{
 			Id = "HestiaDashTrait_Initial"
 			InheritFrom = "HestiaDashTrait"
-			Description = ""
+			Description = "{$Keywords.Dash}时将留下一串火焰。\n {!Icons.Bullet}{#PropertyFormat}冲刺伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1} \n {!Icons.Bullet}{#PropertyFormat}持续伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal2}"
 		}
 /*
 			DisplayName = "From Hestia"
 */
 		{
 			Id = "HestiaSignoff"
-			DisplayName = ""
+			DisplayName = "来自赫斯提亚"
 		}
 /*
 			DisplayName = """
@@ -1580,9 +1580,9 @@ Texts = [
 		{
 			Id = "HestiaSignoff_Max"
 			DisplayName = ""
-				From {#AwardMaxFlavorFormat}Hestia{#AwardDarkFlavorFormat}; you share a {#AwardMaxFlavorFormat}Compassionate Bond
+				你获得了来自{#AwardMaxFlavorFormat}赫斯提亚{#AwardDarkFlavorFormat}的{#AwardMaxFlavorFormat}慈爱羁绊
 
-				{#AwardDarkFlavorFormat}Together, you are the founding members of the Warmth and Compassion Brigade.
+				{#AwardDarkFlavorFormat}你们是温情与慈爱军团的创始成员。
 			"""
 		}
 /*
@@ -1591,8 +1591,8 @@ Texts = [
 */
 		{
       		Id = "LavaSplash"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "熔岩泊"
+			Description = "留有一片熔岩的区域，能在范围内快速伤害敌人。"
 		}
 /*
 			DisplayName = "Hestia's Aid"
@@ -1600,8 +1600,8 @@ Texts = [
 */
 		{
 			Id = "HestiaShoutTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "赫斯提亚之援"
+			Description = "{$Keywords.WrathDerivedStocks}后，燃起火焰之环，每击中敌人一下回复{$TooltipData.TooltipHeal}{!Icons.Health_Small}。 \n {!Icons.Bullet}{#PropertyFormat}火环伤害: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta1} \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.EXWrath}-火环伤害: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta2}"
 		}		
 /*
 			Description = "Your {$Keywords.WrathDerivedStocks} emits a ring of fire around you, restoring {$TooltipData.TooltipHeal} {!Icons.Health_Small} per foe hit. \n {!Icons.Bullet}{#PropertyFormat}Ring Damage: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1} \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.EXWrath} Ring Damage: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal2}"
@@ -1609,7 +1609,7 @@ Texts = [
 		{
 			Id = "HestiaShoutTrait_Tray"
 			InheritFrom = "HestiaShoutTrait"
-			Description = ""
+			Description = "{$Keywords.WrathDerivedStocks}后，燃起火焰之环，每击中敌人一下回复{$TooltipData.TooltipHeal}{!Icons.Health_Small}。\n {!Icons.Bullet}{#PropertyFormat}火环伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1} \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.EXWrath}-火环伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal2}"
 		}	
 /*
 			Description = "Your {$Keywords.WrathDerivedStocks} emits a ring of fire around you, restoring {$TooltipData.TooltipHeal} {!Icons.Health_Small} per foe hit. \n {!Icons.Bullet}{#PropertyFormat}Ring Damage: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1} \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.EXWrath} Ring Damage: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal2}"
@@ -1617,7 +1617,7 @@ Texts = [
 		{
 			Id = "HestiaShoutTrait_Initial"
 			InheritFrom = "HestiaShoutTrait"
-			Description = ""
+			Description = "{$Keywords.WrathDerivedStocks}后，燃起火焰之环，每击中敌人一下回复{$TooltipData.TooltipHeal}{!Icons.Health_Small}。\n {!Icons.Bullet}{#PropertyFormat}火环伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1} \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.EXWrath}-火环伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal2}"
 		} 
 /*
 			DisplayName = "Ember Shot"
@@ -1625,8 +1625,8 @@ Texts = [
 */
 		{
 			Id = "HestiaRangedTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "余烬射击"
+			Description = "{$Keywords.Cast}掷出一枚追踪火球，落地形成{$Keywords.LavaSplash}。\n {!Icons.Bullet}{#PropertyFormat}投弹伤害: \Column 380 {$TooltipData.DisplayDelta1} \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.LavaSplash}伤害: \Column 380 {#OldFormat}{$TooltipData.DisplayDelta2}"
 		}
 /*
 			Description = "Your {$Keywords.Cast} launches a seeking fireball which spawns a {$Keywords.LavaSplash}. \n {!Icons.Bullet}{#PropertyFormat}Cast Damage: \Column 380 {#OldFormat}{$TooltipData.BaseRangedDamage}{!Icons.RightArrow}{$TooltipData.NewTotal1}  \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.LavaSplash} Damage: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal2}"
@@ -1634,7 +1634,7 @@ Texts = [
 		{
 			Id = "HestiaRangedTrait_Initial"
 			InheritFrom = "HestiaRangedTrait"
-			Description = ""
+			Description = "{$Keywords.Cast}掷出一枚追踪火球，落地形成{$Keywords.LavaSplash}。\n {!Icons.Bullet}{#PropertyFormat}投弹伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}  \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.LavaSplash}伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal2}"
 		}
 /*
 			Description = "Your {$Keywords.Cast} launches a seeking fireball which spawns a {$Keywords.LavaSplash}. \n {!Icons.Bullet}{#PropertyFormat}Cast Damage: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1} \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.LavaSplash} Damage: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal2}"
@@ -1642,7 +1642,7 @@ Texts = [
 		{
 			Id = "HestiaRangedTrait_Tray"
 			InheritFrom = "HestiaRangedTrait"
-			Description = ""
+			Description = "{$Keywords.Cast}掷出一枚追踪火球，落地形成{$Keywords.LavaSplash}。\n {!Icons.Bullet}{#PropertyFormat}投弹伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}  \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.LavaSplash}伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal2}"
 		}
 /*
 			DisplayName = "Ember Flare"
@@ -1650,8 +1650,8 @@ Texts = [
 */
 		{
 			Id = "ShieldLoadAmmo_HestiaRangedTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "薪烬火传"
+			Description = "{$Keywords.Cast}可以对周围的敌人造成伤害，并产生{$Keywords.LavaSplash}。\n {!Icons.Bullet}{#PropertyFormat}爆炸伤害: \Column 380 {$TooltipData.DisplayDelta2}\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.LavaSplash}伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal2}"
 		}
 /*
 			Description = "Your {$Keywords.Cast} damages foes around you, leaving behind a {$Keywords.LavaSplash}. \n {!Icons.Bullet}{#PropertyFormat}Blast Damage: \Column 380 {$TooltipData.NewTotal1}\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.LavaSplash} Damage: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal2}"
@@ -1659,7 +1659,7 @@ Texts = [
 		{
 			Id = "ShieldLoadAmmo_HestiaRangedTrait_Tray"
 			InheritFrom = "ShieldLoadAmmo_HestiaRangedTrait"
-			Description = ""
+			Description = "{$Keywords.Cast}可以对周围的敌人造成伤害，并产生{$Keywords.LavaSplash}。\n {!Icons.Bullet}{#PropertyFormat}爆炸伤害: \Column 380 {$TooltipData.NewTotal2}\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.LavaSplash}伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal2}"
 		}
 /*
 			Description = "Your {$Keywords.Cast} damages foes around you, leaving behind a {$Keywords.LavaSplash}. \n {!Icons.Bullet}{#PropertyFormat}Blast Damage: \Column 380 {#OldFormat}{$TooltipData.BaseRangedDamage}{!Icons.RightArrow}{$TooltipData.NewTotal1}\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.LavaSplash} Damage: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal2}"
@@ -1667,7 +1667,7 @@ Texts = [
 		{
 			Id = "ShieldLoadAmmo_HestiaRangedTrait_Initial"
 			InheritFrom = "ShieldLoadAmmo_HestiaRangedTrait"
-			Description = ""
+			Description = "{$Keywords.Cast}可以对周围的敌人造成伤害，并产生{$Keywords.LavaSplash}。\n {!Icons.Bullet}{#PropertyFormat}爆炸伤害: \Column 380 {#OldFormat}{$TooltipData.BaseRangedDamage}{!Icons.RightArrow}{$TooltipData.NewTotal1}\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.LavaSplash}伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal2}"
 		}
 /*
 */
@@ -1693,25 +1693,25 @@ Texts = [
 */
 		{
 			Id = "StrongAttractionTrait",
-			DisplayName = ""
-			Description = ""
-    	}
+			DisplayName = "张开怀抱"
+			Description = "具有吸引敌人能力的{#BoldFormat}祝福{#PreviousFormat}生效距离将变得更远，且能吸引更多的敌人。 \n {!Icons.Bullet}{#PropertyFormat}吸引生效距离: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipAttractionDistance}% \n {!Icons.Bullet}{#PropertyFormat}吸引目标数: \Column 380 {#UpgradeFormat}+{$TooltipData.AttractionCount}"
+    		}
 /*
 			Description = "Your {#BoldFormat}{$Keywords.GodBoon}s {#PreviousFormat} with attraction effects attract further and more foes. \n {!Icons.Bullet}{#PropertyFormat}Bonus Attraction Distance: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipAttractionDistance}% \n {!Icons.Bullet}{#PropertyFormat}Targets Attracted: \Column 380 {#UpgradeFormat}+{$TooltipData.AttractionCount}"
 */
 		{
 			Id = "StrongAttractionTrait_Initial",
 			InheritFrom = "StrongAttractionTrait"
-			Description = ""
-    	}
+			Description = "具有吸引敌人能力的{#BoldFormat}祝福{#PreviousFormat}生效距离将变得更远，且能吸引更多的敌人。 \n {!Icons.Bullet}{#PropertyFormat}吸引生效距离: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipAttractionDistance}% \n {!Icons.Bullet}{#PropertyFormat}吸引目标数: \Column 380 {#UpgradeFormat}+{$TooltipData.AttractionCount}"
+    		}
 /*
 			DisplayName = "Molten Sting"
 			Description = "After you take damage, create a random {$Keywords.LavaSplash} near you. \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.LavaSplash} Damage: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta1}"
 */
 		{
 			Id = "HestiaRevengeTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "熔岩喷发"
+			Description = "受到伤害后，于你附近随机生成一个{$Keywords.LavaSplash}。\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.LavaSplash}伤害: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta1}"
 		}
 /*
 			Description = "After you take damage, create a random {$Keywords.LavaSplash} near you. \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.LavaSplash} Damage: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}"
@@ -1719,7 +1719,7 @@ Texts = [
 		{
 			Id = "HestiaRevengeTrait_Initial"
 			InheritFrom = "HestiaRevengeTrait"
-			Description = ""
+			Description = "受到伤害后，于你附近随机生成一个{$Keywords.LavaSplash}。 \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.LavaSplash}伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}"
 		}
 /*
 			DisplayName = "Homecoming"
@@ -1727,8 +1727,8 @@ Texts = [
 */
 		{
 			Id = "HealthDefianceTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "回到老家"
+			Description = "{$Keywords.ExtraChanceChaos}后，增加{!Icons.HealthUpAlt_Small}效果。\n {!Icons.Bullet}{#PropertyFormat}生命上限恢复: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipBonusHealth}"
 		}
 /*
 			Description = "{$Keywords.ExtraChanceChaos} gives you {!Icons.HealthUpAlt_Small}. \n {!Icons.Bullet}{#PropertyFormat}Bonus Health: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipBonusHealth}"
@@ -1736,7 +1736,7 @@ Texts = [
 		{
 			Id = "HealthDefianceTrait_Initial"
 			InheritFrom = "HealthDefianceTrait"
-			Description = ""
+			Description = "{$Keywords.ExtraChanceChaos}后，增加{!Icons.HealthUpAlt_Small}效果。\n {!Icons.Bullet}{#PropertyFormat}生命上限恢复: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipBonusHealth}"
 		}
 /*
 			Description = "{$Keywords.ExtraChanceChaos} gives you {!Icons.HealthUpAlt_Small}. Replenish {#BoldFormat}1 {#PreviousFormat} use. \n {!Icons.Bullet}{#PropertyFormat}Bonus Health: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipBonusHealth} {#UpgradeFormat}"
@@ -1744,7 +1744,7 @@ Texts = [
 		{
 			Id = "LastStandHealthDrop"
 			InheritFrom = "HealthDefianceTrait_Initial"
-			Description = ""
+			Description = "{$Keywords.ExtraChanceChaos}后，增加{!Icons.HealthUpAlt_Small}效果。补充{#BoldFormat}1{#PreviousFormat}死里逃生。\n {!Icons.Bullet}{#PropertyFormat}生命上限恢复: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipBonusHealth} {#UpgradeFormat}"
 		}
 /*
 			DisplayName = "Temperance"
@@ -1752,8 +1752,8 @@ Texts = [
 */
 		{
 			Id = "LastStandDamageReduceTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "克己节制"
+			Description = "发动{$Keywords.ExtraChanceReplenish}后，本次{$Keywords.EncounterAlt}受到的伤害减少。\n {!Icons.Bullet}{#PropertyFormat}减免伤害: \Column 380 {#PreviousFormat}{$TooltipData.DisplayDelta1}"
 		}
 /*
 			Description = "After using {$Keywords.ExtraChanceReplenish}, take less damage that {$Keywords.EncounterAlt}. \n {!Icons.Bullet}{#PropertyFormat}Damage Resistance: \Column 380 {#PreviousFormat}{$TooltipData.NewTotal1}"
@@ -1761,7 +1761,7 @@ Texts = [
 		{
 			Id = "LastStandDamageReduceTrait_Initial"
 			InheritFrom = "LastStandDamageReduceTrait"
-			Description = ""
+			Description = "发动{$Keywords.ExtraChanceReplenish}后，本次{$Keywords.EncounterAlt}受到的伤害减少。\n {!Icons.Bullet}{#PropertyFormat}减免伤害: \Column 380 {#PreviousFormat}{$TooltipData.NewTotal1}"
 		}
 /*
 			DisplayName = "Molten Core"
@@ -1769,8 +1769,8 @@ Texts = [
 */
 		{
 			Id = "LavaDeathTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "熔火之心"
+			Description = "击杀敌人后，敌人将留下一个{$Keywords.LavaSplash}。\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.LavaSplash}伤害: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta1}"
 		}
 /*
 			Description = "When foes are slain, they leave a {$Keywords.LavaSplash} behind. \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.LavaSplash} Damage: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}"
@@ -1778,7 +1778,7 @@ Texts = [
 		{
 			Id = "LavaDeathTrait_Initial"
 			InheritFrom = "LavaDeathTrait"
-			Description = ""
+			Description = "击杀敌人后，敌人将留下一个{$Keywords.LavaSplash}。\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.LavaSplash}伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}"
 		}
 /*
 			DisplayName = "Melting Heart"
@@ -1786,8 +1786,8 @@ Texts = [
 */
 		{
 			Id = "HealthDamageTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "动人心房"
+			Description = "捡起{$Keywords.CentaurHeart}或{$Keywords.CentaurSoul}时，获得伤害加成。\n 现在获得{#BoldFormat}1{#PreviousFormat} {$Keywords.CentaurSoul}。 \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.Attack}和{$Keywords.Special} 伤害加成: \Column 381 {#UpgradeFormat} {$TooltipData.TooltipDamage:P}"
 		} 
 /*
 			Description = "Gain Bonus Damage when you pick up {$Keywords.CentaurHeart} or {$Keywords.CentaurSoul}. \n {!Icons.Bullet}{#PropertyFormat}Total {$Keywords.Attack} and {$Keywords.Special} Bonus Damage: \Column 383 {#UpgradeFormat} {$TooltipData.TooltipTotalDamage:P}"
@@ -1795,7 +1795,7 @@ Texts = [
 		{
 			Id = "HealthDamageTrait_Tray"
 			InheritFrom = "HealthDamageTrait"
-			Description = ""
+			Description = "捡起{$Keywords.CentaurHeart}或{$Keywords.CentaurSoul}时，获得伤害加成。\n {!Icons.Bullet}{#PropertyFormat}总{$Keywords.Attack}和{$Keywords.Special}伤害加成: \Column 383 {#UpgradeFormat} {$TooltipData.TooltipTotalDamage:P}"
 		}
 /*
 			Description = "Gain Bonus Damage when you pick up {$Keywords.CentaurHeart} or {$Keywords.CentaurSoul}. \n Receive {#BoldFormat}1 {#PreviousFormat} {$Keywords.CentaurSoul} now. \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.Attack} and {$Keywords.Special} Bonus Damage: \Column 381 {#UpgradeFormat} {$TooltipData.TooltipDamage:P}"
@@ -1803,7 +1803,7 @@ Texts = [
 		{
 			Id = "HealthDamageTrait_Initial"
 			InheritFrom = "HealthDamageTrait"
-			Description = ""
+			Description = "捡起{$Keywords.CentaurHeart}或{$Keywords.CentaurSoul}时，获得伤害加成。\n 现在获得{#BoldFormat}1{#PreviousFormat}{$Keywords.CentaurSoul}。 \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.Attack}和{$Keywords.Special} 伤害加成: \Column 381 {#UpgradeFormat}{$TooltipData.TooltipDamage:P}"
 		}		
 /*
 			Description = "Gain Bonus Damage when you pick up {$Keywords.CentaurHeart} or {$Keywords.CentaurSoul}. \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.Attack} and {$Keywords.Special} Bonus Damage: \Column 381 {#UpgradeFormat} {$TooltipData.TooltipDamage:P}"
@@ -1811,21 +1811,21 @@ Texts = [
 		{
 			Id = "HealthDamageSoulDrop"
 			InheritFrom = "HealthDamageTrait_Initial"
-			Description = ""
+			Description = "捡起{$Keywords.CentaurHeart}或{$Keywords.CentaurSoul}时，获得伤害加成。\n {!Icons.Bullet}{#PropertyFormat}{$Keywords.Attack}和{$Keywords.Special}伤害加成: \Column 381 {#UpgradeFormat} {$TooltipData.TooltipDamage:P}"
 		}
 /*
 			DisplayName = "{I} Gain {#UseTextHealingFormat}+{$TempTextData.TooltipMaxHealth}{!Icons.HealthUp_Small} and more..."
 */
 		{
 			Id = "CentaurHeartBoostedText"
-			DisplayName = ""
+			DisplayName = "{I}获得{#UseTextHealingFormat}+{$TempTextData.TooltipMaxHealth}{!Icons.HealthUp_Small}及其他……"
 		}	
 /*
 			DisplayName = "{#CombatTextHighlightFormat}{$TempTextData.TraitName}{#PreviousFormat}: {$TempTextData.Amount:P} Damage!"
 */
 		{
 			Id = "CentaurHeartBoostedText_Alt"
-			DisplayName = ""
+			DisplayName = "{#CombatTextHighlightFormat}{$TempTextData.TraitName}{#PreviousFormat}: {$TempTextData.Amount:P}伤害！"
 		}
 /*
 			DisplayName = "Home Turf"
@@ -1833,8 +1833,8 @@ Texts = [
 */
 		{
 			Id = "LavaResistTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "主场优势"
+			Description = "处于{$Keywords.LavaSplash}之上时，受到的伤害减少。\n {!Icons.Bullet}{#PropertyFormat}伤害抵抗: \Column 380 {#UpgradeFormat}{$TooltipData.DisplayDelta1}{#PreviousFormat}"
 		}
 /*
 			Description = "You take less damage while standing in a {$Keywords.LavaSplash}. \n {!Icons.Bullet}{#PropertyFormat}Damage Resistance: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}{#PreviousFormat}"
@@ -1842,7 +1842,7 @@ Texts = [
 		{
 			Id = "LavaResistTrait_Initial"
 			InheritFrom = "LavaResistTrait"
-			Description = ""
+			Description = "处于{$Keywords.LavaSplash}之上时，受到的伤害减少。\n {!Icons.Bullet}{#PropertyFormat}伤害抵抗: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}{#PreviousFormat}"
 		}
 /*
 			DisplayName = "Eternal Flame"
@@ -1850,8 +1850,8 @@ Texts = [
 */
 		{
 			Id = "LavaLongerTrait",
-			DisplayName = ""
-			Description = ""
+			DisplayName = "火焰不熄"
+			Description = "{$Keywords.LavaSplash}范围变得更大，持续时间会增加。\n {!Icons.Bullet}{#PropertyFormat}持续时间加成: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDuration}秒{#PreviousFormat}。"
     	}
 /*
 			Description = "Your {$Keywords.LavaSplash}{#BoldFormat}s {#PreviousFormat} are bigger and last longer. \n {!Icons.Bullet}{#PropertyFormat}Bonus Duration: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDuration} Sec{#PreviousFormat}."
@@ -1859,7 +1859,7 @@ Texts = [
 		{
 			Id = "LavaLongerTrait_Initial",
 			InheritFrom = "LavaLongerTrait"
-			Description = ""
+			Description = "{$Keywords.LavaSplash}范围变得更大，持续时间会增加。\n {!Icons.Bullet}{#PropertyFormat}持续时间加成: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDuration} 秒{#PreviousFormat}。"
     	}
 /*
 			DisplayName = "Royal Hearth"
@@ -1867,8 +1867,8 @@ Texts = [
 */
 		{
 			Id = "LavaAutoTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "王室壁炉"
+			Description = "{$Keywords.LavaSplash}将吸引敌人。"
 		}
 /*
 			DisplayName = "Bottomless Cauldron"
@@ -1876,8 +1876,8 @@ Texts = [
 */
 		{
 			Id = "ForceHestiaBoonTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "不尽坩埚"
+			Description = "你找到的下一个{$Keywords.GodBoon}将来自{#BoldFormat}赫斯提亚{#PreviousFormat}。她的祝福将有 {#AltUpgradeFormat}{$TooltipData.TooltipBonusChance:P} {#PreviousFormat}的几率成为{#RareFormat}稀有{#PreviousFormat}或更高等级。"
 		}
 /*
 			Description = "The next {$Keywords.GodBoon} you find will be from {#BoldFormat}Hestia{#PreviousFormat}. Her blessings have {#AltUpgradeFormat}{$TooltipData.TooltipBonusChance:P} {#PreviousFormat} chance to be {#RareFormat}Rare {#PreviousFormat} or better. \n\n {#AwardFlavorFormat}{$TooltipData.SignoffText}"
@@ -1885,7 +1885,7 @@ Texts = [
 		{
 			Id = "ForceHestiaBoonTrait_Rack"
 			InheritFrom = "ForceHestiaBoonTrait"
-			Description = ""
+			Description = "你找到的下一个{$Keywords.GodBoon}将来自{#BoldFormat}赫斯提亚{#PreviousFormat}。她的祝福将有 {#AltUpgradeFormat}{$TooltipData.TooltipBonusChance:P} {#PreviousFormat}的几率成为{#RareFormat}稀有{#PreviousFormat}或更高等级。\n\n {#AwardFlavorFormat}{$TooltipData.SignoffText}"
 		}
 /*
 			DisplayName = "Bottomless Cauldron"
@@ -1893,8 +1893,8 @@ Texts = [
 */
 		{
 			Id = "ForceHestiaBoonTrait_Inactive"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "不尽坩埚"
+			Description = "赫斯提亚的祝福将有{#AltUpgradeFormat}{$TooltipData.TooltipBonusChance:P} {#PreviousFormat}的几率成为{#RareFormat}稀有{#PreviousFormat}或更高等级。"
 		}
 /*
 			DisplayName = "Danger Zone"
@@ -1902,8 +1902,8 @@ Texts = [
 */
 		{
 			Id = "MoreTrapDamageTrait"
-			DisplayName = ""
-			Description = "" 
+			DisplayName = "危险区域"
+			Description = "{$Keywords.Traps}和{$Keywords.LavaSplash}{#BoldFormat}都{#PreviousFormat}将对敌人增加伤害。 \n {!Icons.Bullet}{#PropertyFormat}陷阱增伤: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDamageBonus:P}{#AltUpgradeFormat} \n {!Icons.Bullet}{#PropertyFormat}{$Keywords.LavaSplash}增伤: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDamage:P}{#AltUpgradeFormat}" 
 		}	
 /*
 			DisplayName = "Unrequited Love"
@@ -1911,22 +1911,22 @@ Texts = [
 */
 		{
 			Id = "FreeHealthTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "痴心暗许"
+			Description = "击杀{$Keywords.BossPlural}后，获得1{$Keywords.CentaurHeart}。\n 击杀{$Keywords.MiniBoss}后，获得1 {$Keywords.CentaurSoul}。"
 		}	
 /*
 			DisplayName = "{#CombatTextHighlightFormat}Loving Embrace!{#PreviousFormat}!"
 */
 		{
 			Id = "FreeHealthText",
-			DisplayName = ""
+			DisplayName = "{#CombatTextHighlightFormat}爱的拥抱{#PreviousFormat}！"
 		}
 /*
 			DisplayName = "{I} Gain {#UseTextHealingFormat}+{$TempTextData.TooltipMaxHealth} {!Icons.HealthUpAlt_Small} {#PreviousFormat}{#ItalicFormat}(without restoring {!Icons.Health_Small}){#PreviousFormat}"
 */
 		{
 			Id = "UseEmptyHealthDrop"
-			DisplayName = ""
+			DisplayName = "{I}获得{#UseTextHealingFormat}+{$TempTextData.TooltipMaxHealth} {!Icons.HealthUpAlt_Small} {#PreviousFormat}{#ItalicFormat}（{!Icons.Health_Small}并不恢复）{#PreviousFormat}"
 		}
 /*
 			DisplayName = "Striking Sparks"
@@ -1934,8 +1934,8 @@ Texts = [
 */
 		{
 			Id = "ExplosionTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "火花四溅"
+			Description = "{$Keywords.Crit}将引发小范围的爆炸。\n {!Icons.Bullet}{#PropertyFormat}爆炸伤害: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}"
     	}
 /*
 			DisplayName = "Icy Scorches"
@@ -1943,8 +1943,8 @@ Texts = [
 */
 		{
 			Id = "ChillFireTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "冰炭同器"
+			Description = "{$Keywords.Dash}将留下可以施加{$Keywords.Chill}的冰焰。\n {!Icons.Bullet}{#PropertyFormat}伤害加成: \Column 380 {#UpgradeFormat}{$TooltipData.NewTotal1}"
 		}	
 /*
 			DisplayName = "Quick Drink"
@@ -1952,8 +1952,8 @@ Texts = [
 */
 		{
 			Id = "FullHealBossTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "餐前偷饮"
+			Description = "进入{$Keywords.BossPlural}和{$Keywords.MiniBoss}房间将回复{!Icons.Health_Small}。\n {!Icons.Bullet}{#PropertyFormat}遭遇{$Keywords.BossPlural}回复: \Column 380 {#UpgradeFormat}100%{!Icons.Health_Small_Tooltip} \n {!Icons.Bullet}{#PropertyFormat}遭遇{$Keywords.MiniBoss}回复 : \Column 380 {#UpgradeFormat}50%{!Icons.Health_Small_Tooltip}"
 		}
 /*
 			DisplayName = "Quick Drink"
@@ -1961,15 +1961,15 @@ Texts = [
 */
 		{
 			Id = "FullHealBossTrait_Reduced"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "餐前偷饮"
+			Description = "进入{$Keywords.BossPlural}和{$Keywords.MiniBoss}房间将回复{!Icons.Health_Small}。\n {!Icons.Bullet}{#PropertyFormat}遭遇{$Keywords.BossPlural}回复: \Column 380 {#AltPenaltyFormat}{$TooltipData.TooltipHeal}%{!Icons.Health_Small_Tooltip}{#PreviousFormat} \n {!Icons.Bullet}{#PropertyFormat}遭遇{$Keywords.MiniBoss}回复: \Column 380 {#AltPenaltyFormat}{$TooltipData.TooltipHealHalf}%{!Icons.Health_Small_Tooltip}{#PreviousFormat}"
 		}
 /*
 			DisplayName = "{#CombatTextHighlightFormat}Quick Drink!{#PreviousFormat}!"
 */
 		{
 			Id = "FullHealBossText",
-			DisplayName = ""
+			DisplayName = "{#CombatTextHighlightFormat}偷一口{#PreviousFormat}！"
     	}
 /*
 			DisplayName = "Raging Flames"
@@ -1977,8 +1977,8 @@ Texts = [
 */
 		{
 			Id = "FoesNumberDamageTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "怒火中烧"
+			Description = "若你同时面对至少{$TooltipData.EnemyThreshold}个敌人，{$Keywords.Attack}和{$Keywords.Special}将造成更高伤害。 \n {!Icons.Bullet}{#PropertyFormat}伤害加成: \Column 380 {#UpgradeFormat}{$TooltipData.TooltipDamage:P}"
 		}	
 /*
 			DisplayName = "Magnetic Force"
@@ -1986,8 +1986,8 @@ Texts = [
 */
 		{
 			Id = "PullZeusCastTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "磁心引力"
+			Description = "连环闪电效果将能吸引敌人并且增加弹射次数。 \n {!Icons.Bullet}{#PropertyFormat}弹射次数: \Column 380 {#UpgradeFormat}+3"
 		}
 /*
 			DisplayName = "Fish Stew" 
@@ -1995,8 +1995,8 @@ Texts = [
 */
 		{
 			Id = "FishingRewardExtraTrait"
-			DisplayName = "" 
-			Description = ""
+			DisplayName = "鲜美鱼汤" 
+			Description = "{$Keywords.FishingPoint}{#BoldFormat}{#PreviousFormat}将栖息更多的鱼并且{#AltUpgradeFormat}+1等级{!Icons.RandomPomSmall}{#PreviousFormat}。 \n {!Icons.Bullet}{#PropertyFormat}钓鱼收获: \Column 380 {#UpgradeFormat}x2"
 		}
 /*
 			DisplayName = "Summertime"
@@ -2004,22 +2004,22 @@ Texts = [
 */
 		{
 			Id = "ShoutMoreHealTrait"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "悠然假日"
+			Description = "{$Keywords.WrathDerivedStocks}每击中敌人一下将回复{#BoldFormat}+4{#PreviousFormat}{!Icons.Health_Small}。"
 		}
 /*
 			DisplayName = "Blessed foes now attract you."
 */
 		{
 			Id = "LtUpgrade_Hestia"
-			DisplayName = ""
+			DisplayName = "受到祝福的敌人现在会吸引你。"
 		}				
 /*
 			DisplayName = "{!Icons.RunClearStar}Disciple of Hestia{!Icons.RunClearStar}"
 */
 		{
 			Id = "ClearRequiredTraitsHestia"
-			DisplayName = ""
+			DisplayName = "{!Icons.RunClearStar}赫斯提亚的门徒{!Icons.RunClearStar}"
 		}
 /*
 			DisplayName = "Mercy and Forgiveness"
@@ -2028,78 +2028,78 @@ Texts = [
 		// Forgiveness Quest
 		{
 			Id = "ForgivenessQuest"
-			DisplayName = ""
-			Description = ""
+			DisplayName = "仁慈与宽恕"
+			Description = "有朝一日，冥王之子将会在炉灶女神的恩泽下得到每一位神明的宽恕。"
 		}
 /*
 			DisplayName = "Zeus forgave you"
 */
 		{
 			Id = "ZeusFreePass01"
-			DisplayName = ""
+			DisplayName = "宙斯原谅了你"
 		}
 /*
 			DisplayName = "Poseidon forgave you"
 */
 		{
 			Id = "PoseidonFreePass01"
-			DisplayName = ""
+			DisplayName = "波塞冬原谅了你"
 		}
 /*
 			DisplayName = "Athena forgave you"
 */
 		{
 			Id = "AthenaFreePass01"
-			DisplayName = ""
+			DisplayName = "雅典娜原谅了你"
 		}
 /*
 			DisplayName = "Aphrodite forgave you"
 */
 		{
 			Id = "AphroditeFreePass01"
-			DisplayName = ""
+			DisplayName = "阿弗洛狄忒原谅了你"
 		}
 /*
 			DisplayName = "Ares forgave you"
 */
 		{
 			Id = "AresFreePass01"
-			DisplayName = ""
+			DisplayName = "阿瑞斯原谅了你"
 		}
 /*
 			DisplayName = "Artemis forgave you"
 */
 		{
 			Id = "ArtemisFreePass01"
-			DisplayName = ""
+			DisplayName = "阿尔忒弥斯原谅了你"
 		}
 /*
 			DisplayName = "Dionysus forgave you"
 */
 		{
 			Id = "DionysusFreePass01"
-			DisplayName = ""
+			DisplayName = "迪奥尼索斯原谅了你"
 		}
 /*
 			DisplayName = "Apollo forgave you"
 */
 		{
 			Id = "ApolloFreePass01"
-			DisplayName = ""
+			DisplayName = "阿波罗原谅了你"
 		}
 /*
 			DisplayName = "Hestia forgave you"
 */
 		{
 			Id = "HestiaFreePass02"
-			DisplayName = ""
+			DisplayName = "赫斯提亚又原谅了你"
 		}
 /*
 			DisplayName = "Hera forgave you"
 */
 		{
 			Id = "HeraFreePass01"
-			DisplayName = ""
+			DisplayName = "赫拉原谅了你"
 		}
 /*
 		DisplayName = "Hellfish x2"
@@ -2107,210 +2107,210 @@ Texts = [
 		// Fish Doubled
 		{
 		Id = "Fish_Tartarus_Common_01_Doubled"
-		DisplayName = ""
+		DisplayName = "地狱鱼x2"
 		}
 /*
 		DisplayName = "Knucklehead x2"
 */
 		{
 		Id = "Fish_Tartarus_Rare_01_Doubled"
-		DisplayName = ""
+		DisplayName = "拳头鱼x2"
 		}
 /*
 		DisplayName = "Scyllascion x2"
 */
 		{
 		Id = "Fish_Tartarus_Legendary_01_Doubled"
-		DisplayName = ""
+		DisplayName = "蛟龙鱼x2"
 		}
 /*
 		DisplayName = "Slavug x2"
 */
 		{
 		Id = "Fish_Asphodel_Common_01_Doubled"
-		DisplayName = ""
+		DisplayName = "鼻涕虫x2"
 		}
 /*
 		DisplayName = "Chrustacean x2"
 */
 		{
 		Id = "Fish_Asphodel_Rare_01_Doubled"
-		DisplayName = ""
+		DisplayName = "盔甲虾x2"
 		}
 /*
 		DisplayName = "Flameater x2"
 */
 		{
 		Id = "Fish_Asphodel_Legendary_01_Doubled"
-		DisplayName = ""
+		DisplayName = "嗜火鱼x2"
 		}
 /*
 		DisplayName = "Chlam x2"
 */
 		{
 		Id = "Fish_Elysium_Common_01_Doubled"
-		DisplayName = ""
+		DisplayName = "刺甲贝x2"
 		}
 /*
 		DisplayName = "Charp x2"
 */
 		{
 		Id = "Fish_Elysium_Rare_01_Doubled"
-		DisplayName = ""
+		DisplayName = "鲤鱼x2"
 		}
 /*
 		DisplayName = "Seamare x2"
 */
 		{
 		Id = "Fish_Elysium_Legendary_01_Doubled"
-		DisplayName = ""
+		DisplayName = "异形海马x2"
 		}
 /*
 		DisplayName = "Gupp x2"
 */
 		{
 		Id = "Fish_Styx_Common_01_Doubled"
-		DisplayName = ""
+		DisplayName = "加普虫x2"
 		}
 /*
 		DisplayName = "Scuffer x2"
 */
 		{
 		Id = "Fish_Styx_Rare_01_Doubled"
-		DisplayName = ""
+		DisplayName = "刺豚鱼x2"
 		}
 /*
 		DisplayName = "Stonewhal x2"
 */
 		{
 		Id = "Fish_Styx_Legendary_01_Doubled"
-		DisplayName = ""
+		DisplayName = "石背鱼x2"
 		}
 /*
 		DisplayName = "Mati x2"
 */
 		{
 		Id = "Fish_Chaos_Common_01_Doubled"
-		DisplayName = ""
+		DisplayName = "马蒂鱼x2"
 		}
 /*
 		DisplayName = "Projelly x2"
 */
 		{
 		Id = "Fish_Chaos_Rare_01_Doubled"
-		DisplayName = ""
+		DisplayName = "异形水母x2"
 		}
 /*
 		DisplayName = "Voidskate x2"
 */
 		{
 		Id = "Fish_Chaos_Legendary_01_Doubled"
-		DisplayName = ""
+		DisplayName = "双翅鳐x2"
 		}
 /*
 		DisplayName = "Trout x2"
 */
 		{
 		Id = "Fish_Surface_Common_01_Doubled"
-		DisplayName = ""
+		DisplayName = "鳟鱼x2"
 		}
 /*
 		DisplayName = "Bass x2"
 */
 		{
 		Id = "Fish_Surface_Rare_01_Doubled"
-		DisplayName = ""
+		DisplayName = "鲈鱼x2"
 		}
 /*
 		DisplayName = "Sturgeon x2"
 */
 		{
 		Id = "Fish_Surface_Legendary_01_Doubled"
-		DisplayName = ""
+		DisplayName = "鲟鱼x2"
 		}
 /*
 			DisplayName = "Forgiven!"
 */
 		{
 			Id = "FreePassTextBanner"
-			DisplayName = ""
+			DisplayName = "原谅！"
 		}
 /*
 			DisplayName = "Spark of reconciliation"
 */
 		{
 			Id = "ZeusUpgradeFreePass"
-			DisplayName = ""
+			DisplayName = "息电宁人"
 		}
 /*
 			DisplayName = "There's one fire that water won't extinguish"
 */
 		{
 			Id = "PoseidonUpgradeFreePass"
-			DisplayName = ""
+			DisplayName = "和衷共济"
 		}
 /*
 			DisplayName = "A tactical retreat"
 */
 		{
 			Id = "AthenaUpgradeFreePass"
-			DisplayName = ""
+			DisplayName = "战术撤退"
 		}
 /*
 			DisplayName = "Make love, not war"
 */
 		{
 			Id = "AphroditeUpgradeFreePass"
-			DisplayName = ""
+			DisplayName = "大爱无疆"
 		}
 /*
 			DisplayName = "The hunt never stops"
 */
 		{
 			Id = "ArtemisUpgradeFreePass"
-			DisplayName = ""
+			DisplayName = "放鹰收箭"
 		}
 /*
 			DisplayName = "He cannot win a battle of kindness"
 */
 		{
 			Id = "AresUpgradeFreePass"
-			DisplayName = ""
+			DisplayName = "止戈为武"
 		}
 /*
 			DisplayName = "A favor returned"
 */
 		{
 			Id = "DionysusUpgradeFreePass"
-			DisplayName = ""
+			DisplayName = "投桃报李"
 		}
 /*
 			DisplayName = "If you see this, you are a magician... (please report a bug!)"
 */
 		{
 			Id = "DemeterUpgradeFreePass"
-			DisplayName = ""
+			DisplayName = "涣然冰释……(请提交bug！)"
 		}
 /*
 			DisplayName = "His mercy shines on you"
 */
 		{
 			Id = "ApolloUpgradeFreePass"
-			DisplayName = ""
+			DisplayName = "高风亮节"
 		}
 /*
 			DisplayName = "May compassion guide your path"
 */
 		{
 			Id = "HestiaUpgradeFreePass"
-			DisplayName = ""
+			DisplayName = "扶你一程"
 		}
 /*
 			DisplayName = "You've been granted royal forgiveness"
 */
 		{
 			Id = "HeraUpgradeFreePass"
-			DisplayName = ""
+			DisplayName = "开恩特赦"
 		}
 ]
 }
