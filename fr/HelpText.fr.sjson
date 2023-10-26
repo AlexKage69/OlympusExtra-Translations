@@ -152,7 +152,7 @@ Texts = [
 */
 		{
 			Id = "ApolloSignoff_Max"
-			DisplayName = ""
+			DisplayName = """
 				From {#AwardMaxFlavorFormat}Apollo{#AwardDarkFlavorFormat}; you share a {#AwardMaxFlavorFormat}Harmonious Bond
 
 				{#AwardDarkFlavorFormat}Sometimes it takes a prophet to foresee a great friendship.
@@ -679,7 +679,7 @@ Texts = [
 */
 		{
 			Id = "CerberusSignoff_AssistMax"
-			DisplayName = ""
+			DisplayName = """
 				From {#AwardMaxFlavorFormat}Cerberus {#AwardDarkFlavorFormat}, goodest boy
 			"""
 		}
@@ -855,7 +855,7 @@ Texts = [
 */
 		{
 			Id = "HeraSignoff_Max"
-			DisplayName = ""
+			DisplayName = """
 				From {#AwardMaxFlavorFormat}Hera{#AwardDarkFlavorFormat}; you share a {#AwardMaxFlavorFormat}Compassionate Bond
 
 				{#AwardDarkFlavorFormat}Together, you are the founding members of the Warmth and Compassion Brigade.
@@ -1579,7 +1579,7 @@ Texts = [
 */
 		{
 			Id = "HestiaSignoff_Max"
-			DisplayName = ""
+			DisplayName = """
 				From {#AwardMaxFlavorFormat}Hestia{#AwardDarkFlavorFormat}; you share a {#AwardMaxFlavorFormat}Compassionate Bond
 
 				{#AwardDarkFlavorFormat}Together, you are the founding members of the Warmth and Compassion Brigade.
